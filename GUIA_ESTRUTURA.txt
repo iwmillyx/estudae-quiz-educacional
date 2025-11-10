@@ -1,0 +1,108 @@
+PROJETO ESTUDAE — GUIA DE PASTAS E ARQUIVOS
+
+
+1) Visão geral
+PROJETO ESTUDAE/
+├─ img/                   ← imagens (logo, ícones)
+├─ telas/                 ← telas (interface Tkinter)
+│   ├─ tela_logo.py
+│   ├─ tela_login.py      (antes: cadastro.py)
+│   ├─ home.py
+│   ├─ ranking_geral.py
+│   ├─ ranking_materia.py
+│   └─ tela_quiz.py       (futuro: quiz/perguntas)
+├─ dados/                 ← lógica e armazenamento
+│   ├─ dados.py
+│   ├─ dados_db.py
+│   ├─ usuarios.py
+│   ├─ perguntas.py
+│   └─ scores.json
+├─ router.py              ← troca de telas (controlador)
+└─ main.py                ← ponto de entrada do app
+
+
+2) O que cada pasta faz:
+
+🖼️ img/ = Guarda todas as imagens do projeto (ex.: logoSemFundo2.png).
+
+🪟 telas/ (interface do usuário) = Tudo que o usuário vê e clica fica aqui. Cada arquivo = 1 tela.
+
+          Arquivos principais:
+
+• tela_logo.py = Tela inicial (logo + botão “Vamos começar”).
+
+• tela_login.py (antes: cadastro.py) = Tela de login e cadastro.
+    Lê/grava usuários (por enquanto em usuarios.txt ou via funções da pasta dados/ se você migrar).
+
+• home.py = Tela inicial após login (botões ENEM / Militar).
+
+• ranking_geral.py = Mostra ranking somando todas as matérias de uma categoria (ENEM ou MILITAR).
+
+• ranking_materia.py = Mostra ranking por matéria dentro de uma categoria (ex.: ENEM → Matemática).
+
+• tela_quiz.py (futuro, feito pela sua amiga) = Mostra perguntas, alternativas, confirma resposta, 
+                                                soma pontos.
+
+    Deve consultar dados/perguntas.py (para buscar perguntas) e registrar pontuação via dados/dados.py 
+    ou dados/dados_db.py (se usar banco).
+
+🧠 dados/ (lógica, dados e banco) = Cérebro do app. Calcula, guarda e busca informações.
+
+            Arquivos principais:
+
+• dados.py = Funções de pontuação e ranking usando arquivo (ex.: scores.json).
+
+• dados_db.py = Versão com banco (ex.: SQLite).
+
+    Objetivo: substituir o uso de .json/.txt quando vocês migrarem pro BD.
+
+• usuarios.py = Regras para login/cadastro.
+
+    Se continuar em arquivo: carregar_usuarios(), salvar_usuario(), salvar_todos().
+
+    Se for pro banco: mesmas funções, mas usando SQLite.
+
+• perguntas.py = Lida com perguntas (buscar por categoria/matéria/dificuldade, criar perguntas, etc.).
+
+    Pode começar com uma lista/dicionário e migrar depois pro banco sem mudar a interface das funções.
+
+• scores.json = Arquivo simples com pontuações/exemplos (enquanto não usa banco).
+
+
+3) Arquivos de controle
+
+🧭 router.py (controlador de telas) = Responsável por trocar de tela na mesma janela (root).
+
+🚀 main.py (entrada do app) = Cria a janela principal (root = tk.Tk()).
+
+
+4) Quando migrar pro BANCO (SQLite)
+
+    Tabelas mínimas sugeridas:
+
+        usuarios(id, usuario, senha_hash, nome, email, nasc, telefone, estado, criado_em)
+
+        categorias(id, nome) → ENEM, MILITAR
+
+        materias(id, categoria_id, nome) → Matemática, Linguagens, etc.
+
+        perguntas(id, categoria_id, materia_id, enunciado, a, b, c, d, correta, dificuldade)
+
+        respostas(id, usuario_id, pergunta_id, correta, pontos, respondido_em)
+
+    Rankings:
+
+        Geral por categoria: soma pontos de respostas por usuario (filtrando categoria_id).
+
+        Por matéria: soma pontos filtrando também materia_id.
+
+
+5) To-dos (anote o que falta)
+
+    Implementar telas/tela_quiz.py
+
+    Criar dados/perguntas.py (mock → depois BD)
+
+    Definir esquema do SQLite em dados/dados_db.py
+
+    Conectar ranking ao BD quando migrar
