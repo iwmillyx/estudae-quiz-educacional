@@ -14,6 +14,11 @@ from router import Router
 
 if __name__ == "__main__":
     root = tk.Tk()
+    
+    root.title("EstudAe")
+    root.geometry("375x812")  # Simula mobile
+    root.resizable(False, False)
+    
     app = Router(root)
-    app.ir_para_splash()
+    app.ir_para_login()
     root.mainloop()

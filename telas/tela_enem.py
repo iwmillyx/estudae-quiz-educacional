@@ -1,496 +1,368 @@
 import tkinter as tk
 from tkinter import ttk
-from tkinter import font as tkfont
 
-
-class NivelApp(tk.Tk):
-    def __init__(self, subjects_by_area):
-        super().__init__()
-        self.title("Estudae - ENEM")
-        self.geometry("850x580")
-        self.configure(bg="#005227")
-        self.minsize(700, 450)
-        self.subjects_by_area = subjects_by_area
-        self.current_area = None
-        self.subjects = {}
-
-        # Fontes
-        self.title_font = tkfont.Font(family="Segoe UI Semibold", size=22)
-        self.subtitle_font = tkfont.Font(family="Segoe UI", size=12)
-        self.button_font = tkfont.Font(family="Verdana", size=10)
-        self.level_font = tkfont.Font(family="Segoe UI", size=9, weight="bold")
-
-        # Tema ttk
-        style = ttk.Style(self)
-        style.theme_use("clam")
-        style.configure("TFrame", background="#005227")
-        style.configure("TLabel", background="#005227", foreground="#f5f5f5")
-        style.configure("TButton", font=self.button_font, padding=6)
-        style.map("TButton",
-                  background=[("active", "#EDF3F3"), ("!active", "#03bb85")],
-                  foreground=[("active", "#0c0c0c"), ("!active", "#050404")])
-
-        # Área principal
-        self.main_frame = ttk.Frame(self)
-        self.main_frame.grid(row=0, column=0, sticky="nsew")
-        self.grid_rowconfigure(0, weight=1)
-        self.grid_columnconfigure(0, weight=1)
-        self.main_frame.grid_rowconfigure(0, weight=1)
-        self.main_frame.grid_columnconfigure(0, weight=1)
-
-        # Páginas
-        self.pages = {}
-        self.create_area_page()
-        self.create_subject_page()
-        self.create_ranking_page()
-        self.create_user_page()
-
-        # Rodapé
-        self.create_footer()
-
-        # Começa direto na tela de áreas
-        self.show_page("areas")
-
-    # ====================== TELAS ==========================
-
-    def create_area_page(self):
-        """Tela com botões das áreas"""
-        page = ttk.Frame(self.main_frame)
-        self.pages["areas"] = page
-        page.grid(row=0, column=0, sticky="nsew")
-
-        lbl = ttk.Label(page, text="ENEM - Áreas do Conhecimento", font=self.title_font)
-        lbl.pack(pady=30)
-
-        areas_frame = ttk.Frame(page)
-        areas_frame.pack(pady=20)
-
-        for area in self.subjects_by_area:
-            btn = ttk.Button(
-                areas_frame,
-                text=area,
-                command=lambda a=area: self.open_area(a)
-            )
-            btn.pack(pady=8, ipadx=10, ipady=5, fill="x")
-
-    def create_subject_page(self):
-        page = ttk.Frame(self.main_frame)
-        self.pages["materias"] = page
-        page.grid(row=0, column=0, sticky="nsew")
-
-        page.grid_rowconfigure(0, weight=1)
-        page.grid_columnconfigure(0, weight=1)
-        page.grid_columnconfigure(1, weight=2)
-
-        # Lista de matérias
-        left = ttk.Frame(page, padding=(12, 12))
-        left.grid(row=0, column=0, sticky="nsew")
-
-        self.lbl_area = ttk.Label(left, text="", font=("Helvetica", 16, "bold"))
-        self.lbl_area.pack(anchor="nw", pady=(0, 10))
-
-        self.subject_buttons = {}
-        self.subject_list_frame = ttk.Frame(left)
-        self.subject_list_frame.pack(fill="both", expand=True)
-
-        # Detalhes da matéria
-        right = ttk.Frame(page, padding=(20, 20))
-        right.grid(row=0, column=1, sticky="nsew")
-
-        self.lbl_title = ttk.Label(right, text="", font=("Segoe UI Semibold", 18))
-        self.lbl_title.grid(row=0, column=0, sticky="w")
-
-        # Barra de progresso
-        self.progress = ttk.Progressbar(
-            right, orient="horizontal", mode="determinate", maximum=100,
-            style="TProgressbar"
-        )
-        self.progress.grid(row=1, column=0, sticky="ew", pady=(10, 20))
-        style = ttk.Style()
-        style.configure("TProgressbar", thickness=18, troughcolor="white", background="#68ddbd")
-
-        # Frame de níveis
-        self.levels_frame = ttk.Frame(right)
-        self.levels_frame.grid(row=2, column=0, sticky="n", pady=(6, 0))
-
-        # Texto de informação
-        self.info_label = ttk.Label(right, text="", font=self.button_font)
-        self.info_label.grid(row=3, column=0, sticky="w", pady=(14, 0))
-
-    def create_ranking_page(self):
-        page = ttk.Frame(self.main_frame)
-        self.pages["ranking"] = page
-        page.grid(row=0, column=0, sticky="nsew")
-
-        lbl = ttk.Label(page, text="🌍 Ranking Global", font=("Segoe UI Semibold", 18))
-        lbl.pack(pady=20)
-
-        columns = ("Posição", "Nome", "Pontos")
-        tree = ttk.Treeview(page, columns=columns, show="headings", height=8)
-        for col in columns:
-            tree.heading(col, text=col)
-            tree.column(col, anchor="center", width=150)
-        tree.pack(padx=20, pady=10, fill="x")
-
-        data = [
-            (1, "Amanda", 980),
-            (2, "João", 920),
-            (3, "Maria", 870),
-            (4, "Carlos", 850),
-            (5, "Ana", 820),
-        ]
-        for row in data:
-            tree.insert("", "end", values=row)
-
-    def create_user_page(self):
-        page = ttk.Frame(self.main_frame)
-        self.pages["usuario"] = page
-        page.grid(row=0, column=0, sticky="nsew")
-
-        lbl = ttk.Label(page, text="👤 Perfil do Usuário", font=("Segoe UI Semibold", 18))
-        lbl.pack(pady=20)
-
-        info = ttk.Label(
-            page,
-            text="Nome: Amanda\nProgresso total: 67%\nNível geral: Intermediário\n\nContinue estudando! 💪",
-            font=self.button_font,
-            justify="center"
-        )
-        info.pack(pady=20)
-
-    # ====================== RODAPÉ ==========================
-
-    def create_footer(self):
-        self.footer = tk.Frame(self, bg="#00421F", height=60)
-        self.footer.grid(row=1, column=0, sticky="ew")
-        self.footer.grid_propagate(False)
-        self.footer.columnconfigure((0, 1, 2), weight=1, uniform="b")
-
-        self.footer_buttons = {}
-
-        btn_areas = tk.Button(
-            self.footer, text="📘\nÁreas", font=("Segoe UI", 10, "bold"),
-            bg="#03bb85", fg="#070707", relief="flat",
-            activebackground="#02a677", activeforeground="white",
-            command=lambda: self.show_page("areas")
-        )
-        btn_areas.grid(row=0, column=0, sticky="nsew", padx=10, pady=6)
-        self.footer_buttons["areas"] = btn_areas
-
-        btn_ranking = tk.Button(
-            self.footer, text="🌍\nRanking", font=("Segoe UI", 10, "bold"),
-            bg="#03bb85", fg="#060606", relief="flat",
-            activebackground="#02a677", activeforeground="white",
-            command=lambda: self.show_page("ranking")
-        )
-        btn_ranking.grid(row=0, column=1, sticky="nsew", padx=10, pady=6)
-        self.footer_buttons["ranking"] = btn_ranking
-
-        btn_user = tk.Button(
-            self.footer, text="👤\nUsuário", font=("Segoe UI", 10, "bold"),
-            bg="#03bb85", fg="#0c0c0c", relief="flat",
-            activebackground="#02a677", activeforeground="white",
-            command=lambda: self.show_page("usuario")
-        )
-        btn_user.grid(row=0, column=2, sticky="nsew", padx=10, pady=6)
-        self.footer_buttons["usuario"] = btn_user
-
-    # ====================== FUNÇÕES ==========================
-
-    def show_page(self, page_name):
-        for name, frame in self.pages.items():
-            frame.grid_forget()
-
-        self.pages[page_name].grid(row=0, column=0, sticky="nsew")
-
-        if self.footer_buttons:
-            for name, btn in self.footer_buttons.items():
-                btn.configure(bg="#02a677" if name == page_name else "#03bb85")
-
-    def open_area(self, area_name):
-        """Abre as matérias da área escolhida"""
-        self.current_area = area_name
-        self.subjects = self.subjects_by_area[area_name]
-        self.lbl_area.config(text=f"{area_name}")
-        for w in self.subject_list_frame.winfo_children():
-            w.destroy()
-
-        for name in self.subjects:
-            btn = ttk.Button(
-                self.subject_list_frame,
-                text=name,
-                command=lambda n=name: self.select_subject(n)
-            )
-            btn.pack(fill="x", pady=6)
-
-        # Mostra página de matérias
-        self.show_page("materias")
-
-        # Seleciona primeira matéria automaticamente
-        first = next(iter(self.subjects))
-        self.select_subject(first)
-
-    def select_subject(self, name):
-        data = self.subjects[name]
-        max_lvl = data["max"]
-        current = data.get("current", 0)
-
-        self.lbl_title.config(text=f"{name}")
-        pct = int(100 * current / max_lvl) if max_lvl else 0
-        self.progress["value"] = pct
-        self.info_label.config(text=f"Nível atual: {current} / {max_lvl} ({pct}%)")
-
-        for w in self.levels_frame.winfo_children():
-            w.destroy()
-
-        cols = 6
-        for i in range(1, max_lvl + 1):
-            is_completed = i <= current
-            txt = f"Nível {i}"
-            color = "#a4fff7" if is_completed else "#18926E"
-            fg = "#080808" if is_completed else "#010101"
-
-            b = tk.Button(
-                self.levels_frame,
-                text=txt,
-                font=self.level_font,
-                bg=color,
-                fg=fg,
-                activebackground="#005227",
-                activeforeground="#070707",
-                width=12,
-                relief="flat",
-                borderwidth=0,
-                command=lambda lvl=i: self.toggle_level(lvl)
-            )
-            b.grid(row=(i - 1) // cols, column=(i - 1) % cols, padx=8, pady=8)
-            b.configure(highlightthickness=1, highlightbackground="#038554")
-
-    def toggle_level(self, lvl):
-        data = self.subjects[self.lbl_title.cget("text")]
-        max_lvl = data["max"]
-        current = data.get("current", 0)
-
-        if lvl <= current:
-            new_current = lvl - 1
-        else:
-            new_current = lvl
-
-        data["current"] = max(0, min(new_current, max_lvl))
-        self.select_subject(self.lbl_title.cget("text"))
-
-# ------------------------------------------------------------
-# Função usada pelo Router para abrir o ENEM dentro da janela principal
-# ------------------------------------------------------------
-def montar_enem(root, usuario=None, nome=None):
-    import tkinter as tk
-    from tkinter import ttk
-    from tkinter import font as tkfont
-
-    # limpa a janela atual
+def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=None):
+    """Monta a tela do ENEM dentro da janela principal"""
+    
+    # Limpa a tela
     for w in root.winfo_children():
         w.destroy()
 
-    # usa os mesmos dados do seu __main__ (pode trocar para vir do banco)
+    root.title("EstudAe - ENEM")
+    root.config(bg="#005227")
+
+    # Dados das matérias por área (ATUALIZADO COM XP)
     materias_enem = {
         "Ciências da Natureza": {
-            "Física": {"max": 3, "current": 1},
-            "Química": {"max": 3, "current": 2},
-            "Biologia": {"max": 3, "current": 2},
+            "Física": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Química": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Biologia": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
         },
         "Ciências Humanas": {
-            "História": {"max": 3, "current": 3},
-            "Geografia": {"max": 3, "current": 2},
-            "Filosofia": {"max": 3, "current": 1},
-            "Sociologia": {"max": 3, "current": 1},
+            "História": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Geografia": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Filosofia": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Sociologia": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
         },
         "Linguagens e Códigos": {
-            "Português": {"max": 3, "current": 2},
-            "Literatura": {"max": 3, "current": 1},
-            "Inglês": {"max": 3, "current": 2},
-            "Espanhol": {"max": 3, "current": 1},
-            "Artes": {"max": 3, "current": 3},
+            "Português": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Literatura": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Inglês": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Espanhol": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
+            "Artes": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
         },
         "Matemática": {
-            "Matemática": {"max": 3, "current": 2},
+            "Matemática": {"max": 3, "current": 0, "xp": 0, "xp_necessario": {1: 0, 2: 100, 3: 250}},
         }
     }
 
-    # janela base (mesma estética)
-    root.title("Estudae - ENEM")
-    root.geometry("850x580")
-    root.configure(bg="#005227")
+    # Variáveis de controle
+    tela_atual = {"nome": "areas"}
+    area_selecionada = {"nome": None, "materias": {}}
+    materia_selecionada = {"nome": None}
 
-    title_font = tkfont.Font(family="Segoe UI Semibold", size=22)
-    button_font = tkfont.Font(family="Verdana", size=10)
-    level_font = tkfont.Font(family="Segoe UI", size=9, weight="bold")
-
-    # container principal
-    container = tk.Frame(root, bg="#005227")
-    container.pack(fill="both", expand=True)
-    container.grid_rowconfigure(0, weight=1)
-    container.grid_columnconfigure(0, weight=1)
-
-    # topo
-    topo = tk.Frame(container, bg="#005227")
-    topo.grid(row=0, column=0, sticky="ew")
-    tk.Label(topo, text=f"🧠 ENEM  —  {nome or usuario or 'Aluno(a)'}",
-             bg="#005227", fg="#f5f5f5", font=title_font).pack(pady=14)
-
-    # miolo dividido em duas colunas
-    miolo = tk.Frame(container, bg="#005227")
-    miolo.grid(row=1, column=0, sticky="nsew", padx=14, pady=10)
-    miolo.grid_columnconfigure(0, weight=1)
-    miolo.grid_columnconfigure(1, weight=2)
-    miolo.grid_rowconfigure(0, weight=1)
-
-    # ===== Coluna esquerda: áreas & matérias =====
-    left = tk.Frame(miolo, bg="#005227")
-    left.grid(row=0, column=0, sticky="nsew", padx=(0, 10))
-
-    tk.Label(left, text="Áreas do Conhecimento", bg="#005227",
-             fg="#f5f5f5", font=("Helvetica", 14, "bold")).pack(anchor="w", pady=(0, 8))
-
-    areas_frame = tk.Frame(left, bg="#005227")
-    areas_frame.pack(fill="x", pady=(0, 8))
-
-    # subframe com lista de matérias da área selecionada
-    tk.Label(left, text="Matérias", bg="#005227",
-             fg="#f5f5f5", font=("Helvetica", 12, "bold")).pack(anchor="w", pady=(10, 6))
-    materias_frame = tk.Frame(left, bg="#005227")
-    materias_frame.pack(fill="both", expand=True)
-
-    # ===== Coluna direita: detalhes & níveis =====
-    right = tk.Frame(miolo, bg="#ffffff")
-    right.grid(row=0, column=1, sticky="nsew")
-    right.grid_rowconfigure(3, weight=1)  # empurrar níveis pra cima
-
-    titulo_materia = tk.Label(right, text="", bg="#ffffff",
-                              fg="#0f172a", font=("Segoe UI Semibold", 18))
-    titulo_materia.grid(row=0, column=0, sticky="w", padx=16, pady=(16, 8))
-
-    # barra de progresso
-    prog_style = ttk.Style()
-    try:
-        prog_style.theme_use("clam")
-    except tk.TclError:
-        pass
-    prog_style.configure("EnemProgress.Horizontal.TProgressbar", thickness=18,
-                         troughcolor="#ffffff", background="#68ddbd")
-    progresso = ttk.Progressbar(right, orient="horizontal", mode="determinate",
-                                maximum=100, style="EnemProgress.Horizontal.TProgressbar")
-    progresso.grid(row=1, column=0, sticky="ew", padx=16, pady=(0, 16))
-
-    # níveis
-    levels_frame = tk.Frame(right, bg="#ffffff")
-    levels_frame.grid(row=2, column=0, sticky="n", padx=16)
-
-    info_label = tk.Label(right, text="", bg="#ffffff", fg="#0f172a",
-                          font=("Verdana", 10))
-    info_label.grid(row=3, column=0, sticky="sw", padx=16, pady=12)
-
-    # --- estado e helpers ---
-    state = {"area": None, "subjects": {}, "current_subject": None}
-
-    def render_materias(area):
-        state["area"] = area
-        state["subjects"] = materias_enem[area]
-        # limpa lista
-        for w in materias_frame.winfo_children():
-            w.destroy()
-        # cria botões de matéria
-        for nome_mat in state["subjects"]:
-            tk.Button(
-                materias_frame, text=nome_mat,
-                font=("Segoe UI", 10), bg="#03bb85", fg="#0a0a0a",
-                activebackground="#02a677", activeforeground="white",
-                relief="flat", padx=8, pady=6,
-                command=lambda n=nome_mat: select_subject(n)
-            ).pack(fill="x", pady=4)
-
-    def select_subject(nome_mat):
-        state["current_subject"] = nome_mat
-        data = state["subjects"][nome_mat]
-        max_lvl = data["max"]
-        current = data.get("current", 0)
-
-        titulo_materia.config(text=nome_mat)
-        pct = int(100 * current / max_lvl) if max_lvl else 0
-        progresso["value"] = pct
-        info_label.config(text=f"Nível atual: {current} / {max_lvl} ({pct}%)")
-
-        # render níveis
-        for w in levels_frame.winfo_children():
+    # ==================== FUNÇÕES ====================
+    
+    def limpar_conteudo():
+        """Limpa apenas o conteúdo, mantendo o frame principal"""
+        for w in main_frame.winfo_children():
             w.destroy()
 
-        cols = 6
-        for i in range(1, max_lvl + 1):
-            is_done = i <= current
-            txt = f"Nível {i}"
-            bg = "#a4fff7" if is_done else "#18926E"
-            fg = "#080808" if is_done else "#010101"
-            b = tk.Button(
-                levels_frame, text=txt, font=level_font,
-                bg=bg, fg=fg, activebackground="#005227",
-                activeforeground="#070707", width=12, relief="flat", borderwidth=0,
-                command=lambda lvl=i: toggle_level(lvl)
-            )
-            b.grid(row=(i - 1) // cols, column=(i - 1) % cols, padx=8, pady=8)
-            b.configure(highlightthickness=1, highlightbackground="#038554")
-
-    def toggle_level(lvl):
-        nome_mat = state["current_subject"]
-        if not nome_mat:
-            return
-        data = state["subjects"][nome_mat]
-        max_lvl = data["max"]
-        current = data.get("current", 0)
-        new_current = (lvl - 1) if lvl <= current else lvl
-        data["current"] = max(0, min(new_current, max_lvl))
-        select_subject(nome_mat)
-
-    # render botões das áreas
-    for area in materias_enem:
+    def mostrar_areas():
+        """Mostra a tela de áreas do conhecimento"""
+        limpar_conteudo()
+        tela_atual["nome"] = "areas"
+        
+        header = tk.Frame(main_frame, bg="#005227", height=50)
+        header.pack(fill="x", pady=(10, 0))
+        
         tk.Button(
-            areas_frame, text=area,
-            font=("Segoe UI", 10, "bold"),
-            bg="#68ddbd", fg="#0a0a0a",
-            activebackground="#02a677", activeforeground="white",
-            relief="flat", padx=8, pady=6,
-            command=lambda a=area: (render_materias(a), select_subject(next(iter(materias_enem[a]))))
-        ).pack(fill="x", pady=4)
+            header,
+            text="← Voltar",
+            font=("Segoe UI", 11, "bold"),
+            bg="#03bb85",
+            fg="black",
+            activebackground="#02a677",
+            activeforeground="white",
+            relief="flat",
+            command=on_voltar if on_voltar else lambda: print("Voltar para home")
+        ).pack(side="left", padx=15, pady=10)
+        
+        tk.Label(
+            main_frame,
+            text="ENEM - Áreas do Conhecimento",
+            font=("Segoe UI Semibold", 18),
+            bg="#005227",
+            fg="white"
+        ).pack(pady=(20, 30))
+        
+        areas_frame = tk.Frame(main_frame, bg="#005227")
+        areas_frame.pack(expand=True, fill="both", padx=30)
+        
+        for area in materias_enem.keys():
+            tk.Button(
+                areas_frame,
+                text=area,
+                font=("Segoe UI", 12, "bold"),
+                bg="#03bb85",
+                fg="black",
+                activebackground="#02a677",
+                activeforeground="white",
+                relief="flat",
+                width=25,
+                height=2,
+                command=lambda a=area: mostrar_materias(a)
+            ).pack(pady=8)
 
-    # seleciona automaticamente a primeira área/matéria
-    first_area = next(iter(materias_enem))
-    render_materias(first_area)
-    select_subject(next(iter(materias_enem[first_area])))
+    def mostrar_materias(area_nome):
+        """Mostra a lista de matérias de uma área"""
+        limpar_conteudo()
+        tela_atual["nome"] = "materias"
+        area_selecionada["nome"] = area_nome
+        area_selecionada["materias"] = materias_enem[area_nome]
+        
+        header = tk.Frame(main_frame, bg="#005227", height=50)
+        header.pack(fill="x", pady=(10, 0))
+        
+        tk.Button(
+            header,
+            text="← Áreas",
+            font=("Segoe UI", 11, "bold"),
+            bg="#03bb85",
+            fg="black",
+            activebackground="#02a677",
+            activeforeground="white",
+            relief="flat",
+            command=mostrar_areas
+        ).pack(side="left", padx=15, pady=10)
+        
+        canvas = tk.Canvas(main_frame, bg="#005227", highlightthickness=0)
+        scrollbar = tk.Scrollbar(main_frame, orient="vertical", command=canvas.yview)
+        scrollable_frame = tk.Frame(canvas, bg="#005227")
+        
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw", width=375)
+        canvas.configure(yscrollcommand=scrollbar.set)
+        
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+        
+        tk.Label(
+            scrollable_frame,
+            text=f"{area_nome}",
+            font=("Helvetica", 16, "bold"),
+            bg="#005227",
+            fg="white"
+        ).pack(anchor="w", padx=20, pady=(15, 10))
+        
+        for materia_nome in area_selecionada["materias"].keys():
+            tk.Button(
+                scrollable_frame,
+                text=materia_nome,
+                font=("Segoe UI", 12),
+                bg="#03bb85",
+                fg="black",
+                activebackground="#02a677",
+                activeforeground="white",
+                relief="flat",
+                command=lambda m=materia_nome: mostrar_detalhe_materia(m, canvas, scrollable_frame)
+            ).pack(fill="x", padx=20, pady=5)
+        
+        def _on_mousewheel(event):
+            canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+        canvas.bind_all("<MouseWheel>", _on_mousewheel)
+
+    def mostrar_detalhe_materia(materia_nome, canvas_pai, frame_pai):
+        """Mostra os detalhes e níveis de uma matéria COM SISTEMA DE DESBLOQUEIO"""
+        tela_atual["nome"] = "detalhe"
+        materia_selecionada["nome"] = materia_nome
+        
+        for w in frame_pai.winfo_children():
+            w.destroy()
+        
+        data = area_selecionada["materias"][materia_nome]
+        max_lvl = data["max"]
+        current = data.get("current", 0)
+        xp_materia = data.get("xp", 0)
+        xp_necessario = data.get("xp_necessario", {1: 0, 2: 100, 3: 250})
+        
+        # Botão voltar
+        tk.Button(
+            frame_pai,
+            text="← Voltar",
+            font=("Segoe UI", 11, "bold"),
+            bg="#03bb85",
+            fg="black",
+            activebackground="#02a677",
+            activeforeground="white",
+            relief="flat",
+            command=lambda: mostrar_materias(area_selecionada["nome"])
+        ).pack(anchor="w", padx=20, pady=(10, 15))
+        
+        # Título da matéria
+        tk.Label(
+            frame_pai,
+            text=materia_nome,
+            font=("Segoe UI Semibold", 18),
+            bg="#005227",
+            fg="white"
+        ).pack(anchor="w", padx=20, pady=(0, 5))
+        
+        # XP da matéria
+        tk.Label(
+            frame_pai,
+            text=f"XP: {xp_materia}",
+            font=("Segoe UI", 12, "bold"),
+            bg="#005227",
+            fg="#68ddbd"
+        ).pack(anchor="w", padx=20, pady=(0, 10))
+        
+        # Barra de progresso
+        pct = int(100 * current / max_lvl) if max_lvl else 0
+        
+        progress_frame = tk.Frame(frame_pai, bg="#005227")
+        progress_frame.pack(fill="x", padx=20, pady=(5, 15))
+        
+        progress = ttk.Progressbar(
+            progress_frame,
+            orient="horizontal",
+            mode="determinate",
+            maximum=100,
+            value=pct
+        )
+        progress.pack(fill="x")
+        
+        style = ttk.Style()
+        style.configure("TProgressbar", thickness=15, troughcolor="white", background="#68ddbd")
+        
+        # Info
+        tk.Label(
+            frame_pai,
+            text=f"Progresso: {pct}% ({current} de {max_lvl} níveis completados)",
+            font=("Segoe UI", 10),
+            bg="#005227",
+            fg="white"
+        ).pack(anchor="w", padx=20, pady=(5, 20))
+        
+        # Título dos níveis
+        tk.Label(
+            frame_pai,
+            text="Níveis Disponíveis",
+            font=("Segoe UI Semibold", 14),
+            bg="#005227",
+            fg="white"
+        ).pack(anchor="w", padx=20, pady=(10, 10))
+        
+        # Container dos níveis
+        levels_container = tk.Frame(frame_pai, bg="#005227")
+        levels_container.pack(fill="both", padx=20, pady=(0, 20))
+        
+        for nivel in range(1, max_lvl + 1):
+            xp_requerido = xp_necessario.get(nivel, 0)
+            esta_desbloqueado = xp_materia >= xp_requerido
+            nivel_completado = nivel <= current
+            
+            # Card do nível
+            nivel_card = tk.Frame(levels_container, bg="#68ddbd", relief="raised", bd=2)
+            nivel_card.pack(fill="x", pady=8)
+            
+            card_content = tk.Frame(nivel_card, bg="#68ddbd")
+            card_content.pack(fill="x", padx=15, pady=12)
+            
+            # Header
+            header_frame = tk.Frame(card_content, bg="#68ddbd")
+            header_frame.pack(fill="x", pady=(0, 8))
+            
+            tk.Label(
+                header_frame,
+                text=f"Nível {nivel}",
+                font=("Segoe UI", 13, "bold"),
+                bg="#68ddbd",
+                fg="#005227"
+            ).pack(side="left")
+            
+            if nivel_completado:
+                tk.Label(
+                    header_frame,
+                    text="✓ Completado",
+                    font=("Segoe UI", 10, "bold"),
+                    bg="#68ddbd",
+                    fg="#00aa00"
+                ).pack(side="right")
+            elif not esta_desbloqueado:
+                tk.Label(
+                    header_frame,
+                    text="🔒 Bloqueado",
+                    font=("Segoe UI", 10, "bold"),
+                    bg="#68ddbd",
+                    fg="#cc0000"
+                ).pack(side="right")
+            
+            # Info de XP se bloqueado
+            if not esta_desbloqueado:
+                tk.Label(
+                    card_content,
+                    text=f"Requer {xp_requerido} XP para desbloquear",
+                    font=("Segoe UI", 9),
+                    bg="#68ddbd",
+                    fg="#005227"
+                ).pack(anchor="w", pady=(0, 8))
+                
+                xp_progress_frame = tk.Frame(card_content, bg="#68ddbd")
+                xp_progress_frame.pack(fill="x", pady=(0, 8))
+                
+                xp_pct = min(100, int(100 * xp_materia / xp_requerido)) if xp_requerido > 0 else 100
+                
+                xp_canvas = tk.Canvas(xp_progress_frame, width=250, height=15, bg="#005227", highlightthickness=0)
+                xp_canvas.pack()
+                
+                largura_preenchida = int(250 * (xp_pct / 100))
+                xp_canvas.create_rectangle(0, 0, largura_preenchida, 15, fill="#00ff88", outline="")
+                
+                tk.Label(
+                    card_content,
+                    text=f"{xp_materia} / {xp_requerido} XP",
+                    font=("Segoe UI", 8),
+                    bg="#68ddbd",
+                    fg="#005227"
+                ).pack(anchor="w")
+            
+            # Botão
+            if esta_desbloqueado:
+                texto_botao = "✓ Refazer Quiz" if nivel_completado else "📝 Fazer Quiz"
+                
+                def criar_comando(m, n):
+                    return lambda: on_fazer_quiz(m, n) if on_fazer_quiz else print(f"Quiz: {m} - Nível {n}")
+                
+                tk.Button(
+                    card_content,
+                    text=texto_botao,
+                    font=("Segoe UI", 11, "bold"),
+                    bg="#005227",
+                    fg="#68ddbd",
+                    activebackground="#003d1f",
+                    activeforeground="#68ddbd",
+                    relief="flat",
+                    width=20,
+                    command=criar_comando(materia_nome, nivel)
+                ).pack(pady=(8, 0))
+            else:
+                tk.Button(
+                    card_content,
+                    text="🔒 Bloqueado",
+                    font=("Segoe UI", 11, "bold"),
+                    bg="#666666",
+                    fg="#cccccc",
+                    relief="flat",
+                    width=20,
+                    state="disabled"
+                ).pack(pady=(8, 0))
+        
+        canvas_pai.update_idletasks()
+        canvas_pai.configure(scrollregion=canvas_pai.bbox("all"))
+
+    # Layout principal
+    main_frame = tk.Frame(root, bg="#005227")
+    main_frame.pack(fill="both", expand=True)
+    
+    mostrar_areas()
 
 
-
+# Teste
 if __name__ == "__main__":
-    materias_enem = {
-        "Ciências da Natureza": {
-            "Física": {"max": 3, "current": 1},
-            "Química": {"max": 3, "current": 2},
-            "Biologia": {"max": 3, "current": 2},
-        },
-        "Ciências Humanas": {
-            "História": {"max": 3, "current": 3},
-            "Geografia": {"max": 3, "current": 2},
-            "Filosofia": {"max": 3, "current": 1},
-            "Sociologia": {"max": 3, "current": 1},
-        },
-        "Linguagens e Códigos": {
-            "Português": {"max": 3, "current": 2},
-            "Literatura": {"max": 3, "current": 1},
-            "Inglês": {"max": 3, "current": 2},
-            "Espanhol": {"max": 3, "current": 1},
-            "Artes": {"max": 3, "current": 3},
-        },
-        "Matemática": {
-            "Matemática": {"max": 3, "current": 2},
-        }
-    }
-
-    app = NivelApp(materias_enem)
-    app.mainloop()
+    root = tk.Tk()
+    root.geometry("375x812")
+    root.resizable(False, False)
+    
+    def voltar_teste():
+        print("Voltando...")
+    
+    def quiz_teste(materia, nivel):
+        print(f"🎮 Quiz: {materia} - Nível {nivel}")
+    
+    montar_enem(root, on_voltar=voltar_teste, on_fazer_quiz=quiz_teste)
+    root.mainloop()

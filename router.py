@@ -6,10 +6,7 @@
 # Observações:
 #  - cada tela fica em um arquivo separado (ex.: telas/splash.py)
 # ------------------------------------------------------------
-
 import tkinter as tk
-
-from telas.tela_inicio import montar_logo
 from telas.tela_login import App as TelaLogin
 from telas.home import montar_home
 from telas.tela_enem import montar_enem
@@ -18,30 +15,31 @@ from telas.tela_militar import montar_militar
 class Router:
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.usuario_logado = None   # username
-        self.nome_logado = None      # nome completo
+        self.usuario_logado = None
+        self.nome_logado = None
 
     def limpar(self):
+        """Limpa todos os widgets da janela"""
         for w in self.root.winfo_children():
             w.destroy()
 
-    # 1) Logo
-    def ir_para_splash(self):
-        montar_logo(self.root, ao_clicar=self.ir_para_login)
-
-    # 2) Login/Cadastro (a TelaLogin chama de volta on_login quando der certo)
     def ir_para_login(self):
+        """Navega para a tela de login"""
         self.limpar()
-        # passe o callback de sucesso:
         TelaLogin(self.root, on_login=self._login_ok)
 
     def _login_ok(self, usuario: str, nome: str):
+        """Callback chamado após login bem-sucedido"""
         self.usuario_logado = usuario
         self.nome_logado = nome
         self.ir_para_home()
 
-    # 3) Home
     def ir_para_home(self):
+        """Navega para a tela home (escolha: ENEM ou Militar)"""
+        if not self.usuario_logado:  # validação
+            self.ir_para_login()
+            return
+            
         self.limpar()
         montar_home(
             self.root,
@@ -51,13 +49,18 @@ class Router:
             on_militar=self.ir_para_militar,
         )
 
-    # 4) ENEM (tela da sua amiga)
     def ir_para_enem(self):
+        """Navega para a tela do ENEM"""
         self.limpar()
-        montar_enem(self.root, usuario=self.usuario_logado, nome=self.nome_logado)
+        montar_enem(
+            self.root, 
+            usuario=self.usuario_logado, 
+            nome=self.nome_logado,
+            on_voltar=self.ir_para_home
+        )
 
-    # 5) MILITAR
-    def ir_para_militar(self):   # <- NOVA FUNÇÃO
+    def ir_para_militar(self):
+        """Navega para a tela de Concurso Militar"""
         self.limpar()
         montar_militar(
             self.root,
