@@ -1,0 +1,96 @@
+# ============================================
+# .gitignore - PROJETO ESTUDAE
+# ============================================
+
+# ==================== PYTHON ====================
+# Cache do Python (aquele __pycache__ chato)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+.venv/
+
+# ==================== DADOS SENSÍVEIS ====================
+# ⚠️ IMPORTANTE: Bancos de dados com informações reais
+*.db
+*.sqlite
+*.sqlite3
+
+# Arquivos JSON com dados sensíveis
+scores.json
+# Se quiser manter scores.json no Git (sem dados reais):
+# Comente a linha acima e crie um scores_exemplo.json
+
+# Backups de banco
+*.db.bak
+*.sqlite.bak
+
+# Logs que podem conter informações sensíveis
+*.log
+
+# ==================== VSCODE ====================
+.vscode/
+*.code-workspace
+
+# Mas se quiser manter as configurações do VSCode no Git:
+# !.vscode/settings.json
+# !.vscode/extensions.json
+
+# ==================== OUTROS IDEs ====================
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ==================== SISTEMA OPERACIONAL ====================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# ==================== TEMPORÁRIOS ====================
+*.tmp
+*.temp
+*.bak
+*.swp
+*~.nib
+
+# ==================== TESTES ====================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ==================== OUTROS ====================
+# Variáveis de ambiente
+.env
+.env.local
+
+# Arquivos de configuração pessoal
+config_local.py
+secrets.py
+
+# Arquivos grandes desnecessários
+*.zip
+*.rar
+*.7z

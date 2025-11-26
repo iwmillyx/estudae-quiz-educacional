@@ -1,15 +1,20 @@
 import tkinter as tk
 from tkinter import ttk
+from dados.banco_dadosUsuarios import obter_dados_usuario, obter_xp_materias_quiz
+from dados.banco_dadosUsuarios import importar_perguntas, obter_perguntas_por_nivel
+
 
 def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=None):
     """Monta a tela do ENEM dentro da janela principal"""
-    
+   
     # Limpa a tela
     for w in root.winfo_children():
         w.destroy()
 
+
     root.title("EstudAe - ENEM")
     root.config(bg="#005227")
+
 
     # Dados das matérias por área (ATUALIZADO COM XP)
     materias_enem = {
@@ -36,26 +41,64 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
         }
     }
 
+
+    # Atualiza XP real do usuário
+    if usuario:  # 'usuario' é id_usuario
+       dados_usuario = obter_dados_usuario(usuario)
+       xp_por_materia = obter_xp_materias_quiz(usuario, id_quiz=1)  # ENEM = 1
+
+
+       for area, materias in materias_enem.items():
+           for materia_nome, dados in materias.items():
+               xp_usuario = xp_por_materia.get(materia_nome, 0)
+               dados['xp'] = xp_usuario
+
+
+            # Determina o nível atual
+               current = 0
+               for nivel, xp_req in sorted(dados['xp_necessario'].items()):
+                   if xp_usuario >= xp_req:
+                      current = nivel
+               current = min(current, dados['max'])  # não ultrapassa o nível máximo
+               dados['current'] = current
+
+
+            # Calcula progresso real entre níveis
+               if current < dados['max']:
+                  xp_prox = dados['xp_necessario'][current+1]
+                  xp_atual = xp_usuario - dados['xp_necessario'][current]
+                  pct = int(100 * xp_atual / (xp_prox - dados['xp_necessario'][current]))
+               else:
+                  pct = 100
+               dados['pct'] = pct  # salva para a barra de progresso
+
+
+
+
+
+
     # Variáveis de controle
     tela_atual = {"nome": "areas"}
     area_selecionada = {"nome": None, "materias": {}}
     materia_selecionada = {"nome": None}
 
+
     # ==================== FUNÇÕES ====================
-    
+   
     def limpar_conteudo():
         """Limpa apenas o conteúdo, mantendo o frame principal"""
         for w in main_frame.winfo_children():
             w.destroy()
 
+
     def mostrar_areas():
         """Mostra a tela de áreas do conhecimento"""
         limpar_conteudo()
         tela_atual["nome"] = "areas"
-        
+       
         header = tk.Frame(main_frame, bg="#005227", height=50)
         header.pack(fill="x", pady=(10, 0))
-        
+       
         tk.Button(
             header,
             text="← Voltar",
@@ -67,7 +110,7 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             relief="flat",
             command=on_voltar if on_voltar else lambda: print("Voltar para home")
         ).pack(side="left", padx=15, pady=10)
-        
+       
         tk.Label(
             main_frame,
             text="ENEM - Áreas do Conhecimento",
@@ -75,10 +118,10 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             bg="#005227",
             fg="white"
         ).pack(pady=(20, 30))
-        
+       
         areas_frame = tk.Frame(main_frame, bg="#005227")
         areas_frame.pack(expand=True, fill="both", padx=30)
-        
+       
         for area in materias_enem.keys():
             tk.Button(
                 areas_frame,
@@ -94,16 +137,17 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
                 command=lambda a=area: mostrar_materias(a)
             ).pack(pady=8)
 
+
     def mostrar_materias(area_nome):
         """Mostra a lista de matérias de uma área"""
         limpar_conteudo()
         tela_atual["nome"] = "materias"
         area_selecionada["nome"] = area_nome
         area_selecionada["materias"] = materias_enem[area_nome]
-        
+       
         header = tk.Frame(main_frame, bg="#005227", height=50)
         header.pack(fill="x", pady=(10, 0))
-        
+       
         tk.Button(
             header,
             text="← Áreas",
@@ -115,22 +159,22 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             relief="flat",
             command=mostrar_areas
         ).pack(side="left", padx=15, pady=10)
-        
+       
         canvas = tk.Canvas(main_frame, bg="#005227", highlightthickness=0)
         scrollbar = tk.Scrollbar(main_frame, orient="vertical", command=canvas.yview)
         scrollable_frame = tk.Frame(canvas, bg="#005227")
-        
+       
         scrollable_frame.bind(
             "<Configure>",
             lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
         )
-        
+       
         canvas.create_window((0, 0), window=scrollable_frame, anchor="nw", width=375)
         canvas.configure(yscrollcommand=scrollbar.set)
-        
+       
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
-        
+       
         tk.Label(
             scrollable_frame,
             text=f"{area_nome}",
@@ -138,7 +182,7 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             bg="#005227",
             fg="white"
         ).pack(anchor="w", padx=20, pady=(15, 10))
-        
+       
         for materia_nome in area_selecionada["materias"].keys():
             tk.Button(
                 scrollable_frame,
@@ -151,25 +195,26 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
                 relief="flat",
                 command=lambda m=materia_nome: mostrar_detalhe_materia(m, canvas, scrollable_frame)
             ).pack(fill="x", padx=20, pady=5)
-        
+       
         def _on_mousewheel(event):
             canvas.yview_scroll(int(-1*(event.delta/120)), "units")
         canvas.bind_all("<MouseWheel>", _on_mousewheel)
+
 
     def mostrar_detalhe_materia(materia_nome, canvas_pai, frame_pai):
         """Mostra os detalhes e níveis de uma matéria COM SISTEMA DE DESBLOQUEIO"""
         tela_atual["nome"] = "detalhe"
         materia_selecionada["nome"] = materia_nome
-        
+       
         for w in frame_pai.winfo_children():
             w.destroy()
-        
+       
         data = area_selecionada["materias"][materia_nome]
         max_lvl = data["max"]
         current = data.get("current", 0)
         xp_materia = data.get("xp", 0)
         xp_necessario = data.get("xp_necessario", {1: 0, 2: 100, 3: 250})
-        
+       
         # Botão voltar
         tk.Button(
             frame_pai,
@@ -182,7 +227,7 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             relief="flat",
             command=lambda: mostrar_materias(area_selecionada["nome"])
         ).pack(anchor="w", padx=20, pady=(10, 15))
-        
+       
         # Título da matéria
         tk.Label(
             frame_pai,
@@ -191,7 +236,7 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             bg="#005227",
             fg="white"
         ).pack(anchor="w", padx=20, pady=(0, 5))
-        
+       
         # XP da matéria
         tk.Label(
             frame_pai,
@@ -200,13 +245,13 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             bg="#005227",
             fg="#68ddbd"
         ).pack(anchor="w", padx=20, pady=(0, 10))
-        
+       
         # Barra de progresso
-        pct = int(100 * current / max_lvl) if max_lvl else 0
-        
+        pct = data.get('pct', 0)
+       
         progress_frame = tk.Frame(frame_pai, bg="#005227")
         progress_frame.pack(fill="x", padx=20, pady=(5, 15))
-        
+       
         progress = ttk.Progressbar(
             progress_frame,
             orient="horizontal",
@@ -215,10 +260,10 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             value=pct
         )
         progress.pack(fill="x")
-        
+       
         style = ttk.Style()
         style.configure("TProgressbar", thickness=15, troughcolor="white", background="#68ddbd")
-        
+       
         # Info
         tk.Label(
             frame_pai,
@@ -227,7 +272,7 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             bg="#005227",
             fg="white"
         ).pack(anchor="w", padx=20, pady=(5, 20))
-        
+       
         # Título dos níveis
         tk.Label(
             frame_pai,
@@ -236,27 +281,27 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
             bg="#005227",
             fg="white"
         ).pack(anchor="w", padx=20, pady=(10, 10))
-        
+       
         # Container dos níveis
         levels_container = tk.Frame(frame_pai, bg="#005227")
         levels_container.pack(fill="both", padx=20, pady=(0, 20))
-        
+       
         for nivel in range(1, max_lvl + 1):
             xp_requerido = xp_necessario.get(nivel, 0)
             esta_desbloqueado = xp_materia >= xp_requerido
             nivel_completado = nivel <= current
-            
+           
             # Card do nível
             nivel_card = tk.Frame(levels_container, bg="#68ddbd", relief="raised", bd=2)
             nivel_card.pack(fill="x", pady=8)
-            
+           
             card_content = tk.Frame(nivel_card, bg="#68ddbd")
             card_content.pack(fill="x", padx=15, pady=12)
-            
+           
             # Header
             header_frame = tk.Frame(card_content, bg="#68ddbd")
             header_frame.pack(fill="x", pady=(0, 8))
-            
+           
             tk.Label(
                 header_frame,
                 text=f"Nível {nivel}",
@@ -264,7 +309,7 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
                 bg="#68ddbd",
                 fg="#005227"
             ).pack(side="left")
-            
+           
             if nivel_completado:
                 tk.Label(
                     header_frame,
@@ -281,7 +326,7 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
                     bg="#68ddbd",
                     fg="#cc0000"
                 ).pack(side="right")
-            
+           
             # Info de XP se bloqueado
             if not esta_desbloqueado:
                 tk.Label(
@@ -291,18 +336,18 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
                     bg="#68ddbd",
                     fg="#005227"
                 ).pack(anchor="w", pady=(0, 8))
-                
+               
                 xp_progress_frame = tk.Frame(card_content, bg="#68ddbd")
                 xp_progress_frame.pack(fill="x", pady=(0, 8))
-                
+               
                 xp_pct = min(100, int(100 * xp_materia / xp_requerido)) if xp_requerido > 0 else 100
-                
+               
                 xp_canvas = tk.Canvas(xp_progress_frame, width=250, height=15, bg="#005227", highlightthickness=0)
                 xp_canvas.pack()
-                
+               
                 largura_preenchida = int(250 * (xp_pct / 100))
                 xp_canvas.create_rectangle(0, 0, largura_preenchida, 15, fill="#00ff88", outline="")
-                
+               
                 tk.Label(
                     card_content,
                     text=f"{xp_materia} / {xp_requerido} XP",
@@ -310,14 +355,14 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
                     bg="#68ddbd",
                     fg="#005227"
                 ).pack(anchor="w")
-            
+           
             # Botão
             if esta_desbloqueado:
                 texto_botao = "✓ Refazer Quiz" if nivel_completado else "📝 Fazer Quiz"
-                
+               
                 def criar_comando(m, n):
                     return lambda: on_fazer_quiz(m, n) if on_fazer_quiz else print(f"Quiz: {m} - Nível {n}")
-                
+               
                 tk.Button(
                     card_content,
                     text=texto_botao,
@@ -341,15 +386,18 @@ def montar_enem(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=Non
                     width=20,
                     state="disabled"
                 ).pack(pady=(8, 0))
-        
+       
         canvas_pai.update_idletasks()
         canvas_pai.configure(scrollregion=canvas_pai.bbox("all"))
+
 
     # Layout principal
     main_frame = tk.Frame(root, bg="#005227")
     main_frame.pack(fill="both", expand=True)
-    
+   
     mostrar_areas()
+
+
 
 
 # Teste
@@ -357,12 +405,31 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("375x812")
     root.resizable(False, False)
-    
+   
     def voltar_teste():
         print("Voltando...")
-    
+   
     def quiz_teste(materia, nivel):
         print(f"🎮 Quiz: {materia} - Nível {nivel}")
-    
-    montar_enem(root, on_voltar=voltar_teste, on_fazer_quiz=quiz_teste)
+
+    def on_fazer_quiz(materia, nivel):
+    # transforma matéria + nível em id_nivel único
+        id_nivel = f"{materia}_{nivel}"
+
+    # Verifica se já existem perguntas para esse nível
+        perguntas = obter_perguntas_por_nivel(id_nivel)
+
+    # Se não tiver perguntas, importa da API
+        if len(perguntas) == 0:
+           print("🔄 Importando perguntas da API...")
+           importar_perguntas("Fácil", id_nivel)
+           perguntas = obter_perguntas_por_nivel(id_nivel)
+
+    # Agora exibe a tela do quiz
+        print("Perguntas carregadas!", perguntas[:1])  # TEMPORÁRIO
+    # abrir_quiz(perguntas, materia, nivel)
+
+   
+    montar_enem(root, on_voltar=voltar_teste, on_fazer_quiz=on_fazer_quiz)
+
     root.mainloop()

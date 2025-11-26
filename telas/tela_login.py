@@ -18,6 +18,8 @@ import re
 from datetime import datetime
 from PIL import Image, ImageTk
 from utils import calcular_tamanho, calcular_padding, calcular_font_size
+from dados import banco_dadosUsuarios as db_manager
+import hashlib
 
 ARQUIVO_USUARIOS = "dados/usuarios.txt"
 
@@ -35,36 +37,31 @@ ESTADOS_BRASIL = [
 ]
 
 # ------------------------------------------------------------
-# FUNÇÕES DE ARQUIVO (mantidas)
+# FUNÇÕES AUXILIARES
 # ------------------------------------------------------------
-def carregar_usuarios():
-    usuarios = {}
-    if os.path.exists(ARQUIVO_USUARIOS):
-        with open(ARQUIVO_USUARIOS, "r", encoding="utf-8") as f:
-            for linha in f:
-                dados = linha.strip().split(";")
-                if len(dados) >= 7:
-                    user, senha, nome, nasc, tel, email, estado = dados[:7]
-                    usuarios[user] = {
-                        "senha": senha,
-                        "nome": nome,
-                        "nasc": nasc,
-                        "tel": tel,
-                        "email": email,
-                        "estado": estado,
-                    }
-    return usuarios
 
-def salvar_usuario(usuario, senha, nome, nasc, tel, email, estado):
-    os.makedirs(os.path.dirname(ARQUIVO_USUARIOS), exist_ok=True)
-    with open(ARQUIVO_USUARIOS, "a", encoding="utf-8") as f:
-        f.write(f"{usuario};{senha};{nome};{nasc};{tel};{email};{estado}\n")
+def hash_senha(senha):
+    """Gera hash da senha para armazenar/validar."""
+    return hashlib.sha256(senha.encode()).hexdigest()
 
-def salvar_todos(usuarios_dict):
-    os.makedirs(os.path.dirname(ARQUIVO_USUARIOS), exist_ok=True)
-    with open(ARQUIVO_USUARIOS, "w", encoding="utf-8") as f:
-        for u, d in usuarios_dict.items():
-            f.write(f"{u};{d['senha']};{d['nome']};{d['nasc']};{d['tel']};{d['email']};{d['estado']}\n")
+def cadastrar_usuario(nome_completo, email, senha, data_nasc, estado):
+    senha_hash = hash_senha(senha)
+    try:
+        db_manager.criar_usuario(nome_completo, email, senha_hash, data_nasc, estado)
+        return True
+    except Exception as e:
+        print("Erro ao cadastrar:", e)
+        return False
+
+def verificar_usuario(email, senha):
+    usuario = db_manager.verificar_login(email)
+    
+    if usuario:
+        id_usuario, nome, senha_hash = usuario
+        if hash_senha(senha) == senha_hash:
+            return {"id": id_usuario, "nome": nome}
+    return None
+
 
 # ------------------------------------------------------------
 # VALIDAÇÕES (mantidas)
@@ -327,16 +324,23 @@ class App:
         label_esqueci.bind("<Button-1>", lambda e: self.tela_recuperar_senha())
         
         def logar():
-            users = carregar_usuarios()
-            u = usuario_entry.get().strip()
-            s = senha_entry.get()
-            if u in users and users[u]["senha"] == s:
-                nome = users[u]['nome']
-                messagebox.showinfo("Sucesso", f"Bem-vindo, {nome}!")
+            email = usuario_entry.get().strip()
+            senha = senha_entry.get()  # NÃO coloque .strip() aqui!
+                
+            # DEBUG (descomente se precisar debugar)
+            # print(f"\n🔘 TENTANDO LOGIN:")
+            # print(f"   Email: '{email}'")
+            # print(f"   Senha: '{senha}'")
+            # print(f"   Tamanho senha: {len(senha)}")
+            
+            usuario = verificar_usuario(email, senha)
+
+            if usuario:
+                messagebox.showinfo("Sucesso", f"Bem-vindo, {usuario['nome']}!")
                 if callable(self.on_login):
-                    self.on_login(u, nome)
+                    self.on_login(email, usuario['nome'], usuario['id'])
             else:
-                messagebox.showerror("Erro", "Usuário ou senha incorretos.")
+                messagebox.showerror("Erro", "E-mail ou senha incorretos.")
         
         btn_login = tk.Button(card, text="Entrar", font=("Arial", 14, "bold"), bg=self.COR_BOTAO, fg="#ffffff", width=25, height=2, relief="flat", cursor="hand2", command=logar)
         btn_login.pack(pady=(0, 20))
@@ -513,18 +517,15 @@ class App:
             if senha != conf: msg_label.config(text="❌ As senhas não coincidem"); return
             if not email_valido(email): msg_label.config(text="❌ E-mail inválido"); return
 
-            users = carregar_usuarios()
-            if usuario in users: msg_label.config(text="❌ Usuário já existe"); return
-            if any(d["email"] == email for d in users.values()):
-                msg_label.config(text="❌ E-mail já cadastrado"); return
+            if db_manager.email_existente(email):
+                msg_label.config(text="❌ E-mail já cadastrado")
+                return
 
-            try:
-                salvar_usuario(usuario, senha, nome_completo, data_nasc, "", email, estado)  # tel = ""
-            except Exception as ex:
-                messagebox.showerror("Erro", f"Falha ao salvar: {ex}"); return
-
-            messagebox.showinfo("Sucesso", "Cadastro realizado com sucesso!")
-            self.tela_login()
+            if cadastrar_usuario(nome_completo, email, senha, data_nasc, estado):
+                messagebox.showinfo("Sucesso", "Cadastro realizado com sucesso!")
+                self.tela_login()
+            else:
+                msg_label.config(text="❌ Falha ao cadastrar usuário")
         
         # Botão cadastrar - espaçamento reduzido
         btn_cadastrar = tk.Button(card, text="Cadastrar", font=("Arial", 13, "bold"), bg=self.COR_BOTAO, fg="#ffffff", width=25, height=2, relief="flat", cursor="hand2", command=cadastrar)
@@ -536,8 +537,83 @@ class App:
         nome_entry.focus_set()
         self.root.bind("<Return>", lambda e: cadastrar())
 
+    # -------------------- TELA DE RECUPERAR SENHA --------------------
     def tela_recuperar_senha(self):
-        messagebox.showinfo("Info", "Em breve!")
+        """Abre janela para redefinir senha com email + data de nascimento."""
+        def reset_senha():
+            email = entry_email.get().strip()
+            dia = entry_dia.get().strip()
+            mes = entry_mes.get().strip()
+            ano = entry_ano.get().strip()
+            nova_senha = entry_senha.get().strip()
+
+            if not email or not dia or not mes or not ano or not nova_senha:
+                messagebox.showerror("Erro", "Preencha todos os campos.")
+                return
+
+            try:
+                dia_int = int(dia)
+                mes_int = int(mes)
+                ano_int = int(ano)
+                
+                # Formatar com ano completo (4 dígitos)
+                data_nasc = f"{dia_int:02d}/{mes_int:02d}/{ano_int:04d}"
+                
+                # Validação básica de data
+                if not (1 <= dia_int <= 31 and 1 <= mes_int <= 12 and 1900 <= ano_int <= 2025):
+                    messagebox.showerror("Erro", "Data inválida.")
+                    return
+                    
+            except ValueError:
+                messagebox.showerror("Erro", "Data inválida. Digite números válidos.")
+                return
+
+            usuario = db_manager.verificar_usuario_para_senha(email, data_nasc)
+            if not usuario:
+                messagebox.showerror("Erro", "Usuário não encontrado ou data de nascimento incorreta.")
+                return
+
+            id_usuario = usuario[0]
+            nova_senha_hash = hashlib.sha256(nova_senha.encode()).hexdigest()
+            db_manager.atualizar_senha(id_usuario, nova_senha_hash)
+            messagebox.showinfo("Sucesso", "Senha atualizada com sucesso!")
+            window.destroy()
+
+        # --- Interface ---
+        window = tk.Toplevel(self.root)
+        window.title("Recuperar Senha")
+        window.geometry("350x200")
+        window.resizable(False, False)
+
+        tk.Label(window, text="Email:").grid(row=0, column=0, padx=5, pady=5, sticky="e")
+        entry_email = tk.Entry(window, width=30)
+        entry_email.grid(row=0, column=1, padx=5, pady=5)
+
+        tk.Label(window, text="Data de Nascimento:").grid(row=1, column=0, padx=5, pady=5, sticky="e")
+        frame_data = tk.Frame(window)
+        frame_data.grid(row=1, column=1, padx=5, pady=5)
+
+        entry_dia = tk.Entry(frame_data, width=4)
+        entry_dia.pack(side=tk.LEFT)
+        tk.Label(frame_data, text="/").pack(side=tk.LEFT)
+        entry_mes = tk.Entry(frame_data, width=4)
+        entry_mes.pack(side=tk.LEFT)
+        tk.Label(frame_data, text="/").pack(side=tk.LEFT)
+        entry_ano = tk.Entry(frame_data, width=6)
+        entry_ano.pack(side=tk.LEFT)
+
+        tk.Label(window, text="Nova Senha:").grid(row=2, column=0, padx=5, pady=5, sticky="e")
+        entry_senha = tk.Entry(window, width=30, show="*")
+        entry_senha.grid(row=2, column=1, padx=5, pady=5)
+
+        # Adicionar hint para o usuário
+        tk.Label(window, text="Ex: 15/08/1990", font=("Arial", 8), fg="gray").grid(
+            row=3, column=1, sticky="w", padx=5
+        )
+
+        tk.Button(window, text="Redefinir Senha", command=reset_senha).grid(
+            row=4, column=0, columnspan=2, pady=10
+        )
 
 # ------------------------------------------------------------
 # TESTE
