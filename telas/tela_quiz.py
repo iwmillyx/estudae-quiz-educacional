@@ -80,14 +80,46 @@ class TelaQuiz:
         self.mostrar_questao()
         self.iniciar_timer()
 
+    def salvar_progresso_no_banco(self):
+        """Salva o progresso do quiz no banco de dados"""
+        try:
+            from dados.banco_dadosUsuarios import atualizar_pontuacao, obter_id_materia_por_nome, salvar_progresso_nivel
+            
+            # Atualizar pontuação na matéria
+            if self.materia_filtro:
+                id_materia = obter_id_materia_por_nome(self.materia_filtro)
+                if id_materia:
+                    atualizar_pontuacao(self.usuario, id_materia, self.xp_total)
+            
+            # Salvar progresso do nível
+            if self.materia_filtro and self.nivel_filtro:
+                salvar_progresso_nivel(
+                    self.usuario, 
+                    self.materia_filtro, 
+                    self.nivel_filtro,
+                    self.xp_total, 
+                    self.acertos, 
+                    self.erros
+                )
+            
+            return True
+        except Exception as e:
+            print(f"Erro ao salvar progresso: {e}")
+            return False
+
     # --------------------------------------------------------
     # BANCO DE DADOS
     # --------------------------------------------------------
     def carregar_perguntas_do_banco(self):
         questoes = []
+        print("\n[DEBUG] carregar_perguntas_do_banco() chamado")
+        print(f"[DEBUG] Modo: {self.modo}")
+        print(f"[DEBUG] Matéria filtro: {self.materia_filtro}")
+        print(f"[DEBUG] Nível filtro: {self.nivel_filtro}")
+        
+        conn = conectar()
 
         try:
-            conn = conectar()
             cursor = conn.cursor()
 
             query = """
@@ -100,9 +132,8 @@ class TelaQuiz:
                 FROM pergunta p
                 JOIN nivel n ON p.id_nivel = n.id_nivel
                 JOIN materia m ON n.id_materia = m.id_materia
-                WHERE m.id_categoria IN (
-                    SELECT id_categoria FROM categoria WHERE id_quiz = ?
-                )
+                JOIN categoria c ON m.id_categoria = c.id_categoria
+                WHERE c.id_quiz = ?
             """
 
             id_quiz = 1 if self.modo == "enem" else 2
@@ -116,9 +147,13 @@ class TelaQuiz:
                 query += " AND n.nome = ?"
                 params.append(self.nivel_filtro)
 
+            print(f"[DEBUG] Query: {query}")
+            print(f"[DEBUG] Params: {params}")
+
             cursor.execute(query, params)
             resultados = cursor.fetchall()
-            conn.close()
+            
+            print(f"[DEBUG] Perguntas encontradas: {len(resultados)}")
 
             for row in resultados:
                 questoes.append({
@@ -137,11 +172,16 @@ class TelaQuiz:
                     "explicacao": "Confira a resposta correta acima!"
                 })
 
+            conn.close()
+
         except Exception as e:
-            messagebox.showerror("Erro", f"Erro ao carregar perguntas:\n{e}")
+            print(f"[ERRO] Erro ao carregar perguntas: {e}")
+            import traceback
+            traceback.print_exc()
+            conn.close()
 
         return questoes
-
+    
     def calcular_xp_por_nivel(self, nivel):
         xp_map = {"Fácil": 10, "Médio": 15, "Difícil": 25}
         return xp_map.get(nivel, 10)
@@ -234,8 +274,8 @@ class TelaQuiz:
         self.label_enunciado = tk.Label(self.card_questao, text="",
                                         font=("Arial", 13),
                                         bg=self.COR_CARD, fg="#333",
-                                        wraplength=330, justify="left")
-        self.label_enunciado.pack(padx=15, pady=15)
+                                        wraplength=340, justify="left")
+        self.label_enunciado.pack(padx=10, pady=15)
 
         self.frame_alternativas = tk.Frame(self.card_questao, bg=self.COR_CARD)
         self.frame_alternativas.pack(fill="both", expand=True, padx=15, pady=10)
@@ -291,13 +331,15 @@ class TelaQuiz:
             btn = tk.Button(
                 self.frame_alternativas,
                 text=f"{alt['letra']}) {alt['texto']}",
-                font=("Arial", 11),
+                font=("Arial", 10),
                 bg=self.COR_CAMPO,
                 anchor="w",
+                wraplength=320,  # ADICIONE ESTA LINHA
+                justify="left",  # ADICIONE ESTA LINHA
                 relief="flat",
                 command=lambda l=alt['letra']: self.verificar_resposta(l)
             )
-            btn.pack(fill="x", pady=4)
+            btn.pack(fill="x", pady=4, padx=5)
             self.botoes_alternativas.append((btn, alt["letra"]))
 
         self.btn_proxima.pack_forget()
@@ -454,11 +496,243 @@ class TelaQuiz:
     # FINALIZAÇÃO
     # --------------------------------------------------------
     def mostrar_resultado(self):
-        messagebox.showinfo(
-            "Resultado Final",
-            f"Acertos: {self.acertos}\nErros: {self.erros}\nXP: {self.xp_total}"
-        )
-        self.voltar()
+        """Mostra tela de resultado bonita integrada no quiz"""
+        # Salvar no banco
+        sucesso = self.salvar_progresso_no_banco()
+        
+        # Limpar tela
+        for w in self.main_frame.winfo_children():
+            w.destroy()
+        
+        # Calcular estatísticas
+        total = len(self.questoes)
+        porcentagem = int((self.acertos / total) * 100) if total > 0 else 0
+        
+        # Determinar mensagem e cor baseado no desempenho
+        if porcentagem >= 80:
+            mensagem = "🎉 Excelente!"
+            emoji = "🏆"
+            cor_principal = "#4caf50"
+        elif porcentagem >= 60:
+            mensagem = "👏 Muito Bom!"
+            emoji = "⭐"
+            cor_principal = "#2196f3"
+        elif porcentagem >= 40:
+            mensagem = "📚 Continue Estudando!"
+            emoji = "💪"
+            cor_principal = "#ff9800"
+        else:
+            mensagem = "📖 Não Desista!"
+            emoji = "🎯"
+            cor_principal = "#f44336"
+        
+        # Container principal SEM scroll
+        resultado_frame = tk.Frame(self.main_frame, bg=self.COR_FUNDO)
+        resultado_frame.pack(fill="both", expand=True)
+        
+        # Emoji
+        tk.Label(
+            resultado_frame,
+            text=emoji,
+            font=("Arial", 50),  # Reduzido de 70
+            bg=self.COR_FUNDO
+        ).pack(pady=(10, 5))
+        
+        # Título
+        tk.Label(
+            resultado_frame,
+            text=mensagem,
+            font=("Arial", 18, "bold"),  # Reduzido de 22
+            bg=self.COR_FUNDO,
+            fg="white"
+        ).pack(pady=(0, 10))
+        
+        # Card com estatísticas
+        stats_card = tk.Frame(resultado_frame, bg="white", relief="raised", bd=2)
+        stats_card.pack(fill="x", padx=15, pady=5)
+        
+        stats_content = tk.Frame(stats_card, bg="white")
+        stats_content.pack(fill="x", padx=15, pady=15)
+        
+        # Porcentagem grande
+        tk.Label(
+            stats_content,
+            text=f"{porcentagem}%",
+            font=("Arial", 40, "bold"),  # Reduzido de 48
+            bg="white",
+            fg=cor_principal
+        ).pack(pady=(0, 3))
+        
+        tk.Label(
+            stats_content,
+            text="Aproveitamento",
+            font=("Arial", 11),
+            bg="white",
+            fg="#666"
+        ).pack(pady=(0, 10))
+        
+        # Linha divisória
+        tk.Frame(stats_content, bg="#e0e0e0", height=1).pack(fill="x", pady=8)
+        
+        # Grid de estatísticas
+        grid_frame = tk.Frame(stats_content, bg="white")
+        grid_frame.pack(fill="x", pady=8)
+        
+        # Acertos
+        acertos_frame = tk.Frame(grid_frame, bg="white")
+        acertos_frame.pack(side="left", expand=True)
+        
+        tk.Label(
+            acertos_frame,
+            text="✅",
+            font=("Arial", 24),
+            bg="white"
+        ).pack()
+        
+        tk.Label(
+            acertos_frame,
+            text=f"{self.acertos}",
+            font=("Arial", 20, "bold"),
+            bg="white",
+            fg="#4caf50"
+        ).pack()
+        
+        tk.Label(
+            acertos_frame,
+            text="Acertos",
+            font=("Arial", 9),
+            bg="white",
+            fg="#666"
+        ).pack()
+        
+        # Erros
+        erros_frame = tk.Frame(grid_frame, bg="white")
+        erros_frame.pack(side="left", expand=True)
+        
+        tk.Label(
+            erros_frame,
+            text="❌",
+            font=("Arial", 24),
+            bg="white"
+        ).pack()
+        
+        tk.Label(
+            erros_frame,
+            text=f"{self.erros}",
+            font=("Arial", 20, "bold"),
+            bg="white",
+            fg="#f44336"
+        ).pack()
+        
+        tk.Label(
+            erros_frame,
+            text="Erros",
+            font=("Arial", 9),
+            bg="white",
+            fg="#666"
+        ).pack()
+        
+        # XP
+        xp_frame = tk.Frame(grid_frame, bg="white")
+        xp_frame.pack(side="left", expand=True)
+        
+        tk.Label(
+            xp_frame,
+            text="💎",
+            font=("Arial", 24),
+            bg="white"
+        ).pack()
+        
+        tk.Label(
+            xp_frame,
+            text=f"{self.xp_total}",
+            font=("Arial", 20, "bold"),
+            bg="white",
+            fg="#ffa726"
+        ).pack()
+        
+        tk.Label(
+            xp_frame,
+            text="XP Ganho",
+            font=("Arial", 9),
+            bg="white",
+            fg="#666"
+        ).pack()
+        
+        # Linha divisória
+        tk.Frame(stats_content, bg="#e0e0e0", height=1).pack(fill="x", pady=8)
+        
+        # Detalhes (mais compactos)
+        detalhes_frame = tk.Frame(stats_content, bg="white")
+        detalhes_frame.pack(fill="x", pady=5)
+        
+        tk.Label(
+            detalhes_frame,
+            text=f"📝 Total: {total} questões",
+            font=("Arial", 10),
+            bg="white",
+            fg="#333",
+            anchor="w"
+        ).pack(fill="x", pady=1)
+        
+        if self.materia_filtro:
+            tk.Label(
+                detalhes_frame,
+                text=f"📚 Matéria: {self.materia_filtro}",
+                font=("Arial", 10),
+                bg="white",
+                fg="#333",
+                anchor="w"
+            ).pack(fill="x", pady=1)
+        
+        if self.nivel_filtro:
+            tk.Label(
+                detalhes_frame,
+                text=f"⚡ Nível: {self.nivel_filtro}",
+                font=("Arial", 10),
+                bg="white",
+                fg="#333",
+                anchor="w"
+            ).pack(fill="x", pady=1)
+        
+        # Mensagem de desbloqueio (mais compacta)
+        if porcentagem >= 70:
+            desbloqueio_frame = tk.Frame(resultado_frame, bg="#4caf50", relief="raised", bd=2)
+            desbloqueio_frame.pack(fill="x", padx=15, pady=8)
+            
+            tk.Label(
+                desbloqueio_frame,
+                text="🔓 Próximo nível desbloqueado!",
+                font=("Arial", 12, "bold"),
+                bg="#4caf50",
+                fg="white"
+            ).pack(pady=10)
+        
+        # Botões (fixos na parte inferior)
+        botoes_frame = tk.Frame(resultado_frame, bg=self.COR_FUNDO)
+        botoes_frame.pack(side="bottom", fill="x", padx=15, pady=15)
+        
+        tk.Button(
+            botoes_frame,
+            text="🔄 Refazer",
+            font=("Arial", 11, "bold"),
+            bg="#2196f3",
+            fg="white",
+            relief="flat",
+            height=2,
+            command=self.refazer_quiz
+        ).pack(side="left", fill="x", expand=True, padx=(0, 5))
+        
+        tk.Button(
+            botoes_frame,
+            text="✓ Continuar",
+            font=("Arial", 11, "bold"),
+            bg="#4caf50",
+            fg="white",
+            relief="flat",
+            height=2,
+            command=self.finalizar_e_voltar
+        ).pack(side="left", fill="x", expand=True, padx=(5, 0))
 
     def finalizar_e_voltar(self):
         self.destruir()

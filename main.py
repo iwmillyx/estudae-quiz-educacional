@@ -1,14 +1,3 @@
-# ------------------------------------------------------------
-# Aqui ficam:
-#  - o ponto de entrada da aplicação (Tkinter)
-#  - a criação da janela principal e do Router
-#  - a primeira tela exibida (Splash)
-# Fluxo:
-#  1) Splash (logo + botão)
-#  2) Login (cadastro)
-#  3) Home
-# ------------------------------------------------------------
-
 import tkinter as tk
 from router import Router
 from pathlib import Path
@@ -41,10 +30,18 @@ if __name__ == "__main__":
             print("Execute manualmente: python dados/database.py")
             exit(1)
     
+    # INICIALIZA OS NÍVEIS AUTOMATICAMENTE
+    from dados.banco_dadosUsuarios import inicializar_niveis
+    inicializar_niveis()
+
+    # CRIA A TABELA DE HISTÓRICO DE QUIZZES
+    from dados.banco_dadosUsuarios import criar_tabela_historico_quiz
+    criar_tabela_historico_quiz()
+
     root = tk.Tk()
     
     root.title("EstudAe")
-    root.geometry("375x700")  # Simula mobile
+    root.geometry("375x700")
     root.resizable(False, False)
     
     app = Router(root)

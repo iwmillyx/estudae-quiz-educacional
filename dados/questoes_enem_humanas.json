@@ -1,0 +1,1202 @@
+[
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "Durante o período colonial brasileiro, o sistema de capitanias hereditárias foi implementado pela Coroa Portuguesa como tentativa de colonização. Esse sistema representava:",
+    "A": "A centralização do poder administrativo nas mãos do rei de Portugal",
+    "B": "A divisão do território em faixas de terra doadas a nobres portugueses",
+    "C": "O estabelecimento de um governo democrático nas colônias",
+    "D": "A implementação do trabalho assalariado nas fazendas",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "A Revolução Industrial, iniciada na Inglaterra no século XVIII, trouxe profundas transformações sociais e econômicas. Uma das principais características desse período foi:",
+    "A": "O fortalecimento do sistema feudal",
+    "B": "A mecanização da produção e o surgimento das fábricas",
+    "C": "O retorno à economia agrária tradicional",
+    "D": "A abolição do comércio internacional",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "O Iluminismo foi um movimento intelectual que influenciou profundamente a política e a sociedade do século XVIII. Entre seus principais ideais estava:",
+    "A": "A valorização da razão, da ciência e dos direitos individuais",
+    "B": "A defesa do poder absoluto dos reis",
+    "C": "O fortalecimento da autoridade religiosa sobre o Estado",
+    "D": "A manutenção das tradições feudais",
+    "correta": "A"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "A Proclamação da República no Brasil, em 1889, marcou o fim do período monárquico. Esse evento foi liderado principalmente por:",
+    "A": "Membros do clero católico",
+    "B": "Fazendeiros escravistas",
+    "C": "Militares insatisfeitos com o governo imperial",
+    "D": "Comerciantes portugueses",
+    "correta": "C"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "A Primeira Guerra Mundial (1914-1918) teve como uma de suas principais causas:",
+    "A": "A expansão do comunismo na Europa",
+    "B": "As rivalidades imperialistas e disputas territoriais entre as potências europeias",
+    "C": "A unificação política da Europa",
+    "D": "O fim do colonialismo na África",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "O Renascimento Cultural, movimento surgido na Itália no século XIV, caracterizou-se por:",
+    "A": "A valorização da cultura medieval e religiosa",
+    "B": "O resgate dos valores clássicos greco-romanos e o antropocentrismo",
+    "C": "A rejeição completa das artes e ciências",
+    "D": "O fortalecimento do teocentrismo",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "A escravidão no Brasil foi oficialmente abolida em 1888 através da:",
+    "A": "Lei Áurea, assinada pela Princesa Isabel",
+    "B": "Constituição republicana",
+    "C": "Lei do Ventre Livre",
+    "D": "Declaração de Independência",
+    "correta": "A"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "A Revolução Francesa (1789) foi um marco histórico que resultou em:",
+    "A": "O fortalecimento da monarquia absolutista",
+    "B": "A queda do Antigo Regime e a ascensão de ideais democráticos",
+    "C": "A restauração dos privilégios da nobreza",
+    "D": "O isolamento da França no cenário europeu",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "A Era Vargas (1930-1945) foi um período importante da história brasileira. Durante o Estado Novo, Getúlio Vargas:",
+    "A": "Estabeleceu um regime democrático parlamentarista",
+    "B": "Implementou uma ditadura com censura e controle político",
+    "C": "Transferiu o poder para os Estados",
+    "D": "Aboliu todas as leis trabalhistas",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Fácil",
+    "enunciado": "O descobrimento do Brasil em 1500 por Pedro Álvares Cabral estava inserido no contexto:",
+    "A": "Das Cruzadas medievais",
+    "B": "Das Grandes Navegações e da expansão marítima portuguesa",
+    "C": "Da Revolução Industrial",
+    "D": "Da Guerra dos Cem Anos",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "A Guerra Fria (1947-1991) foi um período de tensão geopolítica entre Estados Unidos e União Soviética. Esse conflito caracterizou-se por:",
+    "A": "Confrontos militares diretos entre as duas superpotências",
+    "B": "A disputa ideológica entre capitalismo e socialismo sem conflito armado direto",
+    "C": "A unificação política da Europa",
+    "D": "O desarmamento nuclear completo",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "O processo de independência do Brasil, em 1822, diferenciou-se da maioria das independências latino-americanas porque:",
+    "A": "Resultou em uma república presidencialista",
+    "B": "Manteve a monarquia como forma de governo",
+    "C": "Foi conquistada através de uma guerra popular prolongada",
+    "D": "Estabeleceu imediatamente a abolição da escravidão",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "A crise de 1929, conhecida como a Grande Depressão, teve início nos Estados Unidos e afetou a economia mundial. Uma das principais causas foi:",
+    "A": "A estatização completa da economia americana",
+    "B": "A superprodução industrial e agrícola combinada com especulação financeira",
+    "C": "A implementação do socialismo nos EUA",
+    "D": "O isolamento econômico dos Estados Unidos",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "A ditadura militar no Brasil (1964-1985) caracterizou-se por:",
+    "A": "Ampla liberdade de expressão e democracia plena",
+    "B": "Repressão política, censura e supressão de direitos civis",
+    "C": "Descentralização total do poder",
+    "D": "Ausência de intervenção estatal na economia",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "O Tratado de Tordesilhas (1494) estabeleceu:",
+    "A": "A aliança militar entre Portugal e Espanha",
+    "B": "A divisão das terras descobertas e a descobrir entre Portugal e Espanha",
+    "C": "O fim das Grandes Navegações",
+    "D": "A independência das colônias americanas",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "A Revolução Russa de 1917 resultou em:",
+    "A": "O fortalecimento do regime czarista",
+    "B": "A implantação do primeiro Estado socialista do mundo",
+    "C": "A vitória dos movimentos liberais burgueses",
+    "D": "A restauração da monarquia",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "O Imperialismo do século XIX caracterizou-se pela:",
+    "A": "Retração das potências europeias para seus territórios originais",
+    "B": "Expansão territorial e dominação econômica de países africanos e asiáticos",
+    "C": "Independência de todas as colônias",
+    "D": "Igualdade econômica entre todas as nações",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "O movimento das Diretas Já (1984) no Brasil tinha como principal objetivo:",
+    "A": "Manter o regime militar",
+    "B": "Restabelecer eleições diretas para presidente da República",
+    "C": "Implementar uma monarquia constitucional",
+    "D": "Acabar com o voto popular",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "A Segunda Guerra Mundial (1939-1945) teve como principais potências do Eixo:",
+    "A": "Inglaterra, França e Rússia",
+    "B": "Alemanha, Itália e Japão",
+    "C": "Estados Unidos, Brasil e México",
+    "D": "China, Índia e Austrália",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Médio",
+    "enunciado": "A Inconfidência Mineira (1789) foi uma tentativa de rebelião colonial que tinha entre seus objetivos:",
+    "A": "Fortalecer os laços com Portugal",
+    "B": "A independência do Brasil e o fim da exploração colonial",
+    "C": "Aumentar os impostos cobrados pela Coroa",
+    "D": "Estabelecer uma teocracia em Minas Gerais",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "A Conferência de Berlim (1884-1885) teve como principal objetivo definir as regras para a partilha da África entre as potências europeias. Esse evento representou:",
+    "A": "A consolidação do imperialismo e da exploração colonial no continente africano",
+    "B": "A independência política dos países africanos",
+    "C": "A abolição do tráfico de escravos na África",
+    "D": "O estabelecimento de democracias nas colônias africanas",
+    "correta": "A"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "A Reforma Protestante, iniciada por Martinho Lutero em 1517, teve profundas consequências religiosas e políticas. Entre seus impactos, destaca-se:",
+    "A": "O fortalecimento do poder papal sobre toda a Europa",
+    "B": "A fragmentação da cristandade e o enfraquecimento do poder da Igreja Católica",
+    "C": "A unificação de todas as religiões cristãs",
+    "D": "O fim completo do cristianismo na Europa",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "O período conhecido como República Oligárquica ou República do Café com Leite (1894-1930) no Brasil caracterizou-se por:",
+    "A": "Ampla participação popular e democracia direta",
+    "B": "Alternância de poder entre as oligarquias de São Paulo e Minas Gerais",
+    "C": "Governo militar centralizado",
+    "D": "Igualdade social e distribuição de renda",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "A Guerra do Vietnã (1955-1975) representou um dos principais conflitos da Guerra Fria e resultou em:",
+    "A": "A vitória dos Estados Unidos e a instauração do capitalismo no Vietnã",
+    "B": "A unificação do Vietnã sob regime comunista após a retirada americana",
+    "C": "A divisão permanente do país em Norte e Sul",
+    "D": "A colonização do Vietnã pela França",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "O movimento abolicionista no Brasil ganhou força na segunda metade do século XIX. A Lei do Ventre Livre (1871) estabeleceu que:",
+    "A": "Todos os escravos seriam imediatamente libertados",
+    "B": "Os filhos de mulheres escravizadas nascidos a partir daquela data seriam livres",
+    "C": "A escravidão seria proibida em todo o território nacional",
+    "D": "Os escravos teriam direito a salários",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "O Plano Marshall, implementado após a Segunda Guerra Mundial, tinha como objetivo:",
+    "A": "Destruir a economia europeia",
+    "B": "Ajudar na reconstrução econômica da Europa e conter a expansão do comunismo",
+    "C": "Estabelecer colônias americanas na Europa",
+    "D": "Promover a expansão do socialismo no Ocidente",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "A Revolução Mexicana (1910-1920) foi um movimento social e político que buscava:",
+    "A": "Manter as estruturas políticas e sociais existentes",
+    "B": "Reforma agrária, justiça social e fim da ditadura de Porfírio Díaz",
+    "C": "Estabelecer uma monarquia constitucional",
+    "D": "Anexar o México aos Estados Unidos",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "A Primavera Árabe, iniciada em 2010, foi uma série de protestos populares no Oriente Médio e Norte da África que reivindicavam:",
+    "A": "O retorno de regimes coloniais",
+    "B": "Reformas democráticas, fim da corrupção e melhores condições sociais",
+    "C": "A implementação de monarquias absolutas",
+    "D": "O isolamento político dessas regiões",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "A Guerra dos Trinta Anos (1618-1648) na Europa teve entre suas consequências:",
+    "A": "A unificação religiosa da Europa",
+    "B": "O enfraquecimento do Sacro Império Romano-Germânico e o fortalecimento dos Estados nacionais",
+    "C": "A expansão do poder papal",
+    "D": "O fim de todos os conflitos religiosos na Europa",
+    "correta": "B"
+  },
+  {
+    "materia": "História",
+    "nivel": "Difícil",
+    "enunciado": "O Muro de Berlim, construído em 1961 e derrubado em 1989, simbolizava:",
+    "A": "A união entre os países europeus",
+    "B": "A divisão ideológica entre o bloco capitalista e o socialista durante a Guerra Fria",
+    "C": "A expansão territorial da Alemanha",
+    "D": "O fortalecimento do nazismo",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "O movimento de rotação da Terra é responsável por:",
+    "A": "A sucessão dos dias e noites",
+    "B": "A variação das estações do ano",
+    "C": "O formato esférico do planeta",
+    "D": "A formação das marés",
+    "correta": "A"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "O bioma brasileiro caracterizado por clima semiárido e vegetação xerófila é:",
+    "A": "Amazônia",
+    "B": "Pampa",
+    "C": "Caatinga",
+    "D": "Pantanal",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "O maior rio do mundo em volume de água é o:",
+    "A": "Rio Nilo",
+    "B": "Rio Amazonas",
+    "C": "Rio São Francisco",
+    "D": "Rio Mississipi",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "A camada da atmosfera responsável pela proteção contra raios ultravioleta é a:",
+    "A": "Troposfera",
+    "B": "Estratosfera",
+    "C": "Mesosfera",
+    "D": "Exosfera",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "O processo de desmatamento está mais associado ao avanço da fronteira agrícola especialmente no bioma:",
+    "A": "Caatinga",
+    "B": "Amazônia",
+    "C": "Pampa",
+    "D": "Mata Atlântica",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "O continente com maior concentração populacional do mundo é:",
+    "A": "América",
+    "B": "Europa",
+    "C": "Ásia",
+    "D": "África",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "O clima predominante no Sertão Nordestino é o:",
+    "A": "Equatorial",
+    "B": "Tropical úmido",
+    "C": "Semiárido",
+    "D": "Subtropical",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "O principal gás responsável pelo efeito estufa intensificado é o:",
+    "A": "Oxigênio",
+    "B": "Nitrogênio",
+    "C": "Dióxido de carbono",
+    "D": "Metano",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "A linha imaginária que divide a Terra em Hemisfério Norte e Sul é chamada de:",
+    "A": "Meridiano de Greenwich",
+    "B": "Equador",
+    "C": "Trópico de Capricórnio",
+    "D": "Trópico de Câncer",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Fácil",
+    "enunciado": "O país mais populoso do mundo atualmente é:",
+    "A": "China",
+    "B": "Índia",
+    "C": "Estados Unidos",
+    "D": "Indonésia",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "O processo de urbanização brasileira intensificou-se principalmente a partir de:",
+    "A": "1950, com a industrialização",
+    "B": "1822, com a independência",
+    "C": "1500, com a colonização portuguesa",
+    "D": "1990, com o neoliberalismo",
+    "correta": "A"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "A desertificação ocorre principalmente devido a:",
+    "A": "Baixa umidade natural",
+    "B": "Uso inadequado do solo e desmatamento",
+    "C": "altitude elevada",
+    "D": "Ausência total de cursos d’água",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "O Aquífero Guarani localiza-se principalmente em:",
+    "A": "Norte do Brasil",
+    "B": "Centro-Sul da América do Sul",
+    "C": "África Subsaariana",
+    "D": "Ásia Central",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "O processo de industrialização tardia na América Latina está relacionado principalmente a:",
+    "A": "Grande disponibilidade de mão de obra qualificada",
+    "B": "Dependência tecnológica e econômica",
+    "C": "Alta renda per capita histórica",
+    "D": "Ausência de recursos naturais",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "As cidades-globais caracterizam-se por:",
+    "A": "Alta taxa de ruralização",
+    "B": "Baixa conectividade internacional",
+    "C": "Centralização financeira e influência mundial",
+    "D": "Economia baseada apenas na agricultura",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "O fenômeno da ilha de calor ocorre principalmente devido a:",
+    "A": "Maior presença de áreas verdes",
+    "B": "Reflexão de luz pelos rios",
+    "C": "Concentração de construções e asfalto",
+    "D": "Baixa densidade populacional",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "A agricultura de plantation no período colonial caracterizava-se por:",
+    "A": "Policultura e produção familiar",
+    "B": "Monocultura, escravidão e exportação",
+    "C": "Cooperativas agrícolas",
+    "D": "Produção voltada ao mercado interno",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "Os países desenvolvidos apresentam, em geral:",
+    "A": "Alta taxa de natalidade e baixa expectativa de vida",
+    "B": "Economia primária e baixa urbanização",
+    "C": "Alta industrialização e elevado IDH",
+    "D": "Predominância de agricultura de subsistência",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "A fronteira agrícola brasileira expandiu-se principalmente em direção ao:",
+    "A": "Nordeste Litorâneo",
+    "B": "Centro-Oeste",
+    "C": "Sudeste",
+    "D": "Zona da Mata",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Médio",
+    "enunciado": "O processo de favelização está associado principalmente a:",
+    "A": "Excesso de infraestrutura urbana",
+    "B": "Superávit habitacional",
+    "C": "Desigualdade social e urbanização acelerada",
+    "D": "Baixa densidade populacional",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "O conceito de produção do espaço geográfico, a partir da perspectiva de Milton Santos, refere-se a:",
+    "A": "Apenas às alterações naturais no meio físico",
+    "B": "À interação entre técnicas, normas e ações humanas",
+    "C": "Ao espaço como resultado exclusivo da industrialização",
+    "D": "Somente à influência do clima nas dinâmicas sociais",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "A teoria dos polos de desenvolvimento, proposta por François Perroux, afirma que:",
+    "A": "O crescimento econômico ocorre de forma homogênea",
+    "B": "O desenvolvimento se espalha a partir de centros dinâmicos",
+    "C": "O espaço geográfico não influencia o desenvolvimento",
+    "D": "A economia depende exclusivamente do setor agrícola",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "O termo ‘globalização seletiva’ refere-se ao processo em que:",
+    "A": "Todos os países participam igualmente da economia global",
+    "B": "A integração ocorre de forma desigual, beneficiando regiões específicas",
+    "C": "Todos os territórios são excluídos do comércio internacional",
+    "D": "As fronteiras deixam de existir completamente",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "A geopolítica do petróleo no Oriente Médio é marcada por:",
+    "A": "Baixa importância estratégica após os anos 2000",
+    "B": "Conflitos decorrentes da distribuição desigual das reservas",
+    "C": "Autossuficiência energética global",
+    "D": "Ausência de interferência externa",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "O processo de migração pendular é caracterizado por:",
+    "A": "Mudança definitiva de residência entre países",
+    "B": "Deslocamento diário entre município de moradia e trabalho",
+    "C": "Movimento populacional sazonal de agricultores",
+    "D": "Migração de longa distância motivada por conflitos",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "A teoria da dependência afirma que o subdesenvolvimento é:",
+    "A": "Etapa natural antes do desenvolvimento",
+    "B": "Resultado de relações econômicas desiguais entre países",
+    "C": "Causado exclusivamente por fatores climáticos",
+    "D": "Inexistente em economias industrializadas",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "O arco do desmatamento na Amazônia corresponde principalmente a:",
+    "A": "Área preservada na fronteira do Peru",
+    "B": "Região sul e leste do bioma onde se concentra a expansão agropecuária",
+    "C": "Porção norte composta apenas por reservas indígenas",
+    "D": "Região central onde há menor atividade humana",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "As Zonas Econômicas Especiais (ZEEs), criadas na China, têm como objetivo principal:",
+    "A": "Reduzir o investimento estrangeiro",
+    "B": "Promover abertura econômica e atração de indústrias",
+    "C": "Desestimular exportações",
+    "D": "Impedir urbanização acelerada",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "A verticalização urbana está associada principalmente a:",
+    "A": "Redução da densidade populacional",
+    "B": "Crescimento horizontal das cidades",
+    "C": "Aumento do valor do solo e adensamento construtivo",
+    "D": "Expansão rural",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia",
+    "nivel": "Difícil",
+    "enunciado": "O fenômeno El Niño provoca, no Brasil, efeitos como:",
+    "A": "Aumento das chuvas no Nordeste e seca no Sul",
+    "B": "Seca no Nordeste e chuvas intensas no Sul",
+    "C": "Resfriamento anormal das águas do Pacífico",
+    "D": "Neutralização total de variações climáticas",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "Para Sócrates, o verdadeiro conhecimento começa quando:",
+    "A": "Aceitamos que já sabemos tudo",
+    "B": "Reconhecemos nossa própria ignorância",
+    "C": "Acumulamos riqueza e poder",
+    "D": "Seguimos tradições sem questionar",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "O mito da caverna, de Platão, simboliza:",
+    "A": "A importância da força física",
+    "B": "O medo de viver em sociedade",
+    "C": "A passagem da aparência para o conhecimento verdadeiro",
+    "D": "A necessidade de abandonar a filosofia",
+    "correta": "C"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "Aristóteles afirma que o ser humano é um 'animal político' porque:",
+    "A": "Domina todas as outras espécies",
+    "B": "Vive isolado por natureza",
+    "C": "Só se realiza plenamente em comunidade",
+    "D": "É incapaz de falar",
+    "correta": "C"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "Para Maquiavel, o governante deve priorizar:",
+    "A": "A moral religiosa acima de tudo",
+    "B": "A manutenção do poder e a estabilidade do Estado",
+    "C": "A caridade e o perdão",
+    "D": "A igualdade absoluta",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "O pensamento de René Descartes é marcado pelo princípio:",
+    "A": "Penso, logo existo",
+    "B": "A força cria a verdade",
+    "C": "Nada pode ser conhecido",
+    "D": "O homem é naturalmente mau",
+    "correta": "A"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "Para Kant, atos moralmente corretos devem ser guiados pelo:",
+    "A": "Interesse pessoal",
+    "B": "Dever e razão",
+    "C": "Medo da punição",
+    "D": "Desejos passageiros",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "O Iluminismo defende, de modo geral:",
+    "A": "A valorização da fé acima da razão",
+    "B": "O racionalismo e a liberdade de pensamento",
+    "C": "A autoridade absoluta do rei",
+    "D": "O feudalismo e o imobilismo social",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "Segundo Epicuro, a felicidade está em:",
+    "A": "Acumular bens materiais",
+    "B": "Buscar prazeres simples e evitar dores",
+    "C": "Submeter-se totalmente ao Estado",
+    "D": "Ter fama e reconhecimento",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "Para Rousseau, o homem nasce:",
+    "A": "Mau por natureza",
+    "B": "Bom, mas é corrompido pela sociedade",
+    "C": "Sem capacidade de julgar o certo e o errado",
+    "D": "Destinado à vida isolada",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Fácil",
+    "enunciado": "O termo 'ética' refere-se principalmente a:",
+    "A": "Regras religiosas",
+    "B": "Valores e princípios que orientam ações humanas",
+    "C": "Leis impostas pelo Estado",
+    "D": "Tradições imutáveis",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "O contratualismo defende que o Estado surge a partir:",
+    "A": "Da vontade divina",
+    "B": "De uma guerra entre classes",
+    "C": "De um acordo entre indivíduos",
+    "D": "Da imposição militar",
+    "correta": "C"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "Para Nietzche, a 'moral dos escravos' é caracterizada por:",
+    "A": "Valorização da força e do poder",
+    "B": "Ressentimento e negação da vida",
+    "C": "Afirmação da vontade de potência",
+    "D": "Independência em relação à religião",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "A dialética hegeliana baseia-se na relação entre:",
+    "A": "Mito, fé e revelação",
+    "B": "Tese, antítese e síntese",
+    "C": "Natureza, matéria e acaso",
+    "D": "Corpo, alma e espírito",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "Para Marx, a exploração capitalista ocorre porque:",
+    "A": "Os trabalhadores recebem mais do que produzem",
+    "B": "O lucro surge da mais-valia extraída do trabalho",
+    "C": "O capitalismo elimina a propriedade privada",
+    "D": "As máquinas impedem qualquer desigualdade",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "O utilitarismo, defendido por Bentham e Mill, afirma que uma ação moralmente correta é aquela que:",
+    "A": "Segue apenas tradições culturais",
+    "B": "Maximiza a felicidade do maior número de pessoas",
+    "C": "Obedece cegamente às leis",
+    "D": "Atende ao interesse individual acima de tudo",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "O ceticismo filosófico de Pirro defendia:",
+    "A": "A impossibilidade de qualquer conhecimento seguro",
+    "B": "A existência de verdades absolutas",
+    "C": "A superioridade da razão sobre os sentidos",
+    "D": "A confiança total na revelação religiosa",
+    "correta": "A"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "No pensamento de Hannah Arendt, o totalitarismo distingue-se por:",
+    "A": "Garantir ampla participação política",
+    "B": "Utilizar ideologia e terror para dominar a sociedade",
+    "C": "Ser inevitável nas democracias",
+    "D": "Defender pluralidade e debate público",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "Segundo Locke, o conhecimento surge principalmente de:",
+    "A": "Ideias inatas",
+    "B": "Experiência sensorial",
+    "C": "Iluminação mística",
+    "D": "Contradições lógicas",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "A ética aristotélica busca o 'justo meio', que significa:",
+    "A": "Evitar qualquer tipo de prazer",
+    "B": "Equilibrar excessos e faltas",
+    "C": "Negar a razão",
+    "D": "Viver isolado da sociedade",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Médio",
+    "enunciado": "A frase 'o homem é condenado a ser livre' resume o pensamento de:",
+    "A": "Descartes",
+    "B": "Sartre",
+    "C": "Kant",
+    "D": "Comte",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "Segundo Foucault, o poder moderno opera principalmente por meio:",
+    "A": "Da repressão física direta",
+    "B": "Da vigilância e dos dispositivos disciplinares",
+    "C": "Da autoridade divina",
+    "D": "Da ausência de instituições",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "Na filosofia de Heidegger, o termo 'ser-no-mundo' expressa:",
+    "A": "A total separação entre homem e mundo",
+    "B": "A existência humana como interação e abertura ao mundo",
+    "C": "A prioridade do racional sobre o emocional",
+    "D": "A busca por verdades absolutas e imutáveis",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "A crítica de Adorno e Horkheimer à indústria cultural afirma que ela:",
+    "A": "Estimula a autonomia crítica dos indivíduos",
+    "B": "Produz entretenimento capaz de libertar o pensamento",
+    "C": "Padroniza consciências e reforça a dominação",
+    "D": "Elimina qualquer relação entre cultura e economia",
+    "correta": "C"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "Para Spinoza, a liberdade humana consiste em:",
+    "A": "Agir sem qualquer causa ou determinação",
+    "B": "Compreender as determinações que nos regem e agir pela razão",
+    "C": "Seguir apenas impulsos emocionais",
+    "D": "Afastar-se da natureza para controlá-la",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "A fenomenologia de Husserl busca:",
+    "A": "Descrever a experiência consciente suspendendo julgamentos prévios",
+    "B": "Explicar fenômenos apenas pela biologia",
+    "C": "Negar qualquer validade à percepção",
+    "D": "Transformar a filosofia em ciência exata",
+    "correta": "A"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "Segundo Althusser, os Aparelhos Ideológicos de Estado (AIE) funcionam principalmente por:",
+    "A": "Violência direta",
+    "B": "Coerção militar explícita",
+    "C": "Interpelação ideológica e naturalização da dominação",
+    "D": "Ausência total de regras",
+    "correta": "C"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "Na filosofia de Kierkegaard, o 'salto de fé' representa:",
+    "A": "A rejeição da subjetividade",
+    "B": "A escolha irracional pela verdade objetiva",
+    "C": "A decisão existencial que supera a razão limitada",
+    "D": "A garantia lógica da existência de Deus",
+    "correta": "C"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "A frase 'a existência precede a essência' significa que:",
+    "A": "O ser humano já nasce com um propósito definido",
+    "B": "A essência humana é fixada biologicamente",
+    "C": "Primeiro existimos e depois construímos quem somos",
+    "D": "A liberdade humana é impossível",
+    "correta": "C"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "A crítica de Simone de Beauvoir ao patriarcado afirma que a mulher:",
+    "A": "É biologicamente inferior ao homem",
+    "B": "É definida socialmente como 'o Outro' em relação ao homem",
+    "C": "Ocupa sua posição naturalmente e sem coerção",
+    "D": "Não sofre influência histórica na construção de sua identidade",
+    "correta": "B"
+  },
+  {
+    "materia": "Filosofia",
+    "nivel": "Difícil",
+    "enunciado": "Segundo Wittgenstein, o significado das palavras está relacionado principalmente a:",
+    "A": "Sua essência metafísica",
+    "B": "O uso que fazemos delas em práticas sociais",
+    "C": "Ideias inatas e universais",
+    "D": "Regras fixas independentes do contexto",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "Para Émile Durkheim, o fato social é caracterizado por ser:",
+    "A": "Biológico, individual e voluntário",
+    "B": "Coercitivo, geral e exterior ao indivíduo",
+    "C": "Exclusivamente psicológico",
+    "D": "Totalmente livre de normas",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "Segundo Karl Marx, a base da sociedade capitalista é:",
+    "A": "A religião e os valores morais",
+    "B": "As relações de produção",
+    "C": "A cultura simbólica",
+    "D": "A família como núcleo central",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "Max Weber define ação social como aquela que:",
+    "A": "Ignora totalmente o comportamento dos outros",
+    "B": "É orientada pelo sentido atribuído pelo indivíduo",
+    "C": "Não possui significado subjetivo",
+    "D": "Ocorre apenas no Estado",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "O processo de socialização consiste em:",
+    "A": "Abandono das normas sociais",
+    "B": "Aprendizagem de valores, costumes e regras",
+    "C": "Negação das tradições culturais",
+    "D": "Vivência exclusivamente individual",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "A sociologia surgiu no século XIX como resposta a:",
+    "A": "Guerras medievais",
+    "B": "Transformações da Revolução Industrial",
+    "C": "Expansão do império romano",
+    "D": "Conflitos religiosos na Idade Média",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "A cultura é entendida, de modo geral, como:",
+    "A": "Apenas obras de arte",
+    "B": "Um conjunto de valores, práticas e significados de um grupo",
+    "C": "Somente hábitos alimentares",
+    "D": "Elementos biológicos do ser humano",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "O termo 'etnocentrismo' refere-se a:",
+    "A": "Valorização de diferentes culturas",
+    "B": "Julgamento da cultura do outro pela própria cultura",
+    "C": "Processo de globalização cultural",
+    "D": "Mistura de diversas tradições",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "Instituições sociais, como família e escola, têm como função:",
+    "A": "Promover isolamento social",
+    "B": "Desorganizar normas sociais",
+    "C": "Organizar e estruturar a vida coletiva",
+    "D": "Eliminar regras em sociedade",
+    "correta": "C"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "O conceito de 'papel social' refere-se a:",
+    "A": "A profissão exercida por alguém",
+    "B": "O conjunto de expectativas ligadas a uma posição social",
+    "C": "Uma característica física do indivíduo",
+    "D": "Apenas funções políticas",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Fácil",
+    "enunciado": "A globalização cultural envolve:",
+    "A": "A queda das comunicações internacionais",
+    "B": "A intensificação da troca de símbolos e valores entre países",
+    "C": "O isolamento cultural das nações",
+    "D": "A homogeneização final e total do mundo",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "A anomia, segundo Durkheim, ocorre quando:",
+    "A": "Há excesso de integração social",
+    "B": "As normas sociais enfraquecem, gerando desregulação",
+    "C": "O Estado controla rigidamente os indivíduos",
+    "D": "Os grupos sociais possuem forte coesão",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "O conceito de 'ideologia' em Marx refere-se a:",
+    "A": "Ideias neutras e imparciais",
+    "B": "Representações que legitimam a dominação de uma classe",
+    "C": "Pensamentos criados apenas pela religião",
+    "D": "Conceitos políticos sempre verdadeiros",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "O patriarcado pode ser definido como um sistema social em que:",
+    "A": "As mulheres ocupam as posições de maior poder",
+    "B": "Homens detêm privilégios sociais e políticos",
+    "C": "Não existem diferenças de gênero",
+    "D": "As funções familiares não têm importância",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "A teoria da ação comunicativa de Habermas destaca:",
+    "A": "O conflito constante entre classes",
+    "B": "O entendimento mútuo e o diálogo racional",
+    "C": "A força física como base das relações sociais",
+    "D": "A neutralidade completa da linguagem",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "O conceito de 'interseccionalidade' analisa:",
+    "A": "Somente desigualdades econômicas",
+    "B": "A sobreposição de opressões como gênero, raça e classe",
+    "C": "Aspectos puramente biológicos",
+    "D": "A separação entre desigualdades sociais",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "Para Pierre Bourdieu, o 'capital cultural' refere-se a:",
+    "A": "Riquezas acumuladas por empresas",
+    "B": "Saberes, hábitos e habilidades transmitidos socialmente",
+    "C": "Capital financeiro aplicado em educação",
+    "D": "O dinheiro usado para acessar museus",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "A mobilidade social vertical ocorre quando:",
+    "A": "Há mudança de posição social entre gerações",
+    "B": "O indivíduo muda de posição dentro da mesma classe",
+    "C": "Há ascensão ou queda na hierarquia social",
+    "D": "Alguém se desloca apenas territorialmente",
+    "correta": "C"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "O conceito de habitus, em Bourdieu, caracteriza-se por:",
+    "A": "Ações humanas aleatórias",
+    "B": "Disposições incorporadas que orientam práticas sociais",
+    "C": "Comportamentos totalmente livres de influência social",
+    "D": "Apenas atitudes econômicas",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "Para Weber, a dominação legal-racional baseia-se em:",
+    "A": "Tradições familiares",
+    "B": "Carisma do líder",
+    "C": "Regras e leis impessoais",
+    "D": "Crenças místicas",
+    "correta": "C"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Médio",
+    "enunciado": "A globalização econômica intensifica:",
+    "A": "Barreiras comerciais internacionais",
+    "B": "Fluxos de capitais, mercadorias e informações",
+    "C": "O isolamento dos países",
+    "D": "Desigualdade zero entre nações",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "O panoptismo, conceito desenvolvido por Foucault, refere-se a:",
+    "A": "A vigilância onipresente que disciplina comportamentos",
+    "B": "A punição física como principal método de controle",
+    "C": "A ausência total de supervisão social",
+    "D": "A desintegração das instituições modernas",
+    "correta": "A"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "A teoria da modernidade líquida, de Zygmunt Bauman, descreve uma sociedade marcada por:",
+    "A": "Relações estáveis e permanentes",
+    "B": "Rigidez institucional",
+    "C": "Fluidez, instabilidade e vínculos frágeis",
+    "D": "Ausência de individualização",
+    "correta": "C"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "Segundo Norbert Elias, o processo civilizador envolve:",
+    "A": "A eliminação total das emoções",
+    "B": "Mudanças históricas no autocontrole e comportamento social",
+    "C": "A volta à vida tribal",
+    "D": "A substituição do Estado por comunidades autônomas",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "A crítica da Escola de Frankfurt à sociedade capitalista aponta que a razão instrumental:",
+    "A": "Promove emancipação humana",
+    "B": "Reforça a dominação e transforma pessoas em meios",
+    "C": "Elimina desigualdades sociais",
+    "D": "Surge exclusivamente na Idade Média",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "O conceito de 'biopoder', em Foucault, diz respeito a:",
+    "A": "A autoridade familiar tradicional",
+    "B": "O controle da vida e dos corpos pelas instituições",
+    "C": "A ausência de intervenção estatal",
+    "D": "Um poder exclusivamente militar",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "O funcionalismo de Talcott Parsons compreende a sociedade como:",
+    "A": "Um conjunto caótico sem interdependência",
+    "B": "Um sistema equilibrado cujas partes desempenham funções",
+    "C": "Um espaço em que os conflitos são irreconciliáveis",
+    "D": "Um ambiente em que normas não têm importância",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "No pensamento de Judith Butler, o gênero é entendido como:",
+    "A": "Uma essência fixa e biologicamente determinada",
+    "B": "Um desempenho construído socialmente e repetido",
+    "C": "Uma categoria sem relação com o poder",
+    "D": "Um conceito imutável e universal",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "Segundo Pierre Bourdieu, os campos sociais são:",
+    "A": "Áreas naturais de convivência biológica",
+    "B": "Espaços de disputa onde agentes competem por diferentes capitais",
+    "C": "Setores econômicos sem relação com cultura",
+    "D": "Ambientes onde não há relações de poder",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "Na teoria pós-colonial, autores como Fanon afirmam que o colonialismo produz:",
+    "A": "Identidades homogêneas e estáveis",
+    "B": "Subjetividades fragmentadas e internalização da opressão",
+    "C": "A eliminação de desigualdades raciais",
+    "D": "Sociedades sem hierarquias",
+    "correta": "B"
+  },
+  {
+    "materia": "Sociologia",
+    "nivel": "Difícil",
+    "enunciado": "A noção de 'sociedade de risco', proposta por Ulrich Beck, refere-se a:",
+    "A": "Uma sociedade imune a problemas ambientais",
+    "B": "A produção de riscos globais decorrentes do desenvolvimento tecnológico",
+    "C": "A volta à economia agrária pré-industrial",
+    "D": "Riscos exclusivamente naturais e inevitáveis",
+    "correta": "B"
+  }
+]

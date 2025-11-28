@@ -1,0 +1,302 @@
+[
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "Um produto custa R$50 e teve desconto de 20%. Qual é o preço final?",
+    "A": "R$30",
+    "B": "R$35",
+    "C": "R$40",
+    "D": "R$45",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "A razão entre 8 e 4 é:",
+    "A": "1/2",
+    "B": "2",
+    "C": "4",
+    "D": "8",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "Se um carro percorre 300 km com 20 litros de gasolina, seu consumo é de:",
+    "A": "10 km/L",
+    "B": "15 km/L",
+    "C": "20 km/L",
+    "D": "25 km/L",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "O valor de 3² + 4² é:",
+    "A": "12",
+    "B": "18",
+    "C": "25",
+    "D": "30",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "A média aritmética de 6, 8 e 10 é:",
+    "A": "7",
+    "B": "8",
+    "C": "9",
+    "D": "10",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "A área de um quadrado de lado 5 cm é:",
+    "A": "10 cm²",
+    "B": "20 cm²",
+    "C": "25 cm²",
+    "D": "30 cm²",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "O valor de 0,25 em forma de fração é:",
+    "A": "1/2",
+    "B": "1/3",
+    "C": "1/4",
+    "D": "3/4",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "A soma dos ângulos internos de um triângulo é:",
+    "A": "90°",
+    "B": "180°",
+    "C": "270°",
+    "D": "360°",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "O valor de √49 é:",
+    "A": "5",
+    "B": "6",
+    "C": "7",
+    "D": "8",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Fácil",
+    "enunciado": "Se um número x satisfaz 3x = 12, então x é:",
+    "A": "2",
+    "B": "3",
+    "C": "4",
+    "D": "6",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "O preço de um celular subiu de R$1200 para R$1500. O aumento percentual foi de:",
+    "A": "15%",
+    "B": "20%",
+    "C": "25%",
+    "D": "30%",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "A função f(x) = 2x + 3. Qual é o valor de f(5)?",
+    "A": "10",
+    "B": "11",
+    "C": "12",
+    "D": "13",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "Um carro viaja a 90 km/h. Quanto tempo leva para percorrer 270 km?",
+    "A": "2 h",
+    "B": "2,5 h",
+    "C": "3 h",
+    "D": "4 h",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "O número 3,14159 é uma aproximação de:",
+    "A": "π",
+    "B": "e",
+    "C": "√2",
+    "D": "φ",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "O volume de um cubo de aresta 4 é:",
+    "A": "16",
+    "B": "32",
+    "C": "48",
+    "D": "64",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "Se P(A)=0,4 e P(B)=0,5 e A e B são independentes, então P(A∩B) é:",
+    "A": "0,1",
+    "B": "0,2",
+    "C": "0,25",
+    "D": "0,4",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "A raiz da equação x² − 9 = 0 é:",
+    "A": "3",
+    "B": "±3",
+    "C": "9",
+    "D": "±9",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "Um triângulo retângulo tem catetos 6 e 8. Sua hipotenusa é:",
+    "A": "10",
+    "B": "12",
+    "C": "14",
+    "D": "8√2",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "Se log(x) = 2, então x é:",
+    "A": "2",
+    "B": "10",
+    "C": "100",
+    "D": "1000",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Médio",
+    "enunciado": "Em uma progressão aritmética (PA), a₁ = 5 e r = 3. O quinto termo é:",
+    "A": "11",
+    "B": "14",
+    "C": "17",
+    "D": "20",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "Uma função exponencial cresce 8% ao ano. Se o valor inicial é 500, o valor após 5 anos é aproximadamente:",
+    "A": "650",
+    "B": "734",
+    "C": "800",
+    "D": "950",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "A solução do sistema: x + y = 10 e x - y = 4 é:",
+    "A": "x=6, y=4",
+    "B": "x=7, y=3",
+    "C": "x=8, y=2",
+    "D": "x=9, y=1",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "Uma urna tem 5 bolas vermelhas e 3 azuis. A probabilidade de retirar 2 vermelhas sem reposição é:",
+    "A": "5/16",
+    "B": "1/2",
+    "C": "5/14",
+    "D": "10/28",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "O determinante da matriz [[2,3],[1,4]] é:",
+    "A": "5",
+    "B": "6",
+    "C": "7",
+    "D": "8",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "A área de um setor circular de 90° em um círculo de raio 6 é:",
+    "A": "9π",
+    "B": "12π",
+    "C": "18π",
+    "D": "36π",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "O valor de log₂(32) é:",
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "6",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "Se f(x)=x²−4x+3, o vértice da parábola é:",
+    "A": "(1,2)",
+    "B": "(2,−1)",
+    "C": "(3,−2)",
+    "D": "(4,−3)",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "O volume de um cilindro de raio 3 e altura 10 é:",
+    "A": "30π",
+    "B": "60π",
+    "C": "90π",
+    "D": "120π",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "A soma dos termos de uma PG infinita com a₁=12 e razão r=1/3 é:",
+    "A": "16",
+    "B": "18",
+    "C": "24",
+    "D": "36",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática",
+    "nivel": "Difícil",
+    "enunciado": "A inclinação da reta que passa pelos pontos (1,3) e (5,11) é:",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "correta": "B"
+  }
+]

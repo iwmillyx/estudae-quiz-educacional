@@ -1,17 +1,56 @@
 import sqlite3
 from pathlib import Path
-import random
-import requests
-import urllib.parse
 
 # Ajuste o caminho do banco
 BASE_DIR = Path(__file__).parent
 DB_PATH = BASE_DIR / "estudae.db"
 
-def conectar():
-    return sqlite3.connect(DB_PATH)
+# Coloca o DB na raiz do projeto (dois níveis acima deste arquivo: <projeto>/estudae.db)
+# Assim todos os scripts que importarem este módulo vão apontar para o mesmo DB.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-# --- Funções básicas ---
+def conectar():
+    # Garante que a pasta existe
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    # DEBUG: imprime caminho absoluto do DB (verifique ao rodar quiz e popular_perguntas)
+    print(f"[DEBUG] conectar() -> usando DB em: {DB_PATH}")
+    conn = sqlite3.connect(str(DB_PATH))
+    conn.execute("PRAGMA foreign_keys = ON;")
+    return conn
+
+def inicializar_niveis():
+    """
+    Cria os níveis automaticamente se não existirem.
+    Chame isso quando o app iniciar.
+    """
+    conn = conectar()
+    cursor = conn.cursor()
+    
+    # Verifica se já existem níveis
+    cursor.execute("SELECT COUNT(*) FROM nivel")
+    if cursor.fetchone()[0] > 0:
+        conn.close()
+        return  # Já existem níveis, não faz nada
+    
+    print("📝 Criando níveis automaticamente...")
+    
+    # Cria os níveis para cada matéria
+    cursor.execute("SELECT id_materia, nome FROM materia")
+    materias = cursor.fetchall()
+    
+    for id_materia, nome_materia in materias:
+        for nivel_nome in ['Fácil', 'Médio', 'Difícil']:
+            cursor.execute("""
+                INSERT OR IGNORE INTO nivel (nome, id_materia) 
+                VALUES (?, ?)
+            """, (nivel_nome, id_materia))
+            print(f"  ✅ {nome_materia} - {nivel_nome}")
+    
+    conn.commit()
+    conn.close()
+    print("✅ Níveis criados automaticamente!")
+
+# --- Funções básicas (mantidas como estavam) ---
 
 def criar_usuario(nome_completo, email, senha_hash, data_nasc, estado):
     conn = conectar()
@@ -210,6 +249,106 @@ def obter_xp_materias_quiz(id_usuario, id_quiz):
     conn.close()
     return resultado
 
+
+def obter_niveis_completados_materia(id_usuario, id_quiz):
+    """
+    Retorna um dicionário com as matérias e os níveis que o usuário completou.
+    
+    Exemplo de retorno:
+    {
+        "Matemática": [1, 2],
+        "Português": [1],
+        "Física": [1, 2, 3]
+    }
+    """
+    try:
+        conn = conectar()
+        cursor = conn.cursor()
+        
+        # Busca todos os registros de quizzes completados pelo usuário
+        query = """
+            SELECT materia, nivel 
+            FROM historico_quiz 
+            WHERE id_usuario = ? AND id_quiz = ?
+            ORDER BY materia, nivel
+        """
+        cursor.execute(query, (id_usuario, id_quiz))
+        resultados = cursor.fetchall()
+        
+        # Organiza em um dicionário
+        niveis_por_materia = {}
+        for materia, nivel in resultados:
+            if materia not in niveis_por_materia:
+                niveis_por_materia[materia] = []
+            
+            # Converte nomes de nível para números
+            nivel_numero = {"Fácil": 1, "Médio": 2, "Difícil": 3}.get(nivel, 1)
+            
+            if nivel_numero not in niveis_por_materia[materia]:
+                niveis_por_materia[materia].append(nivel_numero)
+        
+        # Ordena os níveis de cada matéria
+        for materia in niveis_por_materia:
+            niveis_por_materia[materia].sort()
+        
+        conn.close()
+        return niveis_por_materia
+        
+    except Exception as e:
+        print(f"❌ Erro ao obter níveis completados: {e}")
+        return {}
+
+def criar_tabela_historico_quiz():
+    """Cria a tabela de histórico de quizzes se não existir"""
+    try:
+        conn = conectar()
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS historico_quiz (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                id_usuario INTEGER NOT NULL,
+                id_quiz INTEGER NOT NULL,
+                materia TEXT NOT NULL,
+                nivel TEXT NOT NULL,
+                acertos INTEGER DEFAULT 0,
+                total_questoes INTEGER DEFAULT 0,
+                xp_ganho INTEGER DEFAULT 0,
+                data_conclusao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+            )
+        """)
+        
+        conn.commit()
+        conn.close()
+        print("✅ Tabela historico_quiz criada/verificada com sucesso!")
+        
+    except Exception as e:
+        print(f"❌ Erro ao criar tabela historico_quiz: {e}")
+
+
+def salvar_resultado_quiz(id_usuario, id_quiz, materia, nivel, acertos, total_questoes, xp_ganho):
+    """Salva o resultado de um quiz no histórico"""
+    try:
+        conn = conectar()
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            INSERT INTO historico_quiz 
+            (id_usuario, id_quiz, materia, nivel, acertos, total_questoes, xp_ganho)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        """, (id_usuario, id_quiz, materia, nivel, acertos, total_questoes, xp_ganho))
+        
+        conn.commit()
+        conn.close()
+        print(f"✅ Resultado salvo: {materia} - {nivel} ({acertos}/{total_questoes}) +{xp_ganho} XP")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Erro ao salvar resultado do quiz: {e}")
+        return False
+
+
 def carregar_dados_ranking():
     """
     Retorna um dicionário com os rankings gerais:
@@ -369,62 +508,7 @@ def obter_perguntas_por_nivel(id_nivel, limite=10):
     conn.close()
     return dados
 
-def importar_perguntas(nivel_nome, id_nivel):
-    nivel_api = {"Fácil": "easy", "Médio": "medium", "Difícil": "hard"}[nivel_nome]
-    url = f"https://opentdb.com/api.php?amount=20&type=multiple&difficulty={nivel_api}&encode=url3986"
 
-    try:
-        response = requests.get(url, timeout=10)
-        dados = response.json()
-
-        # Verifica se a API retornou sucesso
-        if dados.get('response_code') != 0:
-            print(f"⚠️ API não retornou perguntas (código: {dados.get('response_code')})")
-            return 0
-        
-        resultados = dados['results']
-
-        conn = conectar()
-        cursor = conn.cursor()
-
-        perguntas_inseridas = 0
-
-        for item in resultados:
-            try:
-                enunciado = urllib.parse.unquote(item['question'])
-                alternativas = [urllib.parse.unquote(a) for a in item['incorrect_answers']]
-                correta_texto = urllib.parse.unquote(item["correct_answer"])
-
-                alternativas.append(correta_texto)
-                random.shuffle(alternativas)
-
-                # Garante 4 alternativas
-                while len(alternativas) < 4:
-                    alternativas.append("Alternativa não disponível")
-                alternativas = alternativas[:4]
-
-                letra_correta = chr(65 + alternativas.index(correta_texto))
-
-                cursor.execute("""
-                    INSERT INTO pergunta (enunciado, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_correta, id_nivel)
-                    VALUES (?, ?, ?, ?, ?, ?, ?)
-                """, (enunciado, alternativas[0], alternativas[1], alternativas[2], alternativas[3], letra_correta, id_nivel))
-
-                perguntas_inseridas += 1
-            except Exception as e:
-                print(f"⚠️ Erro ao inserir pergunta: {e}")
-                continue
-
-        conn.commit()
-        conn.close()
-
-        print(f"✅ {perguntas_inseridas} perguntas importadas!")
-        return perguntas_inseridas
-    
-    except Exception as e:
-        print(f"❌ Erro ao buscar da API: {e}")
-        return 0
-    
 def obter_id_nivel_por_materia(nome_materia, nivel_numero):
     """
     Retorna o id_nivel real do banco baseado no nome da matéria e número do nível.
@@ -463,3 +547,151 @@ def obter_id_materia_por_nome(nome_materia):
     conn.close()
     
     return resultado[0] if resultado else None
+
+def verificar_nivel_completado(id_usuario, nome_materia, nome_nivel):
+    """
+    Verifica se um nível já foi completado pelo usuário.
+    Retorna True se completado, False caso contrário.
+    """
+    try:
+        conn = conectar()
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            SELECT completado 
+            FROM progresso_usuario 
+            WHERE id_usuario = ?
+            AND id_materia = (SELECT id_materia FROM materia WHERE nome = ?)
+            AND id_nivel = (SELECT id_nivel FROM nivel WHERE nome = ?)
+        """, (id_usuario, nome_materia, nome_nivel))
+        
+        resultado = cursor.fetchone()
+        conn.close()
+        
+        return resultado[0] == 1 if resultado else False
+    except Exception as e:
+        print(f"Erro ao verificar nível completado: {e}")
+        return False
+
+
+def salvar_progresso_nivel(id_usuario, nome_materia, nome_nivel, xp_ganho, acertos, erros):
+    """
+    Salva ou atualiza o progresso de um nível específico.
+    Marca como completado e registra os dados.
+    """
+    try:
+        conn = conectar()
+        cursor = conn.cursor()
+        
+        # Busca os IDs
+        cursor.execute("SELECT id_materia FROM materia WHERE nome = ?", (nome_materia,))
+        id_materia = cursor.fetchone()[0]
+        
+        cursor.execute("SELECT id_nivel FROM nivel WHERE nome = ?", (nome_nivel,))
+        id_nivel = cursor.fetchone()[0]
+        
+        # Insere ou atualiza o progresso
+        cursor.execute("""
+            INSERT INTO progresso_usuario 
+            (id_usuario, id_materia, id_nivel, completado, xp_ganho, acertos, erros, data_conclusao)
+            VALUES (?, ?, ?, 1, ?, ?, ?, datetime('now'))
+            ON CONFLICT(id_usuario, id_materia, id_nivel) 
+            DO UPDATE SET 
+                completado = 1,
+                xp_ganho = xp_ganho + ?,
+                acertos = acertos + ?,
+                erros = erros + ?,
+                data_conclusao = datetime('now')
+        """, (id_usuario, id_materia, id_nivel, xp_ganho, acertos, erros, xp_ganho, acertos, erros))
+        
+        conn.commit()
+        conn.close()
+        return True
+    except Exception as e:
+        print(f"Erro ao salvar progresso: {e}")
+        return False
+
+
+def adicionar_xp_usuario(id_usuario, xp):
+    """
+    Adiciona XP ao usuário na tabela usuarios.
+    """
+    try:
+        conn = conectar()
+        cursor = conn.cursor()
+        
+        # Verifica se existe coluna xp na tabela usuarios
+        cursor.execute("PRAGMA table_info(usuarios)")
+        colunas = [col[1] for col in cursor.fetchall()]
+        
+        if 'xp' not in colunas:
+            # Adiciona a coluna xp se não existir
+            cursor.execute("ALTER TABLE usuarios ADD COLUMN xp INTEGER DEFAULT 0")
+        
+        # Atualiza o XP
+        cursor.execute("""
+            UPDATE usuarios 
+            SET xp = COALESCE(xp, 0) + ? 
+            WHERE id_usuario = ?
+        """, (xp, id_usuario))
+        
+        conn.commit()
+        conn.close()
+        return True
+    except Exception as e:
+        print(f"Erro ao adicionar XP: {e}")
+        return False
+
+
+def obter_progresso_materia(id_usuario, nome_materia):
+    """
+    Retorna o progresso geral de uma matéria (quantos níveis foram completados).
+    Retorna: (completados, total)
+    """
+    try:
+        conn = conectar()
+        cursor = conn.cursor()
+        
+        # Total de níveis da matéria
+        cursor.execute("""
+            SELECT COUNT(*) 
+            FROM nivel 
+            WHERE id_materia = (SELECT id_materia FROM materia WHERE nome = ?)
+        """, (nome_materia,))
+        total = cursor.fetchone()[0]
+        
+        # Níveis completados
+        cursor.execute("""
+            SELECT COUNT(*) 
+            FROM progresso_usuario 
+            WHERE id_usuario = ?
+            AND id_materia = (SELECT id_materia FROM materia WHERE nome = ?)
+            AND completado = 1
+        """, (id_usuario, nome_materia))
+        completados = cursor.fetchone()[0]
+        
+        conn.close()
+        return (completados, total)
+    except Exception as e:
+        print(f"Erro ao obter progresso: {e}")
+        return (0, 3)  # Default: 0 de 3 níveis
+    
+def importar_perguntas(nome_materia, nivel_numero, limite=10):
+    """
+    Importa perguntas de uma matéria e nível específicos.
+    
+    Args:
+        nome_materia (str): Nome da matéria (ex: "Física", "Matemática")
+        nivel_numero (int): Número do nível (1=Fácil, 2=Médio, 3=Difícil)
+        limite (int): Quantidade máxima de perguntas a retornar
+    
+    Returns:
+        list: Lista de tuplas com os dados das perguntas
+    """
+    id_nivel = obter_id_nivel_por_materia(nome_materia, nivel_numero)
+    
+    if not id_nivel:
+        print(f"⚠ Nível não encontrado para {nome_materia} - Nível {nivel_numero}")
+        return []
+    
+    return obter_perguntas_por_nivel(id_nivel, limite)

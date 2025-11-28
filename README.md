@@ -35,7 +35,11 @@ Além disso, os usuários podem **adicionar suas próprias perguntas**, promoven
 git clone https://github.com/iwmillyx/estudae-quiz-educacional.git
 
 # Acesse o diretório
-cd estudae-quiz-educacional
+cd dados
+
+python popular_perguntas.py
+
+python popular_usuarios.py
 
 # Execute o programa
 python main.py

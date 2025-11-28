@@ -1,16 +1,3 @@
-# ------------------------------------------------------------
-# Aqui ficam:
-#  - a interface de Login e Cadastro
-#  - leitura/gravação de 'usuarios.txt' (formato: usuario;senha;nome;nasc;tel;email;estado)
-#  - validações básicas (e-mail, data, senha)
-#  - "Esqueci a senha": redefine a senha com e-mail + data de nascimento
-#
-# Observações:
-#  - é uma versão simples para começar rápido (sem banco ainda)
-#  - quando migrar para banco (SQLite/Postgres), basta trocar as funções
-#    de salvar/carregar mantendo as mesmas assinaturas
-# ------------------------------------------------------------
-# telas/tela_login.py
 import tkinter as tk
 from tkinter import ttk, messagebox
 import os
@@ -157,7 +144,7 @@ class App:
                 img = ImageTk.PhotoImage(pil_img)
                 logo_lbl = tk.Label(parent, image=img, bg=parent.cget("bg"))
                 # ==== MUDE O ESPAÇAMENTO AQUI (pady) ====
-                logo_lbl.pack(pady=(0, 10))
+                logo_lbl.pack(pady=(20, 10))
                 logo_lbl.image = img
                 parent._img = img
                 return
@@ -194,23 +181,26 @@ class App:
         placeholder.pack_propagate(False)
         tk.Label(placeholder, text="🔐", font=("Arial", 40), bg="#4bc9a0").place(relx=0.5, rely=0.5, anchor="center")
 
-    # -------------------- TELA INICIAL --------------------
+        # -------------------- TELA INICIAL --------------------
     def tela_inicial(self):
+        """Tela inicial com logo e botões (chamada pelo router)."""
         self.limpar_tela()
-        
+
         frame = tk.Frame(self.root, bg=self.COR_FUNDO)
-        frame.place(relx=0.5, rely=0.5, anchor="center")
-        
+        frame.place(relx=0.5, rely=0.50, anchor="center")
+
+        # Logo grande da inicial
         self.carregar_logo(frame, tamanho=(140, 140))
-        
+
         tk.Label(
             frame,
             text="Bem-vindo ao EstudAe!",
             font=("Arial", 22, "bold"),
             bg=self.COR_FUNDO,
             fg="#ffffff"
-        ).pack(pady=(10, 35))
-        
+        ).pack(pady=(10, 20))
+
+        # Botão para ir ao login
         btn_login = tk.Button(
             frame,
             text="Login",
@@ -223,8 +213,9 @@ class App:
             cursor="hand2",
             command=self.tela_login
         )
-        btn_login.pack(pady=(0, 15))
-        
+        btn_login.pack(pady=(0, 12))
+
+        # Link para cadastro
         label_cadastro = tk.Label(
             frame,
             text="Cadastre-se",
@@ -233,60 +224,58 @@ class App:
             fg="#a7f3d0",
             cursor="hand2"
         )
-        label_cadastro.pack(pady=10)
+        label_cadastro.pack(pady=(6, 0))
         label_cadastro.bind("<Button-1>", lambda e: self.tela_cadastro())
         label_cadastro.bind("<Enter>", lambda e: label_cadastro.config(fg="#d1fae5"))
         label_cadastro.bind("<Leave>", lambda e: label_cadastro.config(fg="#a7f3d0"))
 
-    # -------------------- TELA DE LOGIN --------------------
     def tela_login(self):
         self.limpar_tela()
-        
-        # Container principal
-        # ==== MUDE O rely AQUI PARA SUBIR/DESCER TUDO (imagem + card) ====
-        # Valores menores = mais pra cima | Valores maiores = mais pra baixo
+
+        # Frame principal ocupando a tela inteira
         container = tk.Frame(self.root, bg=self.COR_FUNDO)
-        container.place(relx=0.5, rely=0.45, anchor="center")  # Mudei de 0.5 para 0.45 (mais pra cima)
-        
-        # ===== LOGO DA TELA DE LOGIN (DIFERENTE DA INICIAL) =====
-        # ==== MUDE O TAMANHO DA IMAGEM AQUI: tamanho=(largura, altura) ====
+        container.pack(expand=True, fill="both")
+
+        # Logo
+        logo_frame = tk.Frame(container, bg=self.COR_FUNDO)
+        logo_frame.pack(pady=(40, 10))
         self.carregar_logo_login(container, tamanho=(150, 150))
-        
-        # ===== CARD COMEÇA AQUI =====
-        card = tk.Frame(container, bg=self.COR_CARD, padx=10, pady=10)
-        # ==== MUDE O ESPAÇAMENTO ENTRE LOGO E CARD AQUI: pady=(espaço_cima, espaço_baixo) ====
-        card.pack(pady=(15, 0))  # Mudei de 10 para 15  # Espaço entre logo e card
-        
+
+        # Card do login
+        card = tk.Frame(container, bg=self.COR_CARD, padx=15, pady=15)
+        card.pack(pady=(20,0))  # Centraliza verticalmente
+        self.current_card = card
+
         tk.Label(
             card,
             text="Login",
             font=("Arial", 24, "bold"),
             bg=self.COR_CARD,
             fg=self.COR_TEXTO_ESCURO
-        ).pack(pady=(10, 25))
-        
-        # Usuário
-        tk.Label(card, text="Usuário:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x", padx=5)
+        ).pack(pady=(5, 20))
+
+        # Email
+        tk.Label(card, text="Email:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x")
         usuario_container = self.criar_entry_arredondado(card, width=280)
         usuario_container.pack(pady=(5, 15))
         usuario_entry = usuario_container._entry
-        
+
         # Senha
-        tk.Label(card, text="Senha:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x", padx=5)
-        
+        tk.Label(card, text="Senha:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x")
+
         frame_senha_container = tk.Frame(card, bg=self.COR_CARD)
-        frame_senha_container.pack(pady=(5, 5))
-        
+        frame_senha_container.pack()
+
         canvas_senha = tk.Canvas(frame_senha_container, width=280, height=40, bg=self.COR_CARD, highlightthickness=0)
         canvas_senha.pack()
-        
+
         radius = 8
         canvas_senha.create_rectangle(0, 0, 280, 40, fill=self.COR_CAMPO, outline="")
         canvas_senha.create_oval(0, 0, radius*2, radius*2, fill=self.COR_CAMPO, outline="")
         canvas_senha.create_oval(280-radius*2, 0, 280, radius*2, fill=self.COR_CAMPO, outline="")
         canvas_senha.create_oval(0, 40-radius*2, radius*2, 40, fill=self.COR_CAMPO, outline="")
         canvas_senha.create_oval(280-radius*2, 40-radius*2, 280, 40, fill=self.COR_CAMPO, outline="")
-        
+
         senha_entry = tk.Entry(
             frame_senha_container,
             font=("Arial", 11),
@@ -297,7 +286,7 @@ class App:
             show="*"
         )
         senha_entry.place(x=10, y=10, width=200, height=20)
-        
+
         def toggle_senha():
             if senha_entry.cget("show") == "*":
                 senha_entry.config(show="")
@@ -305,7 +294,7 @@ class App:
             else:
                 senha_entry.config(show="*")
                 btn_toggle.config(text="Mostrar")
-        
+
         btn_toggle = tk.Button(
             frame_senha_container,
             text="Mostrar",
@@ -318,38 +307,51 @@ class App:
             command=toggle_senha
         )
         btn_toggle.place(x=220, y=8)
-        
-        label_esqueci = tk.Label(card, text="Esqueci minha senha", font=("Arial", 9), bg=self.COR_CARD, fg=self.COR_BOTAO, cursor="hand2")
-        label_esqueci.pack(pady=(5, 25))
-        label_esqueci.bind("<Button-1>", lambda e: self.tela_recuperar_senha())
-        
-        def logar():
-            email = usuario_entry.get().strip()
-            senha = senha_entry.get()  # NÃO coloque .strip() aqui!
-                
-            # DEBUG (descomente se precisar debugar)
-            # print(f"\n🔘 TENTANDO LOGIN:")
-            # print(f"   Email: '{email}'")
-            # print(f"   Senha: '{senha}'")
-            # print(f"   Tamanho senha: {len(senha)}")
-            
-            usuario = verificar_usuario(email, senha)
 
-            if usuario:
-                messagebox.showinfo("Sucesso", f"Bem-vindo, {usuario['nome']}!")
-                if callable(self.on_login):
-                    self.on_login(email, usuario['nome'], usuario['id'])
-            else:
-                messagebox.showerror("Erro", "E-mail ou senha incorretos.")
-        
-        btn_login = tk.Button(card, text="Entrar", font=("Arial", 14, "bold"), bg=self.COR_BOTAO, fg="#ffffff", width=25, height=2, relief="flat", cursor="hand2", command=logar)
-        btn_login.pack(pady=(0, 20))
-        
-        btn_voltar = tk.Button(card, text="← Voltar", font=("Arial", 10), bg=self.COR_CARD, fg="#999999", relief="flat", bd=0, cursor="hand2", command=self.tela_inicial)
-        btn_voltar.pack()
-        
+        # Esqueci senha
+        label_esqueci = tk.Label(card, text="Esqueci minha senha", font=("Arial", 9), bg=self.COR_CARD, fg=self.COR_BOTAO, cursor="hand2")
+        label_esqueci.pack(pady=(5, 20))
+        label_esqueci.bind("<Button-1>", lambda e: self.tela_recuperar_senha_embedded())
+
+        # Botão entrar
+        tk.Button(
+            card,
+            text="Entrar",
+            font=("Arial", 14, "bold"),
+            bg=self.COR_BOTAO,
+            fg="#ffffff",
+            width=25,
+            height=2,
+            relief="flat",
+            cursor="hand2",
+            command=lambda: self._tentar_login(usuario_entry, senha_entry)
+        ).pack(pady=(0, 15))
+
+        tk.Button(
+            card,
+            text="← Voltar",
+            font=("Arial", 10),
+            bg=self.COR_CARD,
+            fg="#999999",
+            relief="flat",
+            bd=0,
+            cursor="hand2",
+            command=self.tela_inicial
+        ).pack()
+
         usuario_entry.focus_set()
-        self.root.bind("<Return>", lambda e: logar())
+
+    def _tentar_login(self, usuario_entry, senha_entry):
+        email = usuario_entry.get().strip()
+        senha = senha_entry.get()
+
+        usuario = verificar_usuario(email, senha)
+        if usuario:
+            messagebox.showinfo("Sucesso", f"Bem-vindo, {usuario['nome']}!")
+            if callable(self.on_login):
+                self.on_login(email, usuario['nome'], usuario['id'])
+        else:
+            messagebox.showerror("Erro", "E-mail ou senha incorretos.")
 
     # -------------------- TELA DE CADASTRO --------------------
     def tela_cadastro(self):
@@ -361,17 +363,15 @@ class App:
         
         # ===== CARD SEM LOGO =====
         card = tk.Frame(container, bg=self.COR_CARD, padx=25, pady=15)
-        card.place(relx=0.5, rely=0.45, anchor="center")
+        card.place(relx=0.5, rely=0.50, anchor="center")
 
         tk.Label(card, text="Cadastro", font=("Arial", 22, "bold"), bg=self.COR_CARD, fg=self.COR_TEXTO_ESCURO).pack(pady=(5, 15))
 
         # Variáveis
         nome_var = tk.StringVar()
         sobrenome_var = tk.StringVar()
-        usuario_var = tk.StringVar()
         senha_var = tk.StringVar()
         conf_var = tk.StringVar()
-        tel_var = tk.StringVar()
         email_var = tk.StringVar()
         estado_var = tk.StringVar(value="Selecione o estado")
 
@@ -392,13 +392,11 @@ class App:
         sobrenome_container.pack()
         
         nome_entry = nome_container._entry
-        sobrenome_entry = sobrenome_container._entry
 
-        # USUÁRIO - espaçamento reduzido
-        tk.Label(card, text="Usuário:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x", padx=5, pady=(8, 2))
-        usuario_container = self.criar_entry_arredondado(card, var=usuario_var, width=280)
-        usuario_container.pack(padx=5)
-        usuario_entry = usuario_container._entry
+        # E-MAIL - espaçamento reduzido
+        tk.Label(card, text="E-mail:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x", padx=5, pady=(8, 2))
+        email_container = self.criar_entry_arredondado(card, var=email_var, width=280)
+        email_container.pack(padx=5)
 
         # SENHA com Mostrar/Ocultar - espaçamento reduzido
         tk.Label(card, text="Senha:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x", padx=5, pady=(8, 2))
@@ -459,11 +457,6 @@ class App:
         btn_conf = tk.Button(frame_conf, text="Mostrar", font=("Arial", 9), bg=self.COR_CAMPO, fg=self.COR_BOTAO, relief="flat", bd=0, cursor="hand2", command=toggle_conf)
         btn_conf.place(x=220, y=8)
 
-        # E-MAIL - espaçamento reduzido
-        tk.Label(card, text="E-mail:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x", padx=5, pady=(8, 2))
-        email_container = self.criar_entry_arredondado(card, var=email_var, width=280)
-        email_container.pack(padx=5)
-
         # DATA DE NASCIMENTO - espaçamento reduzido
         tk.Label(card, text="Data de nascimento:", font=("Arial", 10), bg=self.COR_CARD, fg="#666666", anchor="w").pack(fill="x", padx=5, pady=(8, 2))
         frame_data = tk.Frame(card, bg=self.COR_CARD)
@@ -499,14 +492,13 @@ class App:
             nome = nome_var.get().strip()
             sobrenome = sobrenome_var.get().strip()
             nome_completo = f"{nome} {sobrenome}".strip()
-            usuario = usuario_var.get().strip()
             senha = senha_var.get()
             conf = conf_var.get()
             email = email_var.get().strip()
             estado = estado_var.get()
             dia, mes, ano = dia_cb.get(), mes_cb.get(), ano_cb.get()
 
-            if not all([nome, sobrenome, usuario, senha, conf, email]) or estado == "Selecione o estado":
+            if not all([nome, sobrenome, senha, conf, email]) or estado == "Selecione o estado":
                 msg_label.config(text="❌ Preencha todos os campos"); return
             if not data_valida(dia, mes, ano):
                 msg_label.config(text="❌ Data de nascimento inválida"); return
@@ -538,8 +530,70 @@ class App:
         self.root.bind("<Return>", lambda e: cadastrar())
 
     # -------------------- TELA DE RECUPERAR SENHA --------------------
-    def tela_recuperar_senha(self):
-        """Abre janela para redefinir senha com email + data de nascimento."""
+    def tela_recuperar_senha_embedded(self):
+        """Mostra o formulário de recuperar senha dentro do mesmo card (sem logo)."""
+        self.limpar_tela()
+
+        # Container principal
+        container = tk.Frame(self.root, bg=self.COR_FUNDO)
+        container.pack(expand=True, fill="both")
+
+        # ==== CARD CENTRAL (SEM LOGO) ====
+        card = tk.Frame(container, bg=self.COR_CARD, padx=25, pady=20)
+        card.place(relx=0.5, rely=0.50, anchor="center")   # centralizado
+        self.current_card = card
+
+        tk.Label(
+            card, text="Redefinir Senha",
+            font=("Arial", 22, "bold"),
+            bg=self.COR_CARD, fg=self.COR_TEXTO_ESCURO
+        ).pack(pady=(0, 20))
+
+        # --- EMAIL ---
+        tk.Label(card, text="E-mail:", font=("Arial", 10),
+                bg=self.COR_CARD, fg="#666", anchor="w").pack(fill="x")
+        email_cont = self.criar_entry_arredondado(card, width=280)
+        email_cont.pack(pady=(5, 15))
+        entry_email = email_cont._entry
+
+        # --- DATA DE NASCIMENTO ---
+        tk.Label(card, text="Data de Nascimento (DD/MM/AAAA):",
+                font=("Arial", 10), bg=self.COR_CARD, fg="#666",
+                anchor="w").pack(fill="x")
+
+        frame_data = tk.Frame(card, bg=self.COR_CARD)
+        frame_data.pack(pady=(5, 15))
+
+        entry_dia = tk.Entry(frame_data, width=4)
+        entry_dia.pack(side=tk.LEFT)
+        tk.Label(frame_data, text="/", bg=self.COR_CARD).pack(side=tk.LEFT)
+
+        entry_mes = tk.Entry(frame_data, width=4)
+        entry_mes.pack(side=tk.LEFT)
+        tk.Label(frame_data, text="/", bg=self.COR_CARD).pack(side=tk.LEFT)
+
+        entry_ano = tk.Entry(frame_data, width=6)
+        entry_ano.pack(side=tk.LEFT)
+
+        # --- NOVA SENHA ---
+        tk.Label(card, text="Nova Senha:", font=("Arial", 10),
+                bg=self.COR_CARD, fg="#666", anchor="w").pack(fill="x")
+
+        senha_cont = self.criar_entry_arredondado(card, width=280)
+        senha_cont.pack(pady=(5, 10))
+        entry_senha = senha_cont._entry
+        entry_senha.config(show="*")
+
+        # --- MENSAGEM DE ERRO ---
+        msg_label = tk.Label(
+            card, text="", font=("Arial", 9),
+            bg=self.COR_CARD, fg="#dc2626",
+            wraplength=260
+        )
+        msg_label.pack(pady=(5, 10))
+
+
+        # === BOTÃO REDEFINIR SENHA ===
         def reset_senha():
             email = entry_email.get().strip()
             dia = entry_dia.get().strip()
@@ -548,72 +602,52 @@ class App:
             nova_senha = entry_senha.get().strip()
 
             if not email or not dia or not mes or not ano or not nova_senha:
-                messagebox.showerror("Erro", "Preencha todos os campos.")
+                msg_label.config(text="❌ Preencha todos os campos.")
                 return
 
             try:
                 dia_int = int(dia)
                 mes_int = int(mes)
                 ano_int = int(ano)
-                
-                # Formatar com ano completo (4 dígitos)
                 data_nasc = f"{dia_int:02d}/{mes_int:02d}/{ano_int:04d}"
-                
-                # Validação básica de data
-                if not (1 <= dia_int <= 31 and 1 <= mes_int <= 12 and 1900 <= ano_int <= 2025):
-                    messagebox.showerror("Erro", "Data inválida.")
+                if not (1 <= dia_int <= 31 and 1 <= mes_int <= 12 and 1900 <= ano_int <= datetime.now().year):
+                    msg_label.config(text="❌ Data inválida.")
                     return
-                    
             except ValueError:
-                messagebox.showerror("Erro", "Data inválida. Digite números válidos.")
+                msg_label.config(text="❌ Data inválida.")
                 return
 
             usuario = db_manager.verificar_usuario_para_senha(email, data_nasc)
             if not usuario:
-                messagebox.showerror("Erro", "Usuário não encontrado ou data de nascimento incorreta.")
+                msg_label.config(text="❌ Usuário não encontrado ou data incorreta.")
                 return
 
             id_usuario = usuario[0]
             nova_senha_hash = hashlib.sha256(nova_senha.encode()).hexdigest()
             db_manager.atualizar_senha(id_usuario, nova_senha_hash)
             messagebox.showinfo("Sucesso", "Senha atualizada com sucesso!")
-            window.destroy()
+            self.tela_login()
 
-        # --- Interface ---
-        window = tk.Toplevel(self.root)
-        window.title("Recuperar Senha")
-        window.geometry("350x200")
-        window.resizable(False, False)
-
-        tk.Label(window, text="Email:").grid(row=0, column=0, padx=5, pady=5, sticky="e")
-        entry_email = tk.Entry(window, width=30)
-        entry_email.grid(row=0, column=1, padx=5, pady=5)
-
-        tk.Label(window, text="Data de Nascimento:").grid(row=1, column=0, padx=5, pady=5, sticky="e")
-        frame_data = tk.Frame(window)
-        frame_data.grid(row=1, column=1, padx=5, pady=5)
-
-        entry_dia = tk.Entry(frame_data, width=4)
-        entry_dia.pack(side=tk.LEFT)
-        tk.Label(frame_data, text="/").pack(side=tk.LEFT)
-        entry_mes = tk.Entry(frame_data, width=4)
-        entry_mes.pack(side=tk.LEFT)
-        tk.Label(frame_data, text="/").pack(side=tk.LEFT)
-        entry_ano = tk.Entry(frame_data, width=6)
-        entry_ano.pack(side=tk.LEFT)
-
-        tk.Label(window, text="Nova Senha:").grid(row=2, column=0, padx=5, pady=5, sticky="e")
-        entry_senha = tk.Entry(window, width=30, show="*")
-        entry_senha.grid(row=2, column=1, padx=5, pady=5)
-
-        # Adicionar hint para o usuário
-        tk.Label(window, text="Ex: 15/08/1990", font=("Arial", 8), fg="gray").grid(
-            row=3, column=1, sticky="w", padx=5
+        # Botões alinhados
+        btn_redefinir = tk.Button(
+            card, text="Redefinir Senha",
+            bg=self.COR_BOTAO, fg="#fff",
+            font=("Arial", 11, "bold"),
+            relief="flat", cursor="hand2",
+            command=reset_senha
         )
+        btn_redefinir.pack(pady=(5, 5))
 
-        tk.Button(window, text="Redefinir Senha", command=reset_senha).grid(
-            row=4, column=0, columnspan=2, pady=10
+        # 🔥 BOTÃO VOLTAR AGORA BEM EMBAIXO
+        btn_voltar = tk.Button(
+            card, text="← Voltar",
+            bg=self.COR_CARD, fg="#999",
+            font=("Arial", 10),
+            relief="flat", bd=0,
+            cursor="hand2",
+            command=self.tela_login
         )
+        btn_voltar.pack(pady=(5, 0))
 
 # ------------------------------------------------------------
 # TESTE

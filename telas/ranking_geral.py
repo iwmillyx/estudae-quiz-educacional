@@ -1,12 +1,3 @@
-# ------------------------------------------------------------
-# Aqui ficam:
-#  - seleção de CATEGORIA (ENEM ou MILITAR)
-#  - listagem do ranking somando TODAS as matérias da categoria
-# Observações:
-#  - os dados vêm do banco de dados (carregar_dados_ranking, ranking_geral)
-# ------------------------------------------------------------
-
-# arquivo: telas/ranking_geral.py
 import tkinter as tk
 from tkinter import font
 from dados.banco_dadosUsuarios import carregar_dados_ranking, ranking_geral
@@ -38,6 +29,7 @@ def mostrar_ranking_geral(root, dados=None, on_back=None):
 
     fonte_titulo = font.Font(family="Segoe UI", size=18, weight="bold")
     fonte_normal = font.Font(family="Segoe UI", size=11)
+    fonte_ranking = font.Font(family="Segoe UI", size=12)
 
     # ================= HEADER =================
     header = tk.Frame(root, bg=COR_VERDE, height=72)
@@ -111,52 +103,103 @@ def mostrar_ranking_geral(root, dados=None, on_back=None):
     )
     menu.grid(row=0, column=1, sticky="e")
 
-    # ================= LISTA (ranking) =================
+    # ================= LISTA (ranking) - TODOS OS USUÁRIOS =================
     list_frame = tk.Frame(scrollable, bg=COR_BG)
-    list_frame.pack(fill="both", expand=True)
+    list_frame.pack(fill="both", expand=True, pady=10)
 
-    listbox = tk.Listbox(
-        list_frame,
-        width=40,
-        height=12,
-        bg=COR_CARD,
-        fg=COR_TEXT,
-        font=("Consolas", 11),
-        bd=0,
-        highlightthickness=1,
-        highlightbackground="#e0e7e9",
-        activestyle="none"
-    )
-    listbox.pack(pady=4, padx=2, fill="both", expand=True)
+    # Container para os itens do ranking
+    ranking_container = tk.Frame(list_frame, bg=COR_CARD, bd=1, relief="solid")
+    ranking_container.pack(fill="both", expand=True, padx=2)
 
     # ================= FUNÇÃO DE ATUALIZAR =================
     def atualizar_lista():
         cat = categoria_var.get()
         lista = ranking_geral(dados, cat)
 
-        listbox.delete(0, tk.END)
+        # Limpa container
+        for widget in ranking_container.winfo_children():
+            widget.destroy()
 
+        # MOSTRA TODOS OS USUÁRIOS (removida a limitação de TOP 10)
         ultimo_pontos = None
         ultimo_rank = 0
 
         for i, (aluno, pontos) in enumerate(lista, start=1):
-
             pos = ultimo_rank if pontos == ultimo_pontos else i
             ultimo_pontos = pontos
             ultimo_rank = pos
 
-            medalha = "🥇" if pos == 1 else "🥈" if pos == 2 else "🥉" if pos == 3 else ""
+            # Cores e medalhas para TOP 3
+            if pos == 1:
+                medalha = "🥇"
+                cor_bg = "#FFF9E6"
+                cor_texto = "#FFB032"
+                peso = "bold"
+            elif pos == 2:
+                medalha = "🥈"
+                cor_bg = "#F5F5F5"
+                cor_texto = "#A9A9A9"
+                peso = "bold"
+            elif pos == 3:
+                medalha = "🥉"
+                cor_bg = "#FFF4E6"
+                cor_texto = "#B87333"
+                peso = "bold"
+            else:
+                medalha = ""
+                cor_bg = COR_CARD
+                cor_texto = COR_TEXT
+                peso = "normal"
 
-            linha = f"{pos}) {medalha} {aluno} - {pontos}"
-            listbox.insert(tk.END, linha)
+            # Frame de cada item
+            item_frame = tk.Frame(ranking_container, bg=cor_bg, height=40)
+            item_frame.pack(fill="x", padx=8, pady=4)
+            item_frame.pack_propagate(False)
 
-            cor = "#FFB032" if pos == 1 else "#A9A9A9" if pos == 2 else "#B87333" if pos == 3 else COR_TEXT
-            listbox.itemconfig(tk.END, fg=cor)
+            # Posição
+            tk.Label(
+                item_frame,
+                text=f"{pos})",
+                bg=cor_bg,
+                fg=cor_texto,
+                font=font.Font(family="Segoe UI", size=12, weight=peso),
+                width=3,
+                anchor="w"
+            ).pack(side="left", padx=(5, 0))
+
+            # Medalha (se tiver)
+            if medalha:
+                tk.Label(
+                    item_frame,
+                    text=medalha,
+                    bg=cor_bg,
+                    font=font.Font(size=14)
+                ).pack(side="left", padx=2)
+
+            # Nome do aluno
+            tk.Label(
+                item_frame,
+                text=aluno,
+                bg=cor_bg,
+                fg=cor_texto,
+                font=font.Font(family="Segoe UI", size=11, weight=peso),
+                anchor="w"
+            ).pack(side="left", fill="x", expand=True, padx=5)
+
+            # Pontos
+            tk.Label(
+                item_frame,
+                text=f"{pontos} XP",
+                bg=cor_bg,
+                fg=cor_texto,
+                font=font.Font(family="Segoe UI", size=11, weight=peso),
+                anchor="e"
+            ).pack(side="right", padx=5)
 
     categoria_var.trace_add("write", lambda *_: atualizar_lista())
     atualizar_lista()
 
-    # ================= BOTÃO VOLTAR (correto) =================
+    # ================= BOTÃO VOLTAR =================
     btn_frame = tk.Frame(scrollable, bg=COR_BG)
     btn_frame.pack(fill="x", pady=(10, 20))
 
@@ -180,9 +223,4 @@ def mostrar_ranking_geral(root, dados=None, on_back=None):
     )
     btn_back.pack(pady=10)
 
-
-    # automatic update on category change
-    categoria_var.trace_add("write", lambda *_: atualizar_lista())
-
-    atualizar_lista()
     return

@@ -1,0 +1,1202 @@
+[
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'O piloto ajustou o plano de voo antes da decolagem.' O termo 'ajustou' significa:",
+    "A": "Corrigiu ou adaptou",
+    "B": "Ignorou",
+    "C": "Atrasou",
+    "D": "Quebrou",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'A comunicação entre torre e aeronave deve ser clara.' O termo 'clara' significa:",
+    "A": "Confusa",
+    "B": "Objetiva e compreensível",
+    "C": "Breve",
+    "D": "Desnecessária",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Indique o sinônimo de 'decolagem':",
+    "A": "Aterrissagem",
+    "B": "Procedimento",
+    "C": "Partida",
+    "D": "Controle",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'O mecânico revisou o motor.' O verbo está no tempo:",
+    "A": "Presente",
+    "B": "Passado",
+    "C": "Futuro",
+    "D": "Imperativo",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Qual das opções indica um adjetivo?",
+    "A": "Voar",
+    "B": "Azul",
+    "C": "Correr",
+    "D": "Aeronave",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'O comandante autorizou o pouso.' O plural de 'comandante' é:",
+    "A": "Comandantes",
+    "B": "Comandanteis",
+    "C": "Comandante-s",
+    "D": "Comandantens",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A palavra 'rápido' é classificada como:",
+    "A": "Substantivo",
+    "B": "Adjunto adnominal",
+    "C": "Adjetivo",
+    "D": "Pronome",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'O avião retornou ao hangar.' A palavra 'avião' é um:",
+    "A": "Verbo",
+    "B": "Substantivo",
+    "C": "Adjetivo",
+    "D": "Advérbio",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A forma correta do plural de 'órgão' é:",
+    "A": "Órgãos",
+    "B": "Órgãoes",
+    "C": "Orgãos",
+    "D": "Órgães",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'O passageiro embarcou cedo.' O antônimo de 'cedo' é:",
+    "A": "Rápido",
+    "B": "Lento",
+    "C": "Tarde",
+    "D": "Logo",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'A aeronave, que havia sido revisada, apresentou falha no voo.' O trecho 'que havia sido revisada' é:",
+    "A": "Oração coordenada",
+    "B": "Oração subordinada adjetiva explicativa",
+    "C": "Aposição",
+    "D": "Oração subordinada substantiva",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O plural de 'avião turboélice' é:",
+    "A": "Aviões turboélices",
+    "B": "Aviões turboélice",
+    "C": "Aviões turboélicios",
+    "D": "Avião turboélices",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'O piloto pediu que os passageiros permanecessem sentados.' A forma verbal 'permanecessem' expressa:",
+    "A": "Desejo",
+    "B": "Certeza",
+    "C": "Ação concluída",
+    "D": "Hipótese",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Assinale a opção com um advérbio:",
+    "A": "Segurança",
+    "B": "Rápido",
+    "C": "Facilmente",
+    "D": "Hangar",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'O avião pousou apesar da forte chuva.' A expressão 'apesar de' indica:",
+    "A": "Condição",
+    "B": "Concessão",
+    "C": "Causa",
+    "D": "Finalidade",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "'Houve atrasos no embarque.' A forma verbal é:",
+    "A": "Impessoal",
+    "B": "Plural necessária",
+    "C": "Verbal transitiva",
+    "D": "Flexionada no particípio",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "'Se houver tempo, revisaremos o checklist.' O período contém:",
+    "A": "Causa",
+    "B": "Condição",
+    "C": "Oposição",
+    "D": "Conclusão",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A regência verbal incorreta é:",
+    "A": "Simpatizei com ela",
+    "B": "Preferi o avião ao navio",
+    "C": "Visamos a segurança",
+    "D": "Assisti o pouso",
+    "correta": "D"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'O copiloto observou atentamente os instrumentos.' A palavra 'atentamente' indica:",
+    "A": "Modo",
+    "B": "Tempo",
+    "C": "Afirmação",
+    "D": "Negação",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O antônimo de 'inevitável' é:",
+    "A": "Rápido",
+    "B": "Possível",
+    "C": "Evitável",
+    "D": "Seguro",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'O técnico, ao verificar o sistema hidráulico, constatou falhas que poderiam ter sido evitadas.' O termo 'que' retoma:",
+    "A": "Técnico",
+    "B": "Sistema hidráulico",
+    "C": "Falhas",
+    "D": "Constatação",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A voz passiva de 'A torre autorizou o pouso' é:",
+    "A": "O pouso foi autorizado pela torre",
+    "B": "A torre fora autorizada pelo pouso",
+    "C": "O pouso autorizou a torre",
+    "D": "A torre tinha autorizado o pouso",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'Embora os ventos fossem fortes, a aeronave manteve estabilidade.' A conjunção indica:",
+    "A": "Condição",
+    "B": "Concessão",
+    "C": "Tempo",
+    "D": "Finalidade",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Identifique o erro de concordância:",
+    "A": "Houveram falhas no procedimento",
+    "B": "Foram revisados os equipamentos",
+    "C": "Existiram problemas mecânicos",
+    "D": "Ocorreram atrasos no hangar",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A forma correta da crase é:",
+    "A": "Entregou o relatório à piloto",
+    "B": "Dirigiu-se a àrea restrita",
+    "C": "O técnico vai à consertar a asa",
+    "D": "O avião voltou à aproximadamente 20h",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Em 'Após verificar o motor, o mecânico liberou o avião', o termo reduzido é:",
+    "A": "Oração reduzida de gerúndio",
+    "B": "Oração reduzida de particípio",
+    "C": "Oração reduzida de infinitivo",
+    "D": "Oração subordinada desenvolvida",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A regência correta é:",
+    "A": "Informaram ao piloto o problema",
+    "B": "Informaram o piloto o problema",
+    "C": "Informaram ao problema o piloto",
+    "D": "Informaram de o piloto o problema",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "'O comandante falou calmamente com a tripulação.' O termo destacado é adjunto adverbial de:",
+    "A": "Modo",
+    "B": "Tempo",
+    "C": "Causa",
+    "D": "Afirmação",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'O avião não só decolou rapidamente como também realizou a manobra com precisão.' O período apresenta:",
+    "A": "Ambiguidade",
+    "B": "Elipse",
+    "C": "Paralelismo sintático",
+    "D": "Pleonasmo",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O uso da vírgula está correto em:",
+    "A": "Os mecânicos, revisaram o painel.",
+    "B": "O comandante confirmou, que pousaria.",
+    "C": "Quando terminou a inspeção, liberou o helicóptero.",
+    "D": "Falhou, porém no teste final.",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O valor de 7 + 5 × 2 é:",
+    "A": "19",
+    "B": "17",
+    "C": "24",
+    "D": "27",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A fração equivalente a 0,5 é:",
+    "A": "1/2",
+    "B": "1/3",
+    "C": "2/3",
+    "D": "1/4",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A expressão 3² é igual a:",
+    "A": "3",
+    "B": "6",
+    "C": "9",
+    "D": "12",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A soma dos ângulos internos de um triângulo é:",
+    "A": "180°",
+    "B": "360°",
+    "C": "90°",
+    "D": "270°",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O valor de √81 é:",
+    "A": "7",
+    "B": "8",
+    "C": "9",
+    "D": "10",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Se um avião percorre 300 km em 3 horas, sua velocidade média é:",
+    "A": "50 km/h",
+    "B": "75 km/h",
+    "C": "100 km/h",
+    "D": "150 km/h",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A área de um quadrado de lado 4 é:",
+    "A": "8",
+    "B": "12",
+    "C": "16",
+    "D": "20",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O perímetro de um triângulo com lados 3, 4 e 5 é:",
+    "A": "9",
+    "B": "10",
+    "C": "11",
+    "D": "12",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O sucessor de -3 é:",
+    "A": "-5",
+    "B": "-4",
+    "C": "-2",
+    "D": "3",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A porcentagem equivalente a 0,2 é:",
+    "A": "10%",
+    "B": "15%",
+    "C": "20%",
+    "D": "25%",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A expressão (4 + 6) ÷ 2 é igual a:",
+    "A": "4",
+    "B": "5",
+    "C": "6",
+    "D": "8",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Em um hangar trabalham 24 militares. Se esse número representa 30% do efetivo total, o efetivo total é:",
+    "A": "60",
+    "B": "70",
+    "C": "80",
+    "D": "90",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A equação 3x − 9 = 0 tem solução:",
+    "A": "x = 1",
+    "B": "x = 2",
+    "C": "x = 3",
+    "D": "x = 4",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O valor de 2³ × 3² é:",
+    "A": "36",
+    "B": "54",
+    "C": "72",
+    "D": "108",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Uma aeronave consumiu 1200 litros de combustível em 3 horas de voo. O consumo médio é:",
+    "A": "300 L/h",
+    "B": "350 L/h",
+    "C": "400 L/h",
+    "D": "450 L/h",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A área de um triângulo de base 10 cm e altura 6 cm é:",
+    "A": "20 cm²",
+    "B": "25 cm²",
+    "C": "30 cm²",
+    "D": "60 cm²",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A soma dos termos de uma PA com 5 termos, primeiro termo 2 e último termo 10 é:",
+    "A": "25",
+    "B": "30",
+    "C": "35",
+    "D": "40",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A mediana do conjunto {3, 8, 12, 14, 20} é:",
+    "A": "8",
+    "B": "12",
+    "C": "14",
+    "D": "20",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Um militar percorre 5 km a pé diariamente. Quantos quilômetros ele percorre em 4 semanas (28 dias)?",
+    "A": "100 km",
+    "B": "120 km",
+    "C": "130 km",
+    "D": "140 km",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A raiz da equação x² − 16 = 0 é:",
+    "A": "±2",
+    "B": "±4",
+    "C": "±6",
+    "D": "±8",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O valor de log₂(32) é:",
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "6",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A distância entre os pontos A(2, 3) e B(6, 9) é:",
+    "A": "4",
+    "B": "6",
+    "C": "8",
+    "D": "10",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Uma PA tem a₁ = 7 e razão r = 4. O 20º termo é:",
+    "A": "79",
+    "B": "83",
+    "C": "91",
+    "D": "107",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A probabilidade de sair número par em um dado comum é:",
+    "A": "1/2",
+    "B": "1/3",
+    "C": "2/3",
+    "D": "3/4",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Se f(x) = x² − 6x + 8, o valor mínimo da função é:",
+    "A": "−1",
+    "B": "0",
+    "C": "1",
+    "D": "2",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O determinante da matriz [[2, 1], [5, 3]] é:",
+    "A": "1",
+    "B": "3",
+    "C": "5",
+    "D": "7",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O volume de um cilindro de raio 5 cm e altura 12 cm é:",
+    "A": "150π",
+    "B": "200π",
+    "C": "250π",
+    "D": "300π",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A soma dos infinitos termos de uma PG com a₁ = 9 e razão r = 2/3 é:",
+    "A": "12",
+    "B": "18",
+    "C": "27",
+    "D": "30",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O coeficiente angular da reta que passa pelos pontos (−1, 4) e (3, 12) é:",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A solução do sistema: 2x + y = 7 e 3x − y = 8 é:",
+    "A": "x = 1, y = 5",
+    "B": "x = 2, y = 3",
+    "C": "x = 3, y = 1",
+    "D": "x = 4, y = −1",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "The word 'pilot' means:",
+    "A": "Mechanic",
+    "B": "Co-pilot",
+    "C": "Aircraft operator",
+    "D": "Passenger",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "The opposite of 'fast' is:",
+    "A": "Quick",
+    "B": "Slow",
+    "C": "Short",
+    "D": "Tall",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Choose the correct plural of 'aircraft':",
+    "A": "Aircrafts",
+    "B": "Aircraft",
+    "C": "Aircrafs",
+    "D": "Aircraftes",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "The word 'tower' refers to:",
+    "A": "Control center",
+    "B": "Engine part",
+    "C": "Runway",
+    "D": "Fuel tank",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "The verb 'to land' means:",
+    "A": "To take off",
+    "B": "To fly",
+    "C": "To arrive on the ground",
+    "D": "To refuel",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "The correct translation of 'weather' is:",
+    "A": "Tempo (clima)",
+    "B": "Tempo (hora)",
+    "C": "Vento",
+    "D": "Neblina",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Choose the correct article: '___ airplane is ready.'",
+    "A": "A",
+    "B": "An",
+    "C": "The",
+    "D": "No article",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "The expression 'on time' means:",
+    "A": "Late",
+    "B": "Early",
+    "C": "Punctual",
+    "D": "Impossible",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "The past tense of 'go' is:",
+    "A": "Goed",
+    "B": "Goes",
+    "C": "Went",
+    "D": "Goen",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Choose the correct option: 'The pilot ___ very experienced.'",
+    "A": "are",
+    "B": "is",
+    "C": "be",
+    "D": "were",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "The expression 'runway closed due to fog' means:",
+    "A": "A pista está aberta por causa da neblina",
+    "B": "A pista está fechada por causa da neblina",
+    "C": "A pista está aberta e sem neblina",
+    "D": "A pista está fechada por manutenção",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Choose the correct sentence:",
+    "A": "The planes is landing now.",
+    "B": "The plane are landing now.",
+    "C": "The plane is landing now.",
+    "D": "Plane the is landing now.",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "In the sentence 'The mechanic checked the engine carefully', the word 'carefully' is:",
+    "A": "Adjective",
+    "B": "Verb",
+    "C": "Adverb",
+    "D": "Conjunction",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "The correct translation of 'fuel consumption' is:",
+    "A": "Consumo de energia",
+    "B": "Consumo de combustível",
+    "C": "Tanque de combustível",
+    "D": "Economia de combustível",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "The comparative form of 'safe' is:",
+    "A": "Safer",
+    "B": "More safe",
+    "C": "Safier",
+    "D": "Most safe",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "In 'Pilots must follow procedures', the word 'must' indicates:",
+    "A": "Permission",
+    "B": "Obligation",
+    "C": "Ability",
+    "D": "Possibility",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Fill the blank: 'The crew ___ preparing for takeoff.'",
+    "A": "is",
+    "B": "are",
+    "C": "be",
+    "D": "was",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "The antonym of 'dangerous' is:",
+    "A": "Risk",
+    "B": "Secure",
+    "C": "Safe",
+    "D": "Soft",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "In the sentence 'The technician fixed the problem', the word 'fixed' is in the:",
+    "A": "Present",
+    "B": "Past",
+    "C": "Future",
+    "D": "Conditional",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "The correct translation of 'air traffic control' is:",
+    "A": "Controle de velocidade da aeronave",
+    "B": "Controle de tráfego aéreo",
+    "C": "Controle da cabine",
+    "D": "Controle da torre elétrica",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "In the sentence 'The aircraft was grounded due to a critical malfunction', the phrase 'was grounded' means:",
+    "A": "Foi abastecida",
+    "B": "Foi impedida de voar",
+    "C": "Foi autorizada a decolar",
+    "D": "Pousou rapidamente",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Choose the sentence in passive voice:",
+    "A": "The crew performed the checklist.",
+    "B": "The checklist was performed by the crew.",
+    "C": "The crew was performing the checklist.",
+    "D": "They perform the checklist daily.",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "The best synonym for 'accurate' is:",
+    "A": "Approximate",
+    "B": "Correct",
+    "C": "Fast",
+    "D": "Complex",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "The correct conditional sentence is:",
+    "A": "If the weather improves, the flight will depart.",
+    "B": "If the weather improved, the flight departs.",
+    "C": "If the weather improves, the flight departed.",
+    "D": "If the weather improve, the flight will depart.",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "In 'Had the pilot checked the system, the issue would not have happened', the structure is:",
+    "A": "Zero conditional",
+    "B": "First conditional",
+    "C": "Second conditional",
+    "D": "Third conditional",
+    "correta": "D"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "The expression 'to comply with regulations' means:",
+    "A": "Ignorar normas",
+    "B": "Criar normas",
+    "C": "Cumprir normas",
+    "D": "Revisar normas",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "In the expression 'highly maneuverable aircraft', the word 'maneuverable' means:",
+    "A": "Lenta para virar",
+    "B": "Difícil de operar",
+    "C": "Capaz de fazer manobras com facilidade",
+    "D": "Impossível de manobrar",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Choose the correct option: 'The report, ___ was written by the commander, explained the incident.'",
+    "A": "that",
+    "B": "which",
+    "C": "what",
+    "D": "who",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "The best translation of 'engine failure during climb' is:",
+    "A": "Falha do motor durante a subida",
+    "B": "Manutenção do motor na subida",
+    "C": "Motor ligado na subida",
+    "D": "Motor desligado após a subida",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "The meaning of 'the aircraft encountered severe turbulence' is:",
+    "A": "A aeronave evitou turbulência",
+    "B": "A aeronave encontrou turbulência leve",
+    "C": "A aeronave encontrou turbulência severa",
+    "D": "A aeronave criou turbulência",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A unidade de força no Sistema Internacional é:",
+    "A": "Joule",
+    "B": "Pascal",
+    "C": "Newton",
+    "D": "Watt",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O valor aproximado da gravidade na superfície da Terra é:",
+    "A": "2 m/s²",
+    "B": "5 m/s²",
+    "C": "9,8 m/s²",
+    "D": "15 m/s²",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A velocidade média de um avião que percorre 600 km em 2 horas é:",
+    "A": "200 km/h",
+    "B": "300 km/h",
+    "C": "400 km/h",
+    "D": "300 km/h",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A energia cinética depende da:",
+    "A": "Velocidade e massa",
+    "B": "Altura e massa",
+    "C": "Aceleração apenas",
+    "D": "Pressão do ar",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A força que puxa objetos para o centro da Terra é chamada de:",
+    "A": "Elástica",
+    "B": "Centrífuga",
+    "C": "Gravitacional",
+    "D": "Magnética",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A velocidade do som no ar é aproximadamente:",
+    "A": "150 m/s",
+    "B": "340 m/s",
+    "C": "600 m/s",
+    "D": "1200 m/s",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A pressão é definida como:",
+    "A": "Força × área",
+    "B": "Força ÷ área",
+    "C": "Massa × aceleração",
+    "D": "Energia ÷ tempo",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Uma onda sonora é classificada como:",
+    "A": "Eletromagnética",
+    "B": "Longitudinal",
+    "C": "Transversal",
+    "D": "Radiante",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A terceira lei de Newton afirma que:",
+    "A": "A energia se conserva",
+    "B": "A toda ação corresponde uma reação",
+    "C": "F = m · a",
+    "D": "Corpos permanecem em repouso",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A unidade de trabalho mecânico no SI é:",
+    "A": "Newton",
+    "B": "Joule",
+    "C": "Watt",
+    "D": "Ampère",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Um avião acelera de 50 m/s para 70 m/s em 10 s. Sua aceleração média é:",
+    "A": "1 m/s²",
+    "B": "2 m/s²",
+    "C": "3 m/s²",
+    "D": "4 m/s²",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A resistência equivalente de dois resistores de 6 Ω e 3 Ω em paralelo é:",
+    "A": "2 Ω",
+    "B": "3 Ω",
+    "C": "4 Ω",
+    "D": "9 Ω",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Um corpo de massa 8 kg sofre uma força resultante de 24 N. A aceleração é:",
+    "A": "2 m/s²",
+    "B": "3 m/s²",
+    "C": "4 m/s²",
+    "D": "6 m/s²",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A frequência de uma onda de 2 m de comprimento e velocidade de 40 m/s é:",
+    "A": "10 Hz",
+    "B": "20 Hz",
+    "C": "30 Hz",
+    "D": "40 Hz",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A energia potencial gravitacional de um corpo de 2 kg a 10 m de altura é (g = 10 m/s²):",
+    "A": "20 J",
+    "B": "40 J",
+    "C": "100 J",
+    "D": "200 J",
+    "correta": "D"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A potência consumida por um equipamento que usa 120 J em 3 s é:",
+    "A": "10 W",
+    "B": "20 W",
+    "C": "30 W",
+    "D": "40 W",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Um avião faz curva de raio 400 m a 80 m/s. A força centrípeta para uma massa de 5000 kg é:",
+    "A": "40 kN",
+    "B": "80 kN",
+    "C": "100 kN",
+    "D": "120 kN",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A dilatação linear de um metal depende de:",
+    "A": "Velocidade",
+    "B": "Temperatura",
+    "C": "Pressão",
+    "D": "Volume",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Se a intensidade da corrente elétrica dobra em um resistor, a potência dissipada:",
+    "A": "Cai pela metade",
+    "B": "Permanece igual",
+    "C": "Dobra",
+    "D": "Quadruplica",
+    "correta": "D"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Um objeto eletrizado negativamente possui:",
+    "A": "Excesso de prótons",
+    "B": "Excesso de elétrons",
+    "C": "Déficit de nêutrons",
+    "D": "Déficit de elétrons",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A energia armazenada em uma mola de constante 400 N/m comprimida 5 cm é:",
+    "A": "0,25 J",
+    "B": "0,5 J",
+    "C": "1,0 J",
+    "D": "2,0 J",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A força resultante em um avião de massa 10.000 kg que acelera de 150 m/s para 160 m/s em 5 s é:",
+    "A": "10 kN",
+    "B": "20 kN",
+    "C": "25 kN",
+    "D": "30 kN",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Uma lente convergente de 25 cm forma imagem real de um objeto a 50 cm. A distância da imagem é:",
+    "A": "25 cm",
+    "B": "50 cm",
+    "C": "75 cm",
+    "D": "100 cm",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O trabalho realizado por uma força variável é determinado:",
+    "A": "Pela área do gráfico F × t",
+    "B": "Pela área do gráfico F × x",
+    "C": "Pela área do gráfico v × t",
+    "D": "Pela área do gráfico a × t",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Se a resistência é mantida constante e a tensão aplicada dobra, a potência:",
+    "A": "Dobra",
+    "B": "Triplica",
+    "C": "Quadruplica",
+    "D": "Permanece constante",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Uma onda tem velocidade 300 m/s e frequência 600 Hz. O comprimento de onda é:",
+    "A": "0,2 m",
+    "B": "0,3 m",
+    "C": "0,4 m",
+    "D": "0,5 m",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Em uma transformação adiabática, ocorre:",
+    "A": "Troca de calor com o ambiente",
+    "B": "Ausência de troca de calor",
+    "C": "Temperatura constante",
+    "D": "Pressão constante",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O efeito Doppler causa aumento da frequência percebida quando:",
+    "A": "A fonte se afasta",
+    "B": "O observador se afasta",
+    "C": "A fonte se aproxima",
+    "D": "Nada se move",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A força centrípeta de um avião fazendo curva aumenta quando:",
+    "A": "A velocidade diminui",
+    "B": "O raio aumenta",
+    "C": "A massa diminui",
+    "D": "A velocidade aumenta",
+    "correta": "D"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Um transformador ideal reduz tensão de 1200 V para 120 V. A relação entre espiras é:",
+    "A": "1:10",
+    "B": "1:5",
+    "C": "10:1",
+    "D": "5:1",
+    "correta": "C"
+  }
+]

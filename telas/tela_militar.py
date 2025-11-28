@@ -1,47 +1,176 @@
 import tkinter as tk
 from tkinter import ttk
-from dados.banco_dadosUsuarios import obter_xp_materias_quiz
-from dados.banco_dadosUsuarios import importar_perguntas, obter_perguntas_por_nivel
-
+from dados.banco_dadosUsuarios import obter_xp_materias_quiz, obter_niveis_completados_materia
 
 
 def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=None):
     """Monta a tela de Concurso Militar dentro da janela principal"""
 
-
     # Obter XP real do usuário no quiz Militar (id_quiz=2)
     xp_por_materia = obter_xp_materias_quiz(usuario[0], id_quiz=2) if usuario else {}
 
+    # Obter níveis realmente completados por matéria
+    niveis_completados = obter_niveis_completados_materia(usuario[0], id_quiz=2) if usuario else {}
 
     # Limpa a tela
     for w in root.winfo_children():
         w.destroy()
 
-
-    root.title("EstudAe - Militar")
+    root.title("Militar")
     root.config(bg="#005227")
 
-
-    # Dados das matérias (ATUALIZADO COM XP)
-    materias = {
-    "Matemática": {"max": 3, "current": 0, "xp": xp_por_materia.get("Matemática", 0), "xp_necessario": {1:0,2:100,3:250}},
-    "Português":  {"max": 3, "current": 0, "xp": xp_por_materia.get("Português", 0),  "xp_necessario": {1:0,2:100,3:250}},
-    "Física":     {"max": 3, "current": 0, "xp": xp_por_materia.get("Física", 0),     "xp_necessario": {1:0,2:100,3:250}},
-    "Química":    {"max": 3, "current": 0, "xp": xp_por_materia.get("Química", 0),    "xp_necessario": {1:0,2:100,3:250}},
-    "História":   {"max": 3, "current": 0, "xp": xp_por_materia.get("História", 0),   "xp_necessario": {1:0,2:100,3:250}},
-    "Geografia":  {"max": 3, "current": 0, "xp": xp_por_materia.get("Geografia", 0),  "xp_necessario": {1:0,2:100,3:250}},
-    "Inglês":     {"max": 3, "current": 0, "xp": xp_por_materia.get("Inglês", 0),     "xp_necessario": {1:0,2:100,3:250}},
+    # ============ MAPEAMENTO CORRETO DAS MATÉRIAS COM SUFIXOS ============
+    materias_por_concurso = {
+        "Exército": [
+            "Português (Exército)", 
+            "Matemática (Exército)", 
+            "História (Exército)", 
+            "Geografia (Exército)", 
+            "Inglês (Exército)", 
+            "Física (Exército)", 
+            "Química (Exército)"
+        ],
+        "Marinha": [
+            "Português (Marinha)", 
+            "Matemática (Marinha)", 
+            "Física (Marinha)", 
+            "Química (Marinha)", 
+            "Inglês (Marinha)"
+        ],
+        "Aeronáutica": [
+            "Português (Aeronáutica)", 
+            "Matemática (Aeronáutica)", 
+            "Inglês (Aeronáutica)", 
+            "Física (Aeronáutica)"
+        ]
     }
 
+    # Dados das matérias (TODAS COM NOME COMPLETO DO BANCO)
+    todas_materias = {
+        # EXÉRCITO
+        "Matemática (Exército)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Matemática (Exército)", 0), 
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Matemática (Exército)", [])
+        },
+        "Português (Exército)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Português (Exército)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Português (Exército)", [])
+        },
+        "Física (Exército)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Física (Exército)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Física (Exército)", [])
+        },
+        "Química (Exército)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Química (Exército)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Química (Exército)", [])
+        },
+        "História (Exército)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("História (Exército)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("História (Exército)", [])
+        },
+        "Geografia (Exército)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Geografia (Exército)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Geografia (Exército)", [])
+        },
+        "Inglês (Exército)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Inglês (Exército)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Inglês (Exército)", [])
+        },
+        
+        # MARINHA
+        "Português (Marinha)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Português (Marinha)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Português (Marinha)", [])
+        },
+        "Matemática (Marinha)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Matemática (Marinha)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Matemática (Marinha)", [])
+        },
+        "Física (Marinha)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Física (Marinha)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Física (Marinha)", [])
+        },
+        "Química (Marinha)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Química (Marinha)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Química (Marinha)", [])
+        },
+        "Inglês (Marinha)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Inglês (Marinha)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Inglês (Marinha)", [])
+        },
+        
+        # AERONÁUTICA
+        "Português (Aeronáutica)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Português (Aeronáutica)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Português (Aeronáutica)", [])
+        },
+        "Matemática (Aeronáutica)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Matemática (Aeronáutica)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Matemática (Aeronáutica)", [])
+        },
+        "Inglês (Aeronáutica)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Inglês (Aeronáutica)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Inglês (Aeronáutica)", [])
+        },
+        "Física (Aeronáutica)": {
+            "max": 3, 
+            "current": 0, 
+            "xp": xp_por_materia.get("Física (Aeronáutica)", 0),
+            "xp_necessario": {1:0, 2:100, 3:250},
+            "niveis_feitos": niveis_completados.get("Física (Aeronáutica)", [])
+        },
+    }
 
-
-
-    tela_atual = {"nome": "categorias"}
+    tela_atual = {"nome": "categorias", "concurso": None}
     materia_selecionada = {"nome": None}
 
-
     # Atualiza o nível atual baseado no XP do usuário
-    for mat, data in materias.items():
+    for mat, data in todas_materias.items():
         xp = data["xp"]
         current_level = 0
         for nivel, xp_req in sorted(data["xp_necessario"].items()):
@@ -49,19 +178,20 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
                current_level = nivel
         data["current"] = current_level
 
-
-
-
     # ==================== FUNÇÕES ====================
    
     def limpar_conteudo():
         for w in main_frame.winfo_children():
             w.destroy()
 
-
     def mostrar_categorias():
         limpar_conteudo()
+        
+        # Desvincular eventos de scroll
+        root.unbind_all("<MouseWheel>")
+        
         tela_atual["nome"] = "categorias"
+        tela_atual["concurso"] = None
        
         header = tk.Frame(main_frame, bg="#005227", height=50)
         header.pack(fill="x", pady=(10, 0))
@@ -89,7 +219,13 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
         btn_frame = tk.Frame(main_frame, bg="#005227")
         btn_frame.pack(expand=True)
        
-        for i, (txt, emoji) in enumerate([("Exército", "🪖"), ("Marinha", "⚓"), ("Aeronáutica", "✈️")]):
+        concursos = [
+            ("Exército", "🪖"),
+            ("Marinha", "⚓"),
+            ("Aeronáutica", "✈️")
+        ]
+        
+        for txt, emoji in concursos:
             tk.Button(
                 btn_frame,
                 text=f"{emoji} {txt}",
@@ -101,13 +237,24 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
                 relief="flat",
                 activebackground="#02a677",
                 activeforeground="white",
-                command=mostrar_materias
+                command=lambda c=txt: mostrar_materias(c)
             ).pack(pady=12)
 
+    def extrair_nome_display(nome_completo):
+        """Remove o sufixo para exibição: 'Português (Exército)' -> 'Português'"""
+        return nome_completo.split(" (")[0]
 
-    def mostrar_materias():
+    def mostrar_materias(concurso):
         limpar_conteudo()
+        
+        # Desvincular eventos anteriores
+        root.unbind_all("<MouseWheel>")
+        
         tela_atual["nome"] = "materias"
+        tela_atual["concurso"] = concurso
+       
+        # Matérias do concurso (já com sufixo completo)
+        materias_concurso = materias_por_concurso.get(concurso, [])
        
         header = tk.Frame(main_frame, bg="#005227", height=50)
         header.pack(fill="x", pady=(10, 0))
@@ -141,29 +288,33 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
        
         tk.Label(
             scrollable_frame,
-            text="Matérias - Militar",
+            text=f"Matérias - {concurso}",
             font=("Helvetica", 16, "bold"),
             bg="#005227",
             fg="white"
         ).pack(anchor="w", padx=20, pady=(15, 10))
        
-        for name in materias.keys():
+        # Exibir botões com nome LIMPO mas guardar nome COMPLETO
+        for nome_completo in materias_concurso:
+            nome_display = extrair_nome_display(nome_completo)
+            
             tk.Button(
                 scrollable_frame,
-                text=name,
+                text=nome_display,
                 font=("Segoe UI", 12),
                 bg="#03bb85",
                 fg="black",
                 activebackground="#02a677",
                 activeforeground="white",
                 relief="flat",
-                command=lambda n=name: mostrar_detalhe_materia(n, canvas, scrollable_frame)
+                command=lambda n=nome_completo: mostrar_detalhe_materia(n, canvas, scrollable_frame)
             ).pack(fill="x", padx=20, pady=5)
        
         def _on_mousewheel(event):
             canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+        
+        root.unbind_all("<MouseWheel>")
         canvas.bind_all("<MouseWheel>", _on_mousewheel)
-
 
     def mostrar_detalhe_materia(nome_materia, canvas_pai, frame_pai):
         """Mostra os detalhes e níveis COM SISTEMA DE DESBLOQUEIO"""
@@ -173,29 +324,20 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
         for w in frame_pai.winfo_children():
             w.destroy()
        
-        data = materias[nome_materia]
+        data = todas_materias[nome_materia]
         max_lvl = data["max"]
         current = data.get("current", 0)
         xp_materia = data.get("xp", 0)
         xp_necessario = data.get("xp_necessario", {1: 0, 2: 100, 3: 250})
-       
-        # Botão voltar
-        tk.Button(
-            frame_pai,
-            text="← Voltar",
-            font=("Segoe UI", 11, "bold"),
-            bg="#03bb85",
-            fg="black",
-            activebackground="#02a677",
-            activeforeground="white",
-            relief="flat",
-            command=lambda: mostrar_materias()
-        ).pack(anchor="w", padx=20, pady=(10, 15))
+        niveis_feitos = data.get("niveis_feitos", [])
+        
+        # Nome para exibição (sem sufixo)
+        nome_display = extrair_nome_display(nome_materia)
        
         # Título
         tk.Label(
             frame_pai,
-            text=nome_materia,
+            text=nome_display,
             font=("Segoe UI Semibold", 18),
             bg="#005227",
             fg="white"
@@ -210,8 +352,9 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
             fg="#68ddbd"
         ).pack(anchor="w", padx=20, pady=(0, 10))
        
-        # Barra de progresso
-        pct = int(100 * current / max_lvl) if max_lvl else 0
+        # Barra de progresso baseada em níveis completados
+        niveis_completos = len(niveis_feitos)
+        pct = int(100 * niveis_completos / max_lvl) if max_lvl > 0 else 0
        
         progress_frame = tk.Frame(frame_pai, bg="#005227")
         progress_frame.pack(fill="x", padx=20, pady=(5, 15))
@@ -227,10 +370,10 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
        
         style = ttk.Style()
         style.configure("TProgressbar", thickness=15, troughcolor="white", background="#68ddbd")
-       
+    
         tk.Label(
             frame_pai,
-            text=f"Progresso: {pct}% ({current} de {max_lvl} níveis completados)",
+            text=f"Progresso: {pct}% ({niveis_completos} de {max_lvl} níveis completados)",
             font=("Segoe UI", 10),
             bg="#005227",
             fg="white"
@@ -252,7 +395,7 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
         for nivel in range(1, max_lvl + 1):
             xp_requerido = xp_necessario.get(nivel, 0)
             esta_desbloqueado = xp_materia >= xp_requerido
-            nivel_completado = nivel <= current
+            nivel_completado = nivel in niveis_feitos
            
             # Card
             nivel_card = tk.Frame(levels_container, bg="#68ddbd", relief="raised", bd=2)
@@ -353,14 +496,11 @@ def montar_militar(root, usuario=None, nome=None, on_voltar=None, on_fazer_quiz=
         canvas_pai.update_idletasks()
         canvas_pai.configure(scrollregion=canvas_pai.bbox("all"))
 
-
     # Layout principal
     main_frame = tk.Frame(root, bg="#005227")
     main_frame.pack(fill="both", expand=True)
    
     mostrar_categorias()
-
-
 
 
 # Teste
@@ -369,26 +509,36 @@ if __name__ == "__main__":
     root.geometry("375x812")
     root.resizable(False, False)
    
+    usuario_teste = (1, "Usuario Teste")
+   
     def voltar_teste():
         print("Voltando...")
+        root.destroy()
    
-    def quiz_militar(materia, nivel):
-    # id_nivel baseado em matéria e nível
-        id_nivel = f"{materia}_{nivel}"
-
-    # Pega até 10 perguntas do banco
-        perguntas = obter_perguntas_por_nivel(id_nivel, limite=10)
-
-    # Se não houver perguntas, importa da API
-        if len(perguntas) == 0:
-        # Converte nível numérico para string
-            nivel_str = {1: "Fácil", 2: "Médio", 3: "Difícil"}.get(nivel, "Fácil")
-            importar_perguntas(nivel_str, id_nivel)
-            perguntas = obter_perguntas_por_nivel(id_nivel, limite=10)
-
-        print(f"Perguntas carregadas para {materia} - Nível {nivel}: {len(perguntas)}")
-    # Aqui você chamaria a tela do quiz passando 'perguntas'
-
-    montar_militar(root, on_voltar=voltar_teste, on_fazer_quiz=quiz_militar)
-
+    def on_fazer_quiz(materia, nivel):
+        nivel_map = {1: "Fácil", 2: "Médio", 3: "Difícil"}
+        nivel_nome = nivel_map.get(nivel, "Fácil")
+        
+        print(f"🎮 Iniciando Quiz: {materia} - {nivel_nome}")
+        
+        from telas.tela_quiz import TelaQuiz
+        
+        def voltar_ao_militar():
+            montar_militar(root, usuario=usuario_teste, on_voltar=voltar_teste, on_fazer_quiz=on_fazer_quiz)
+        
+        def ao_finalizar(resultado):
+            print(f"✅ Quiz finalizado! XP ganho: {resultado['xp_ganho']}")
+            voltar_ao_militar()
+        
+        TelaQuiz(
+            root=root,
+            usuario=usuario_teste[0],
+            modo="militar",
+            materia=materia,  # Passa o nome COMPLETO com sufixo
+            nivel=nivel_nome,
+            on_voltar=voltar_ao_militar,
+            on_finalizar=ao_finalizar
+        )
+   
+    montar_militar(root, usuario=usuario_teste, on_voltar=voltar_teste, on_fazer_quiz=on_fazer_quiz)
     root.mainloop()

@@ -1,11 +1,3 @@
-# ------------------------------------------------------------
-# Router de Telas (Tkinter) do EstudAe
-# Aqui ficam:
-#  - as funções que trocam de tela dentro da mesma janela
-#  - chamadas para: Splash, Login e Home
-# Observações:
-#  - cada tela fica em um arquivo separado (ex.: telas/splash.py)
-# ------------------------------------------------------------
 import tkinter as tk
 from telas.tela_login import App as TelaLogin
 from telas.home import montar_home
@@ -16,7 +8,8 @@ from telas.tela_criarQuiz import montar_criador_quiz
 from dados.banco_dadosUsuarios import (
     obter_dados_usuario,
     atualizar_pontuacao,
-    obter_id_materia_por_nome
+    obter_id_materia_por_nome,
+    salvar_resultado_quiz
 )
 
 class Router:
@@ -86,7 +79,7 @@ class Router:
             on_enem=self.ir_para_enem,
             on_militar=self.ir_para_militar,
             on_criar_quiz=self.ir_para_criar_quiz,
-            dados_usuario=dados_usuario  # Agora usa dados reais do banco
+            dados_usuario=dados_usuario
         )
     
     def ir_para_enem(self):
@@ -94,7 +87,7 @@ class Router:
         self.limpar()
         montar_enem(
             self.root, 
-            usuario=self.usuario_logado, 
+            usuario=self.id_usuario,
             nome=self.nome_logado,
             on_voltar=self.ir_para_home,
             on_fazer_quiz=self._fazer_quiz_enem
@@ -105,7 +98,7 @@ class Router:
         self.limpar()
         montar_militar(
             self.root,
-            usuario=self.usuario_logado,
+            usuario=(self.id_usuario, self.nome_logado),
             nome=self.nome_logado,
             on_voltar=self.ir_para_home,
             on_fazer_quiz=self._fazer_quiz_militar
@@ -119,15 +112,19 @@ class Router:
             materia: Nome da matéria (ex: "Física", "Matemática")
             nivel: Nível do quiz (1, 2 ou 3)
         """
+        # Converte número do nível para nome
+        nivel_map = {1: "Fácil", 2: "Médio", 3: "Difícil"}
+        nivel_nome = nivel_map.get(nivel, "Fácil")
+        
         self.limpar()
         TelaQuiz(
             self.root,
-            usuario=self.usuario_logado,
+            usuario=self.id_usuario,
             modo="enem",
-            materia=materia,  # Passa a matéria para filtrar as questões
-            nivel=nivel,      # Passa o nível para filtrar as questões
+            materia=materia,
+            nivel=nivel_nome,
             on_voltar=self.ir_para_enem,
-            on_finalizar=self._quiz_finalizado_enem  # Callback quando terminar
+            on_finalizar=self._quiz_finalizado_enem
         )
     
     def _fazer_quiz_militar(self, materia: str, nivel: int):
@@ -138,13 +135,17 @@ class Router:
             materia: Nome da matéria
             nivel: Nível do quiz (1, 2 ou 3)
         """
+        # Converte número do nível para nome
+        nivel_map = {1: "Fácil", 2: "Médio", 3: "Difícil"}
+        nivel_nome = nivel_map.get(nivel, "Fácil")
+        
         self.limpar()
         TelaQuiz(
             self.root,
-            usuario=self.usuario_logado,
+            usuario=self.id_usuario,
             modo="militar",
             materia=materia,
-            nivel=nivel,
+            nivel=nivel_nome,
             on_voltar=self.ir_para_militar,
             on_finalizar=self._quiz_finalizado_militar
         )
@@ -156,18 +157,40 @@ class Router:
         Args:
             resultado: dict com {xp_ganho, acertos, erros, materia, nivel}
         """
-        # Salva pontuação no banco de dados
+        # SALVA PONTUAÇÃO NO HISTÓRICO DE QUIZZES (banco de dados) 
         if self.id_usuario:
             materia = resultado.get('materia')
+            nivel = resultado.get('nivel')
             xp_ganho = resultado.get('xp_ganho', 0)
+            acertos = resultado.get('acertos', 0)
+            total_questoes = resultado.get('total_questoes', 10)
             
-            # Obtém o id_materia
-            id_materia = obter_id_materia_por_nome(materia)
+            # Remove sufixo do concurso se houver
+            materia_limpa = materia.split(" (")[0]
+            
+            # Salva no histórico
+            try:
+                salvar_resultado_quiz(
+                    id_usuario=self.id_usuario,
+                    id_quiz=1,
+                    materia=materia_limpa,
+                    nivel=nivel,
+                    acertos=acertos,
+                    total_questoes=total_questoes,
+                    xp_ganho=xp_ganho
+                )
+
+                print(f"✅ Quiz salvo no histórico: {materia_limpa} - {nivel}")
+            except Exception as e:
+                print(f"❌ Erro ao salvar histórico: {e}")
+
+            # Salva pontuação no banco de dados (sistema antigo)
+            id_materia = obter_id_materia_por_nome(materia_limpa)
             
             if id_materia:
                 try:
                     atualizar_pontuacao(self.id_usuario, id_materia, xp_ganho)
-                    print(f"✅ {xp_ganho} XP salvos em {materia}!")
+                    print(f"✅ {xp_ganho} XP salvos em {materia_limpa}!")
                 except Exception as e:
                     print(f"❌ Erro ao salvar pontuação: {e}")
 
@@ -184,19 +207,6 @@ class Router:
             chave = f"{materia}_{nivel}"
             self.materias_progresso[chave] = True
         
-        # Mostra mensagem de sucesso
-        from tkinter import messagebox
-        mensagem = f"🎉 Quiz finalizado!\n\n"
-        mensagem += f"✅ Acertos: {resultado.get('acertos', 0)}\n"
-        mensagem += f"❌ Erros: {resultado.get('erros', 0)}\n"
-        mensagem += f"💎 XP ganho: {resultado.get('xp_ganho', 0)}\n"
-        mensagem += f"📊 Aproveitamento: {aproveitamento}%"
-        
-        if aproveitamento >= 70:
-            mensagem += f"\n\n🔓 Próximo nível desbloqueado!"
-        
-        messagebox.showinfo("Resultado", mensagem)
-        
         # Volta para a tela do ENEM
         self.ir_para_enem()
     
@@ -206,9 +216,30 @@ class Router:
         # Salva pontuação no banco de dados
         if self.id_usuario:
             materia = resultado.get('materia')
+            nivel = resultado.get('nivel')
             xp_ganho = resultado.get('xp_ganho', 0)
+            acertos = resultado.get('acertos', 0)
+            total_questoes = resultado.get('total_questoes', 10)
             
-            # Obtém o id_materia
+            # Remove sufixo do concurso
+            materia_limpa = materia.split(" (")[0]
+            
+            # Salva no histórico
+            try:
+                salvar_resultado_quiz(
+                    id_usuario=self.id_usuario,
+                    id_quiz=2,  # 2 = MILITAR
+                    materia=materia_limpa,
+                    nivel=nivel,
+                    acertos=acertos,
+                    total_questoes=total_questoes,
+                    xp_ganho=xp_ganho
+                )
+                print(f"✅ Quiz salvo no histórico: {materia_limpa} - {nivel}")
+            except Exception as e:
+                print(f"❌ Erro ao salvar histórico: {e}")
+
+            # Salva pontuação no banco de dados (sistema antigo)
             id_materia = obter_id_materia_por_nome(materia)
             
             if id_materia:
@@ -228,19 +259,6 @@ class Router:
             materia = resultado.get('materia')
             chave = f"{materia}_{nivel}"
             self.materias_progresso[chave] = True
-        
-        # Mostra mensagem de sucesso
-        from tkinter import messagebox
-        mensagem = f"🎉 Quiz finalizado!\n\n"
-        mensagem += f"✅ Acertos: {resultado.get('acertos', 0)}\n"
-        mensagem += f"❌ Erros: {resultado.get('erros', 0)}\n"
-        mensagem += f"💎 XP ganho: {resultado.get('xp_ganho', 0)}\n"
-        mensagem += f"📊 Aproveitamento: {aproveitamento}%"
-        
-        if aproveitamento >= 70:
-            mensagem += f"\n\n🔓 Próximo nível desbloqueado!"
-        
-        messagebox.showinfo("Resultado", mensagem)
         
         self.ir_para_militar()
     

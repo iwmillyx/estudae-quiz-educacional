@@ -1,13 +1,4 @@
 # ------------------------------------------------------------
-# Aqui ficam:
-#  - o título e a identidade visual (verde do grupo)
-#  - os botões principais para iniciar a jornada (ENEM / Militar)
-# Observações:
-#  - por enquanto, os botões só dão print (placeholder)
-#  - depois você pode abrir novas janelas/telas com as funcionalidades
-# ------------------------------------------------------------
-
-# ------------------------------------------------------------
 # Tela Home do EstudAe
 # ------------------------------------------------------------
 import tkinter as tk
@@ -111,8 +102,6 @@ def montar_home(root, usuario=None, nome=None, on_enem=None, on_militar=None, on
                                             on_enem=on_enem, on_militar=on_militar,
                                             on_criar_quiz=on_criar_quiz, on_ranking=on_ranking)).pack(side="bottom", pady=24)
 
-
-
     botao_rankings = tk.Button(
         footer_content,
         text="🏆 Ver Rankings",
@@ -198,13 +187,13 @@ def montar_home(root, usuario=None, nome=None, on_enem=None, on_militar=None, on
             ("Streak:", f"🔥 {dados_usuario['streak_dias']} dias"),
         ]
 
-        for titulo, valor in labels_principais:
+        for titulo_label, valor in labels_principais:
             frame_linha = tk.Frame(content_principal, bg="#68ddbd")
             frame_linha.pack(fill="x", pady=5)
             
             tk.Label(
                 frame_linha,
-                text=titulo,
+                text=titulo_label,
                 font=("Arial", 12, "bold"),
                 bg="#68ddbd",
                 fg="#005227"

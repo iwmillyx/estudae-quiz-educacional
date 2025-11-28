@@ -592,9 +592,9 @@ if __name__ == "__main__":
         print("=" * 50)
     
     # Teste com usuário que PODE criar (500+ XP)
-    # montar_criador_quiz(root, usuario_xp=600, usuario_nivel=3, on_salvar=salvar_teste)
+    montar_criador_quiz(root, usuario_xp=600, usuario_nivel=3, on_salvar=salvar_teste)
     
     # Teste com usuário BLOQUEADO (descomentar para testar)
-    montar_criador_quiz(root, usuario_xp=200, usuario_nivel=2, on_salvar=salvar_teste)
+    # montar_criador_quiz(root, usuario_xp=200, usuario_nivel=2, on_salvar=salvar_teste)
     
     root.mainloop()

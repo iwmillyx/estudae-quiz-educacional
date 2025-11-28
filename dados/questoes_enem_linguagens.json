@@ -1,0 +1,1502 @@
+[
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "Em um texto dissertativo-argumentativo, a função da tese é:",
+    "A": "Apresentar a opinião central defendida pelo autor",
+    "B": "Trazer apenas exemplos e citações",
+    "C": "Descrever personagens e ambientes",
+    "D": "Introduzir elementos de humor",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "O sentido literal de uma palavra refere-se a:",
+    "A": "Seu significado simbólico",
+    "B": "O uso poético da linguagem",
+    "C": "Seu significado básico e objetivo",
+    "D": "Uma interpretação metafórica",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "A função apelativa da linguagem tem como objetivo:",
+    "A": "Convencer ou influenciar o leitor",
+    "B": "Expressar emoções pessoais",
+    "C": "Informar sobre fatos",
+    "D": "Embelezar a mensagem",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "Um sinônimo de 'feliz' é:",
+    "A": "Triste",
+    "B": "Alegre",
+    "C": "Difícil",
+    "D": "Rápido",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "O gênero textual 'notícia' caracteriza-se por:",
+    "A": "Relatar fatos com objetividade",
+    "B": "Criar narrativas ficcionais",
+    "C": "Apresentar versos rimados",
+    "D": "Convencer o leitor por meio de argumentos",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "A palavra 'cantaríamos' está flexionada no tempo:",
+    "A": "Presente",
+    "B": "Pretérito perfeito",
+    "C": "Futuro do presente",
+    "D": "Futuro do pretérito",
+    "correta": "D"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "A figura de linguagem metáfora consiste em:",
+    "A": "Comparação explícita com conectivos",
+    "B": "Atribuir a algo um sentido figurado",
+    "C": "Imitar sons",
+    "D": "Repetição de palavras",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "O sujeito da frase 'As crianças brincavam no parque' é:",
+    "A": "No parque",
+    "B": "Brincavam",
+    "C": "As crianças",
+    "D": "Crianças brincavam",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "A concordância verbal correta está em:",
+    "A": "Nós vai ao cinema",
+    "B": "Eles estudou muito",
+    "C": "Eu fiz o trabalho",
+    "D": "Tu fizeram a prova",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Fácil",
+    "enunciado": "A linguagem formal é usada principalmente em:",
+    "A": "Conversas informais",
+    "B": "Redação do ENEM",
+    "C": "Mensagens entre amigos",
+    "D": "Publicações descontraídas",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "O uso de conectivos em um texto tem como função principal:",
+    "A": "Enfeitar o texto",
+    "B": "Criar musicalidade",
+    "C": "Estabelecer relação entre ideias",
+    "D": "Eliminar vírgulas do texto",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "A ambiguidade em um texto ocorre quando:",
+    "A": "Há precisão absoluta no sentido",
+    "B": "A frase permite mais de uma interpretação",
+    "C": "O autor utiliza linguagem formal",
+    "D": "As palavras são sinônimas",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "A intertextualidade se caracteriza por:",
+    "A": "Rejeitar qualquer referência a outros textos",
+    "B": "Retomar, dialogar ou relacionar-se com outros textos",
+    "C": "Usar somente linguagem científica",
+    "D": "Impedir interpretações múltiplas",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "Em 'Ele chegou, porém não entrou', a palavra 'porém' expressa:",
+    "A": "Causa",
+    "B": "Adição",
+    "C": "Contraste",
+    "D": "Conclusão",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "O sujeito oculto caracteriza-se por:",
+    "A": "Não existir na oração",
+    "B": "Estar explícito no início da frase",
+    "C": "Não aparecer, mas estar identificado pela conjugação verbal",
+    "D": "Ser sempre uma palavra indefinida",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "A função poética da linguagem destaca:",
+    "A": "A forma e a estética da mensagem",
+    "B": "A intenção de convencer",
+    "C": "A transmissão objetiva de fatos",
+    "D": "A instrução do receptor",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "A colocação pronominal correta ocorre em:",
+    "A": "Me disseram a verdade",
+    "B": "Diga-me a verdade",
+    "C": "Não diga-me isso",
+    "D": "Vou lhe falar amanhã",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "O efeito de sentido da ironia ocorre quando:",
+    "A": "As palavras significam exatamente o que dizem",
+    "B": "Diz-se o contrário do que se quer comunicar",
+    "C": "A fala é interrompida abruptamente",
+    "D": "O texto usa metáforas científicas",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "Os verbos transitivos diretos exigem:",
+    "A": "Objeto direto",
+    "B": "Objeto indireto",
+    "C": "Adjunto adverbial",
+    "D": "Predicativo",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Médio",
+    "enunciado": "A concordância nominal correta está em:",
+    "A": "As menina inteligente",
+    "B": "Aqueles aluno aplicado",
+    "C": "As casas bonitas",
+    "D": "Os problema resolvido",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "O polissíndeto, figura de linguagem, caracteriza-se por:",
+    "A": "Omissão de conjunções",
+    "B": "Repetição de conjunções para dar ênfase",
+    "C": "Contraste de ideias opostas",
+    "D": "Repetição de sons consonantais",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "O valor semântico da vírgula em 'Os alunos, cansados, foram embora' indica:",
+    "A": "Enumeração",
+    "B": "Vocativo",
+    "C": "Aposto explicativo",
+    "D": "Conjunção adversativa implícita",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "A coesão referencial ocorre quando:",
+    "A": "O autor usa pronomes e expressões que retomam termos do texto",
+    "B": "O texto ignora informações anteriores",
+    "C": "Há repetição constante de palavras",
+    "D": "O autor evita usar sinônimos",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "A função metalinguística da linguagem está presente quando:",
+    "A": "A linguagem fala de si mesma",
+    "B": "A mensagem foca no receptor",
+    "C": "O emissor expressa emoções",
+    "D": "Há intenção de persuadir",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "A presença de modalizadores em um texto serve para:",
+    "A": "Indicar posicionamento e grau de certeza do emissor",
+    "B": "Evitar subjetividade a todo custo",
+    "C": "Eliminar ambiguidade estrutural",
+    "D": "Substituir argumentos por metáforas",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "A diferença entre denotação e conotação é que:",
+    "A": "Denotação é figurada e conotação é literal",
+    "B": "Denotação é literal e conotação é figurada",
+    "C": "Ambas são figuradas",
+    "D": "Ambas são sempre literais",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "A construção do ethos em um texto argumentativo refere-se a:",
+    "A": "Dados estatísticos que comprovam fatos",
+    "B": "A credibilidade que o autor tenta construir de si mesmo",
+    "C": "Apelos emocionais ao leitor",
+    "D": "Conexões lógicas entre premissas",
+    "correta": "B"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "Os verbos que indicam mudança de estado, como 'tornar-se', formam:",
+    "A": "Predicação verbal transitiva",
+    "B": "Verbos intransitivos",
+    "C": "Predicados nominais",
+    "D": "Predicados verbais",
+    "correta": "C"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "A voz passiva sintética ocorre em:",
+    "A": "Vendem-se casas",
+    "B": "Casas são vendidas",
+    "C": "As casas foram vendidas",
+    "D": "As casas venderam-se pelos moradores",
+    "correta": "A"
+  },
+  {
+    "materia": "Português",
+    "nivel": "Difícil",
+    "enunciado": "O discurso indireto livre é caracterizado por:",
+    "A": "Separação rígida entre fala do narrador e do personagem",
+    "B": "Fusão de pensamentos do narrador e do personagem",
+    "C": "Uso exclusivo de primeira pessoa",
+    "D": "Ausência total de marcas subjetivas",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "O Romantismo no Brasil é inaugurado pela publicação de:",
+    "A": "O Cortiço",
+    "B": "Iracema",
+    "C": "Suspiros Poéticos e Saudades",
+    "D": "Memórias Póstumas de Brás Cubas",
+    "correta": "C"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "O Realismo caracteriza-se principalmente por:",
+    "A": "Idealização exagerada do herói",
+    "B": "Visão crítica e objetiva da sociedade",
+    "C": "Fortes elementos sobrenaturais",
+    "D": "Linguagem extremamente rebuscada",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "Machado de Assis é considerado o principal representante brasileiro do:",
+    "A": "Barroco",
+    "B": "Realismo",
+    "C": "Parnasianismo",
+    "D": "Arcadismo",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "No Modernismo de 1922, destacou-se o movimento:",
+    "A": "Escola Baiana",
+    "B": "Semana de Arte Moderna",
+    "C": "Escola do Recife",
+    "D": "Trovas Medievais",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "Uma característica marcante do Parnasianismo é:",
+    "A": "Valorização da perfeição formal",
+    "B": "Subjetividade intensa",
+    "C": "Narrativas fantásticas",
+    "D": "Linguagem caótica e experimental",
+    "correta": "A"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "A obra 'O Auto da Barca do Inferno' foi escrita por:",
+    "A": "Luís de Camões",
+    "B": "Gil Vicente",
+    "C": "Gonçalves Dias",
+    "D": "Eça de Queirós",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "Clarice Lispector é associada principalmente ao:",
+    "A": "Romantismo",
+    "B": "Realismo",
+    "C": "Modernismo (3ª fase)",
+    "D": "Arcadismo",
+    "correta": "C"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "'Iracema', de José de Alencar, pertence ao:",
+    "A": "Romantismo Indianista",
+    "B": "Simbolismo",
+    "C": "Pós-Modernismo",
+    "D": "Barroco",
+    "correta": "A"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "'Navio Negreiro', de Castro Alves, é um poema:",
+    "A": "Simbolista",
+    "B": "Pós-moderno",
+    "C": "Condoreiro/Abolicionista",
+    "D": "Arcádico",
+    "correta": "C"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Fácil",
+    "enunciado": "A obra 'Dom Casmurro' gira em torno do possível adultério de:",
+    "A": "Capitu",
+    "B": "Ema Bovary",
+    "C": "Helena",
+    "D": "Túlia",
+    "correta": "A"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "No Barroco brasileiro, a principal dualidade temática é:",
+    "A": "Luz e tecnologia",
+    "B": "Corpo e alma",
+    "C": "Erudição e oralidade",
+    "D": "Fé e ciência moderna",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "Uma característica do Arcadismo é:",
+    "A": "Vida simples e idealizada no campo",
+    "B": "Valorização do pessimismo existencial",
+    "C": "Uso intenso de metáforas complexas",
+    "D": "Crítica social profunda",
+    "correta": "A"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "No Naturalismo, o comportamento humano é explicado principalmente por:",
+    "A": "Vontade divina",
+    "B": "Determinismos biológicos e sociais",
+    "C": "Racionalidade heroica",
+    "D": "Idealização romântica",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "A ironia machadiana serve muitas vezes para:",
+    "A": "Evitar críticas sociais",
+    "B": "Reforçar a moral da história",
+    "C": "Questionar comportamentos e convenções da época",
+    "D": "Criar clima épico",
+    "correta": "C"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "O Modernismo de 1930 é marcado por:",
+    "A": "Experimentação radical",
+    "B": "Regionalismo e aprofundamento psicológico",
+    "C": "Exclusividade de temas urbanos",
+    "D": "Desprezo pela linguagem brasileira",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "O Simbolismo é caracterizado por:",
+    "A": "Objetividade extrema",
+    "B": "Musicalidade, subjetividade e misticismo",
+    "C": "Enredo linear e previsível",
+    "D": "Valorização da vida cotidiana",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "Guimarães Rosa destacou-se por:",
+    "A": "Rejeitar qualquer invenção linguística",
+    "B": "Criar uma linguagem inovadora e regionalista",
+    "C": "Representar apenas ambientes urbanos",
+    "D": "Fazer parte do Realismo",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "O Humanismo português tem como figura central:",
+    "A": "Padre Antônio Vieira",
+    "B": "Gil Vicente",
+    "C": "Camilo Castelo Branco",
+    "D": "Camões",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "A linguagem concisa e objetiva é típica do:",
+    "A": "Simbolismo",
+    "B": "Parnasianismo",
+    "C": "Modernismo de 22",
+    "D": "Quinhentismo",
+    "correta": "D"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Médio",
+    "enunciado": "O regionalismo de 1930 retrata principalmente:",
+    "A": "A vida no sertão e desigualdades sociais",
+    "B": "A burguesia da elite europeia",
+    "C": "A mitologia clássica",
+    "D": "Temas futuristas e tecnológicos",
+    "correta": "A"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "Em 'Grande Sertão: Veredas', o uso inovador da linguagem cria um efeito de:",
+    "A": "Simplicidade absoluta",
+    "B": "Narrativa altamente musical e complexa",
+    "C": "Neutralidade emotiva",
+    "D": "Repetição mecânica de fórmulas fixas",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "O fluxo de consciência, recurso usado por Clarice Lispector, consiste em:",
+    "A": "Narrar fatos de forma objetiva",
+    "B": "Apresentar pensamentos íntimos de forma descontínua e subjetiva",
+    "C": "Descrever ações físicas detalhadas",
+    "D": "Repetir diálogos externos",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "O projeto estético-antropofágico do Modernismo defendia:",
+    "A": "Rejeição de qualquer influência estrangeira",
+    "B": "Assimilação crítica de culturas externas para criar algo novo",
+    "C": "Imitação fiel da literatura europeia",
+    "D": "Retorno ao classicismo puro",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "Padre Antônio Vieira utilizava o conceito de 'engenho' para destacar:",
+    "A": "A frieza lógica da argumentação",
+    "B": "A criatividade retórica na persuasão",
+    "C": "A neutralidade da linguagem",
+    "D": "A exclusão da poesia nos sermões",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "O romance 'O Cortiço', de Aluísio Azevedo, exemplifica o Naturalismo por meio do:",
+    "A": "Destino determinado pelo ambiente",
+    "B": "Protagonismo de heróis idealizados",
+    "C": "Enfoque exclusivo em temas amorosos",
+    "D": "Uso de mitologia clássica",
+    "correta": "A"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "O poema simbolista valoriza o 'vago e o indeterminado', buscando:",
+    "A": "Exatidão científica",
+    "B": "Objetividade jornalística",
+    "C": "Sensações e sugestões subjetivas",
+    "D": "Trama narrativa fixa",
+    "correta": "C"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "A sátira social presente em 'Memórias de um Sargento de Milícias' caracteriza a obra como:",
+    "A": "Romance urbano de costumes",
+    "B": "Ficção científica",
+    "C": "Poesia arcádica",
+    "D": "Drama neoclássico",
+    "correta": "A"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "O narrador não confiável, típico de Machado de Assis, funciona como:",
+    "A": "Um guia seguro ao leitor",
+    "B": "Uma estratégia para questionar a verdade narrativa",
+    "C": "Um recurso apenas humorístico",
+    "D": "Um meio de suprimir ironias",
+    "correta": "B"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "A lírica camoniana equilibra:",
+    "A": "Subjetividade amorosa e rigor formal clássico",
+    "B": "Ciência moderna e alegorias futuristas",
+    "C": "Racionalidade plena e ausência de emoção",
+    "D": "A pura oralidade com improviso",
+    "correta": "A"
+  },
+  {
+    "materia": "Literatura",
+    "nivel": "Difícil",
+    "enunciado": "No Simbolismo, a sinestesia é usada para:",
+    "A": "Misturar sensações de diferentes sentidos",
+    "B": "Excluir toda musicalidade",
+    "C": "Criar narrativas realistas",
+    "D": "Aumentar precisão científica",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'Many people believe that success is about talent, but consistency often plays a much bigger role.' Qual a ideia principal do texto?",
+    "A": "O talento é irrelevante para o sucesso.",
+    "B": "A consistência é mais importante que o talento.",
+    "C": "A maioria das pessoas não quer ter sucesso.",
+    "D": "O sucesso depende apenas de sorte.",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'Due to heavy rain, the event was postponed.' A palavra 'postponed' significa:",
+    "A": "Cancelado",
+    "B": "Atrasado/adiado",
+    "C": "Acelerado",
+    "D": "Encerrado",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'The company's goal is to reduce waste and promote sustainability.' O termo 'sustainability' refere-se a:",
+    "A": "Lucro rápido",
+    "B": "Responsabilidade ambiental",
+    "C": "Marketing digital",
+    "D": "Crescimento econômico apenas",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "A expressão 'in the long run' significa:",
+    "A": "Eventualmente/ao longo do tempo",
+    "B": "Rapidamente",
+    "C": "De vez em quando",
+    "D": "Sem dúvida",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'She managed to overcome her fears.' O verbo 'overcome' significa:",
+    "A": "Ignorar",
+    "B": "Aumentar",
+    "C": "Superar",
+    "D": "Criar",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "What is the best synonym for 'improve' in the sentence 'We need to improve our communication'?",
+    "A": "Maintain",
+    "B": "Replace",
+    "C": "Enhance",
+    "D": "Reduce",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'This device is user-friendly.' A expressão 'user-friendly' significa:",
+    "A": "Difícil de usar",
+    "B": "Apenas para especialistas",
+    "C": "Fácil de usar",
+    "D": "Muito caro",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "O simple past do verbo 'to leave' é:",
+    "A": "Left",
+    "B": "Leaved",
+    "C": "Leaving",
+    "D": "Leaves",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'The film was not what I had expected.' O autor expressa:",
+    "A": "Surpresa/decepção",
+    "B": "Raiva intensa",
+    "C": "Alívio",
+    "D": "Indiferença",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Fácil",
+    "enunciado": "A frase 'She rarely eats fast food' indica:",
+    "A": "Hábito frequente",
+    "B": "Ação futura",
+    "C": "Hábito raro",
+    "D": "Proibição",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'The campaign aims to raise awareness about the dangers of distracted driving.' O objetivo principal da campanha é:",
+    "A": "Punir motoristas",
+    "B": "Informar sobre riscos",
+    "C": "Promover vendas",
+    "D": "Gerar entretenimento",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "Em textos de opinião, a expressão 'It is worth noting that…' normalmente serve para:",
+    "A": "Introduzir um contra-argumento",
+    "B": "Reforçar um ponto importante",
+    "C": "Encerrar a discussão",
+    "D": "Expressar dúvida",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'Although the device is expensive, many people still buy it due to its reliability.' A conjunção 'although' expressa:",
+    "A": "Causa",
+    "B": "Contraste",
+    "C": "Comparação",
+    "D": "Finalidade",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "A frase 'He is used to working under pressure' significa que ele:",
+    "A": "Evita trabalhar sob pressão",
+    "B": "Está acostumado a isso",
+    "C": "Ficou estressado recentemente",
+    "D": "Nunca trabalhou sob pressão",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'The author questions whether technology is actually improving our communication.' O autor:",
+    "A": "Discorda totalmente",
+    "B": "Condena o uso da tecnologia",
+    "C": "Levanta dúvidas sobre os benefícios",
+    "D": "Elogia a comunicação moderna",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "A expressão 'by no means' significa:",
+    "A": "De vez em quando",
+    "B": "De jeito nenhum",
+    "C": "Com sorte",
+    "D": "Talvez",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'The law was enforced to protect consumers.' O termo 'enforced' indica:",
+    "A": "Ignorado",
+    "B": "Revogado",
+    "C": "Aplicado",
+    "D": "Proibido",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "O phrasal verb 'carry out' significa:",
+    "A": "Desistir",
+    "B": "Realizar/conduzir",
+    "C": "Adiar",
+    "D": "Reclamar",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "Em análise textual, 'the author implies that…' significa:",
+    "A": "O autor diz explicitamente",
+    "B": "O autor sugere indiretamente",
+    "C": "O autor contradiz o leitor",
+    "D": "O autor apresenta estatísticas",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Médio",
+    "enunciado": "A frase 'If it weren't for you, I wouldn't be here today' expressa:",
+    "A": "Agradecimento",
+    "B": "Ameaça",
+    "C": "Indiferença",
+    "D": "Crítica severa",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'The article highlights the paradox of being constantly connected yet feeling increasingly isolated.' O paradoxo mencionado é:",
+    "A": "Pessoas isoladas se tornam populares",
+    "B": "Conexão digital não gera isolamento",
+    "C": "Mais conexão pode gerar mais solidão",
+    "D": "Tecnologia elimina totalmente a solidão",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "A expressão idiomática 'a double-edged sword' significa:",
+    "A": "Algo inútil",
+    "B": "Algo com efeitos positivos e negativos",
+    "C": "Algo extremamente perigoso",
+    "D": "Algo totalmente previsível",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'The author challenges the common assumption that progress always leads to happiness.' O autor:",
+    "A": "Apoia totalmente a ideia de progresso",
+    "B": "Questiona a relação direta entre progresso e felicidade",
+    "C": "Sugere abandonar todo tipo de inovação",
+    "D": "Descreve um avanço científico",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "O termo 'undermine', em contexto crítico, significa:",
+    "A": "Fortalecer",
+    "B": "Enfraquecer/desestabilizar",
+    "C": "Ignorar",
+    "D": "Confirmar",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'Her argument hinges on the idea that education must be accessible to all.' O verbo 'hinges on' significa:",
+    "A": "Depende de",
+    "B": "Contradiz",
+    "C": "Ignora",
+    "D": "Rejeita",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "A expressão 'from scratch' significa:",
+    "A": "De maneira aleatória",
+    "B": "Do zero",
+    "C": "Com pressa",
+    "D": "Com ajuda externa",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'By framing the problem as inevitable, the author minimizes the responsibility of policymakers.' O papel do autor é:",
+    "A": "Isentar responsáveis",
+    "B": "Assumir a culpa",
+    "C": "Negar que exista problema",
+    "D": "Defender políticas públicas",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "Em crítica textual, 'the author's stance' refere-se a:",
+    "A": "O tamanho do texto",
+    "B": "A postura/opinião do autor",
+    "C": "A cronologia dos fatos",
+    "D": "A biografia do autor",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'The proposal was met with skepticism.' O termo 'skepticism' indica:",
+    "A": "Entusiasmo",
+    "B": "Dúvida/desconfiança",
+    "C": "Admiração",
+    "D": "Concordância total",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês",
+    "nivel": "Difícil",
+    "enunciado": "O phrasal verb 'to brush off criticism' significa:",
+    "A": "Responder com calma",
+    "B": "Aceitar críticas",
+    "C": "Ignorar críticas",
+    "D": "Transformar críticas em elogios",
+    "correta": "C"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'El proyecto busca mejorar la calidad de vida de los jóvenes.' A expressão 'mejorar' significa:",
+    "A": "Reduzir",
+    "B": "Melhorar",
+    "C": "Eliminar",
+    "D": "Esquecer",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'El autor destaca la importancia de la lectura diaria.' A palavra 'destaca' significa:",
+    "A": "Ignora",
+    "B": "Esconde",
+    "C": "Destaca/enfatiza",
+    "D": "Diminui",
+    "correta": "C"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "A expressão 'por supuesto' significa:",
+    "A": "Claro / com certeza",
+    "B": "Nunca",
+    "C": "Talvez",
+    "D": "De repente",
+    "correta": "A"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "O plural de 'luz' em espanhol é:",
+    "A": "Luzes",
+    "B": "Luces",
+    "C": "Luzs",
+    "D": "Luzos",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'La tecnología facilita el acceso a la información.' O verbo 'facilita' significa:",
+    "A": "Complica",
+    "B": "Promove",
+    "C": "Facilita",
+    "D": "Proíbe",
+    "correta": "C"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "O pronome 'ellos' significa:",
+    "A": "Eu",
+    "B": "Eles",
+    "C": "Nós",
+    "D": "Ele",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "A expressão 'tener ganas de' significa:",
+    "A": "Ter medo de",
+    "B": "Ter vontade de",
+    "C": "Ter obrigação de",
+    "D": "Ter certeza de",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "O verbo 'ser' no presente para 'nosotros' é:",
+    "A": "Soy",
+    "B": "Eres",
+    "C": "Somos",
+    "D": "Son",
+    "correta": "C"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'Los jóvenes valoran la libertad de expresión.' A palavra 'valoran' significa:",
+    "A": "Escondem",
+    "B": "Valorizam",
+    "C": "Negam",
+    "D": "Evaporam",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Fácil",
+    "enunciado": "A tradução de '¿Cómo estás?' é:",
+    "A": "De onde você é?",
+    "B": "Como você está?",
+    "C": "Quantos anos você tem?",
+    "D": "Onde você mora?",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'Aunque el acceso a internet ha aumentado, persisten desigualdades en su uso.' A conjunção 'aunque' indica:",
+    "A": "Causa",
+    "B": "Contraste",
+    "C": "Condição",
+    "D": "Conclusão",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "A expressão 'tener en cuenta' significa:",
+    "A": "Ignorar",
+    "B": "Levar em conta",
+    "C": "Resolver rapidamente",
+    "D": "Desistir",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'El autor cuestiona si las redes sociales realmente conectan a las personas.' O autor:",
+    "A": "Confirma que conectam",
+    "B": "Questiona sua eficácia",
+    "C": "Mostra indiferença",
+    "D": "Não vê nenhum problema",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "Qual é o melhor sinônimo de 'además'?",
+    "A": "Sin embargo",
+    "B": "Por lo tanto",
+    "C": "Además / também",
+    "D": "Apenas",
+    "correta": "C"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'Es imprescindible proteger los bosques para garantizar el futuro.' A palavra 'imprescindible' significa:",
+    "A": "Inútil",
+    "B": "Opcional",
+    "C": "Indispensável",
+    "D": "Perigoso",
+    "correta": "C"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "O pretérito indefinido de 'hacer' (ele) é:",
+    "A": "Hacio",
+    "B": "Hizo",
+    "C": "Hace",
+    "D": "Hacía",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "A expressão 'estar de acuerdo' significa:",
+    "A": "Estar de lado",
+    "B": "Concordar",
+    "C": "Desistir",
+    "D": "Observar atentamente",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'El programa promueve hábitos saludables en las escuelas.' O verbo 'promueve' indica:",
+    "A": "Proíbe",
+    "B": "Destrói",
+    "C": "Promove",
+    "D": "Complica",
+    "correta": "C"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "O pronome 'cuyo/cuya' indica:",
+    "A": "Quantidade",
+    "B": "Posse",
+    "C": "Dúvida",
+    "D": "Contraste",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'La autora insiste en que la educación emocional es fundamental.' Isso mostra:",
+    "A": "Certeza e ênfase",
+    "B": "Neutralidade",
+    "C": "Ambiguidade",
+    "D": "Sarcasmo",
+    "correta": "A"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'El artículo pone de relieve la paradoja de sentirse solo en un mundo hiperconectado.' O paradoxo é:",
+    "A": "Conexão elimina solidão",
+    "B": "Mais conexão pode significar mais solidão",
+    "C": "Tecnologia impede isolamento",
+    "D": "Todos são socialmente ativos",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "A expressão 'a grandes rasgos' significa:",
+    "A": "Em detalhes",
+    "B": "Em linhas gerais",
+    "C": "Sem importância",
+    "D": "Com esforço",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'El autor pretende desmontar la idea de que el éxito depende únicamente del esfuerzo individual.' O autor:",
+    "A": "Apoia o mérito individual",
+    "B": "Questiona a visão meritocrática",
+    "C": "Evita discutir mérito",
+    "D": "Promove competição",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "A palavra 'desafiar' em espanhol significa:",
+    "A": "Imitar",
+    "B": "Desafiar / questionar",
+    "C": "Esquecer",
+    "D": "Fechar",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'El informe subraya que las políticas actuales no bastan para revertir la crisis climática.' A palavra 'bastan' significa:",
+    "A": "São suficientes",
+    "B": "São antigas",
+    "C": "São perigosas",
+    "D": "São inexistentes",
+    "correta": "A"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "A expressão 'no obstante' indica:",
+    "A": "Condição",
+    "B": "Conclusão",
+    "C": "Contraste",
+    "D": "Causa",
+    "correta": "C"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'De no haberse implementado las medidas, el daño habría sido mayor.' Essa construção expressa:",
+    "A": "Hipótese irreal do passado",
+    "B": "Fato futuro",
+    "C": "Pedido formal",
+    "D": "Ação habitual",
+    "correta": "A"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "O termo 'apenas' em espanhol significa:",
+    "A": "Somente",
+    "B": "Quase nada",
+    "C": "Apesar de",
+    "D": "Sempre",
+    "correta": "A"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "Texto: 'El autor sostiene que los medios moldean la percepción pública.' O verbo 'sostiene' significa:",
+    "A": "Duvida",
+    "B": "Sustenta/defende",
+    "C": "Copia",
+    "D": "Despreza",
+    "correta": "B"
+  },
+  {
+    "materia": "Espanhol",
+    "nivel": "Difícil",
+    "enunciado": "A expressão idiomática 'estar en las nubes' significa:",
+    "A": "Estar distraído",
+    "B": "Estar rico",
+    "C": "Estar em perigo",
+    "D": "Estar motivado",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "O Renascimento valorizava especialmente:",
+    "A": "A abstração total",
+    "B": "A perspectiva e o humanismo",
+    "C": "O improviso e a aleatoriedade",
+    "D": "A arte digital",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "O movimento Impressionista é conhecido por:",
+    "A": "Traços rígidos e contornos fortes",
+    "B": "Uso de luz e pinceladas soltas",
+    "C": "Representações religiosas medievais",
+    "D": "Esculturas monumentais",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "Tarsila do Amaral é uma artista associada ao:",
+    "A": "Modernismo brasileiro",
+    "B": "Romantismo europeu",
+    "C": "Gótico medieval",
+    "D": "Dadaísmo",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "A arte abstrata caracteriza-se por:",
+    "A": "Imitação fiel da realidade",
+    "B": "Representações figurativas apenas",
+    "C": "Formas e cores não realistas",
+    "D": "Somente esculturas em pedra",
+    "correta": "C"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "A Semana de Arte Moderna ocorreu em:",
+    "A": "1922",
+    "B": "1500",
+    "C": "2000",
+    "D": "1889",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "A escultura é uma linguagem artística que trabalha principalmente com:",
+    "A": "Som",
+    "B": "Volume e tridimensionalidade",
+    "C": "Movimento corporal",
+    "D": "Palavras",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "A Pop Art utilizava imagens:",
+    "A": "Mitológicas antigas",
+    "B": "Do cotidiano e da cultura de massa",
+    "C": "Apenas religiosas",
+    "D": "Exclusivamente abstratas",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "A arte indígena brasileira é marcada por:",
+    "A": "Geometrismo e relação com a natureza",
+    "B": "Perspectiva renascentista",
+    "C": "Metais industriais",
+    "D": "Romantização europeia",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "O Cubismo, de Picasso, rompe com:",
+    "A": "A tridimensionalidade",
+    "B": "A perspectiva tradicional",
+    "C": "A ideia de colagem",
+    "D": "A cor na pintura",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Fácil",
+    "enunciado": "A arte contemporânea se caracteriza por:",
+    "A": "Valorização exclusiva da pintura clássica",
+    "B": "Mistura de linguagens e experimentação",
+    "C": "Regras rígidas de composição",
+    "D": "Uso apenas de mármore",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "O Barroco no Brasil foi fortemente influenciado por:",
+    "A": "Minimalismo japonês",
+    "B": "Religião católica e teatralidade",
+    "C": "Arte digital emergente",
+    "D": "Arquitetura industrial",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "O expressionismo busca representar:",
+    "A": "Fidelidade absoluta ao real",
+    "B": "Sensações e emoções intensas",
+    "C": "Sons musicais",
+    "D": "Óptica científica apenas",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "A instalação artística difere da escultura tradicional porque:",
+    "A": "É sempre feita de pedra",
+    "B": "Exige interação ou experiência espacial",
+    "C": "É exclusivamente sonora",
+    "D": "Nunca utiliza objetos do cotidiano",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "O movimento Futurista valorizava:",
+    "A": "Velocidade, tecnologia e energia",
+    "B": "Mitologia clássica",
+    "C": "A vida rural",
+    "D": "Tradições fixas e estáticas",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "A técnica do afresco, usada por Michelangelo, consiste em:",
+    "A": "Pintura sobre gesso úmido",
+    "B": "Gravação em pedra lisa",
+    "C": "Escultura em bronze",
+    "D": "Colagem em madeira",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "O teatro grego clássico é marcado pelo:",
+    "A": "Uso de máscaras e temas mitológicos",
+    "B": "Minimalismo total",
+    "C": "Improviso aleatório",
+    "D": "Ritmos eletrônicos",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "O Surrealismo buscava:",
+    "A": "Representar a lógica e a razão",
+    "B": "Explorar o inconsciente e o sonho",
+    "C": "Recriar cenas históricas",
+    "D": "Eliminar simbolismos",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "Na música, o ritmo corresponde:",
+    "A": "À repetição de padrões sonoros no tempo",
+    "B": "À tonalidade fixa",
+    "C": "Ao silêncio absoluto",
+    "D": "Apenas ao volume alto",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "A dança contemporânea caracteriza-se por:",
+    "A": "Gestos rígidos e codificados",
+    "B": "Expressão livre e experimentação corporal",
+    "C": "Movimentos exclusivamente clássicos",
+    "D": "Uso apenas de sapatilhas",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Médio",
+    "enunciado": "O conceito de ready-made, usado por Duchamp, consiste em:",
+    "A": "Criar pinturas acadêmicas",
+    "B": "Expor objetos comuns como arte",
+    "C": "Fazer esculturas monumentais",
+    "D": "Registrar movimentos corporais",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "O Modernismo brasileiro rompeu com o academicismo ao propor:",
+    "A": "Retorno ao realismo fotográfico",
+    "B": "Linguagem brasileira, antropofagia cultural e inovação formal",
+    "C": "Obediência às normas europeias",
+    "D": "Rejeição de qualquer influência externa",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "No expressionismo abstrato de Jackson Pollock, a técnica do 'dripping' enfatiza:",
+    "A": "Precisão geométrica",
+    "B": "A gestualidade e o processo criativo",
+    "C": "Realismo anatômico",
+    "D": "Simetria absoluta",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "A arte conceitual prioriza:",
+    "A": "A execução técnica refinada",
+    "B": "A ideia acima do objeto artístico",
+    "C": "Cores vibrantes como regra",
+    "D": "Narrativas lineares",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "O Neoclassicismo surge como reação ao:",
+    "A": "Barroco e Rococó, buscando simplicidade e racionalidade",
+    "B": "Romantismo, buscando emoção intensa",
+    "C": "Futurismo, defendendo a tradição",
+    "D": "Impressionismo, buscando velocidade",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "A análise formal de uma obra considera:",
+    "A": "Contexto político apenas",
+    "B": "Cores, linhas, formas e composição",
+    "C": "História de vida do artista apenas",
+    "D": "Opinião popular",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "A arte africana tradicional influenciou fortemente o Cubismo por meio:",
+    "A": "De máscaras e simplificação geométrica de formas humanas",
+    "B": "Da escrita hieroglífica",
+    "C": "Da perspectiva linear",
+    "D": "Da pintura realista",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "O teatro épico de Bertolt Brecht busca:",
+    "A": "Emoção catártica do público",
+    "B": "Distanciamento crítico e reflexão social",
+    "C": "Suspensão total da descrença",
+    "D": "Naturalismo absoluto",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "Na música dodecafônica de Schoenberg, a organização sonora baseia-se em:",
+    "A": "Repetição tonal",
+    "B": "Série de doze sons sem hierarquia tonal",
+    "C": "Improvisação livre",
+    "D": "Ritmos africanos estruturados",
+    "correta": "B"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "A arte urbana contemporânea costuma enfatizar:",
+    "A": "Temas sociais e ocupação crítica do espaço público",
+    "B": "Regras acadêmicas clássicas",
+    "C": "Proporções anatômicas perfeitas",
+    "D": "Desenhos apenas em papel",
+    "correta": "A"
+  },
+  {
+    "materia": "Artes",
+    "nivel": "Difícil",
+    "enunciado": "O pós-modernismo nas artes é caracterizado por:",
+    "A": "Busca de unidade e pureza estilística",
+    "B": "Hibridismo, ironia e mistura de referências",
+    "C": "Rejeição da cultura pop",
+    "D": "Retorno estrito ao academicismo",
+    "correta": "B"
+  }
+]

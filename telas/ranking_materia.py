@@ -1,23 +1,14 @@
-# ------------------------------------------------------------
-# Aqui ficam:
-#  - seleção de CATEGORIA (ENEM ou MILITAR)
-#  - seleção de MATÉRIA (carregada conforme a categoria)
-#  - listagem do ranking SOMENTE daquela matéria
-# Observações:
-#  - os dados vêm do módulo 'dados' (carregar_dados, ranking_materia)
-#  - quando migrar para banco, basta trocar o import (ex.: dados_db)
-# ------------------------------------------------------------
-
+# arquivo: telas/ranking_por_materia.py
 import tkinter as tk
 from tkinter import font
 from dados.banco_dadosUsuarios import carregar_ranking_materias
 
 # ===== TEMA MOBILE DO ESTUDAE =====
-COR_VERDE = "#005227"     # fundo geral
-COR_BG = "#005227"        # fundo de trás
-COR_CARD = "#f7fdf9"      # card clarinho
-COR_ACCENT = "#68ddbd"    # verde claro
-COR_TEXT = "#08321a"      # texto escuro
+COR_VERDE = "#005227"
+COR_BG = "#005227"
+COR_CARD = "#f7fdf9"
+COR_ACCENT = "#68ddbd"
+COR_TEXT = "#08321a"
 
 def mostrar_ranking_por_materia(root, dados=None, on_back=None):
 
@@ -86,7 +77,6 @@ def mostrar_ranking_por_materia(root, dados=None, on_back=None):
     center_ctrl = tk.Frame(frame_ctrl, bg=COR_BG)
     center_ctrl.pack(anchor="center")
 
-    # Card claro envolvendo “Categoria” + dropdown
     ctrl_card = tk.Frame(center_ctrl, bg="#eaf8f1", padx=10, pady=8)
     ctrl_card.pack()
 
@@ -117,20 +107,12 @@ def mostrar_ranking_por_materia(root, dados=None, on_back=None):
     )
     menu_mat.grid(row=1, column=1, sticky="e")
 
-    # ================= LISTBOX =================
+    # ================= CONTAINER DO RANKING - TODOS OS USUÁRIOS =================
     list_frame = tk.Frame(scrollable, bg=COR_BG)
-    list_frame.pack(fill="both", expand=True)
+    list_frame.pack(fill="both", expand=True, pady=10)
 
-    listbox = tk.Listbox(
-        list_frame, width=40, height=12,
-        bg=COR_CARD, fg=COR_TEXT,
-        font=("Consolas", 11),
-        bd=0,
-        highlightthickness=1,
-        highlightbackground="#e0e7e9",
-        activestyle="none"
-    )
-    listbox.pack(pady=4, padx=2, fill="both", expand=True)
+    ranking_container = tk.Frame(list_frame, bg=COR_CARD, bd=1, relief="solid")
+    ranking_container.pack(fill="both", expand=True, padx=2)
 
     # ================= FUNÇÕES =================
     def preencher_materias():
@@ -140,7 +122,6 @@ def mostrar_ranking_por_materia(root, dados=None, on_back=None):
         try:
             materias = dados[cat]["materias"]
         except:
-            # fallback dependendo da estrutura recebida
             entry = dados.get(cat, {})
             if isinstance(entry, dict):
                 materias = list(entry.keys())
@@ -159,7 +140,9 @@ def mostrar_ranking_por_materia(root, dados=None, on_back=None):
         cat = categoria_var.get()
         mat = materia_var.get()
 
-        listbox.delete(0, tk.END)
+        # Limpa container
+        for widget in ranking_container.winfo_children():
+            widget.destroy()
 
         if not mat:
             return
@@ -170,6 +153,7 @@ def mostrar_ranking_por_materia(root, dados=None, on_back=None):
         if isinstance(container_data, dict) and mat in container_data:
             lista = container_data.get(mat, [])
 
+        # MOSTRA TODOS OS USUÁRIOS (removida a limitação de TOP 10)
         ultimo_pontos = None
         ultimo_rank = 0
 
@@ -178,18 +162,79 @@ def mostrar_ranking_por_materia(root, dados=None, on_back=None):
             ultimo_pontos = pontos
             ultimo_rank = pos
 
-            medalha = "🥇" if pos == 1 else "🥈" if pos == 2 else "🥉" if pos == 3 else ""
-            cor = "#FFB032" if pos == 1 else "#A9A9A9" if pos == 2 else "#B87333" if pos == 3 else COR_TEXT
+            # Cores e medalhas para TOP 3
+            if pos == 1:
+                medalha = "🥇"
+                cor_bg = "#FFF9E6"
+                cor_texto = "#FFB032"
+                peso = "bold"
+            elif pos == 2:
+                medalha = "🥈"
+                cor_bg = "#F5F5F5"
+                cor_texto = "#A9A9A9"
+                peso = "bold"
+            elif pos == 3:
+                medalha = "🥉"
+                cor_bg = "#FFF4E6"
+                cor_texto = "#B87333"
+                peso = "bold"
+            else:
+                medalha = ""
+                cor_bg = COR_CARD
+                cor_texto = COR_TEXT
+                peso = "normal"
 
-            listbox.insert(tk.END, f"{pos}) {medalha} {aluno} - {pontos}")
-            listbox.itemconfig(tk.END, fg=cor)
+            # Frame de cada item
+            item_frame = tk.Frame(ranking_container, bg=cor_bg, height=40)
+            item_frame.pack(fill="x", padx=8, pady=4)
+            item_frame.pack_propagate(False)
+
+            # Posição
+            tk.Label(
+                item_frame,
+                text=f"{pos})",
+                bg=cor_bg,
+                fg=cor_texto,
+                font=font.Font(family="Segoe UI", size=12, weight=peso),
+                width=3,
+                anchor="w"
+            ).pack(side="left", padx=(5, 0))
+
+            # Medalha (se tiver)
+            if medalha:
+                tk.Label(
+                    item_frame,
+                    text=medalha,
+                    bg=cor_bg,
+                    font=font.Font(size=14)
+                ).pack(side="left", padx=2)
+
+            # Nome do aluno
+            tk.Label(
+                item_frame,
+                text=aluno,
+                bg=cor_bg,
+                fg=cor_texto,
+                font=font.Font(family="Segoe UI", size=11, weight=peso),
+                anchor="w"
+            ).pack(side="left", fill="x", expand=True, padx=5)
+
+            # Pontos
+            tk.Label(
+                item_frame,
+                text=f"{pontos} XP",
+                bg=cor_bg,
+                fg=cor_texto,
+                font=font.Font(family="Segoe UI", size=11, weight=peso),
+                anchor="e"
+            ).pack(side="right", padx=5)
 
         root.title(f"Ranking — {cat} / {mat}")
 
     categoria_var.trace_add("write", lambda *_: (preencher_materias(), atualizar_lista()))
     materia_var.trace_add("write", lambda *_: atualizar_lista())
 
-    # ================= BOTÃO VOLTAR (igual ao ranking geral) =================
+    # ================= BOTÃO VOLTAR =================
     btn_frame = tk.Frame(scrollable, bg=COR_BG)
     btn_frame.pack(fill="x", pady=(15, 25))
 

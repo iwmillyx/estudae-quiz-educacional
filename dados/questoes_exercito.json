@@ -1,0 +1,2102 @@
+[
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'O soldado recebeu a ordem imediatamente.' O termo 'imediatamente' indica uma circunstância de:",
+    "A": "Modo",
+    "B": "Tempo",
+    "C": "Intensidade",
+    "D": "Negação",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A palavra 'coragem' é classificada como:",
+    "A": "Substantivo",
+    "B": "Verbo",
+    "C": "Adjetivo",
+    "D": "Advérbio",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A forma correta do plural de 'general' é:",
+    "A": "Generais",
+    "B": "General-s",
+    "C": "Generaís",
+    "D": "Generalos",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "O antônimo de 'forte' é:",
+    "A": "Robusto",
+    "B": "Ágil",
+    "C": "Fraco",
+    "D": "Leve",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A forma correta do verbo 'estar' no presente do indicativo para 'eles' é:",
+    "A": "Está",
+    "B": "Estou",
+    "C": "Estamos",
+    "D": "Estão",
+    "correta": "D"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A palavra que indica um adjetivo é:",
+    "A": "Rapidamente",
+    "B": "Soldado",
+    "C": "Valente",
+    "D": "Hoje",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "Texto: 'O comandante entrou na sala.' A palavra 'comandante' é:",
+    "A": "Verbo",
+    "B": "Pronome",
+    "C": "Substantivo",
+    "D": "Conjunção",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "Qual frase apresenta verbo no futuro?",
+    "A": "O recruta marchou rápido.",
+    "B": "O sargento irá chegar.",
+    "C": "O soldado estava atento.",
+    "D": "Ele cumpria ordens.",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "O sinônimo de 'rápido' é:",
+    "A": "Lento",
+    "B": "Devagar",
+    "C": "Veloz",
+    "D": "Fraco",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "O plural correto de 'quartel' é:",
+    "A": "Quartéis",
+    "B": "Quarteis",
+    "C": "Quartel-s",
+    "D": "Quartelões",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'O soldado que chegou atrasado foi advertido.' O trecho 'que chegou atrasado' é:",
+    "A": "Aposição",
+    "B": "Oração subordinada adjetiva",
+    "C": "Oração coordenada",
+    "D": "Vocativo",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A regência correta é:",
+    "A": "Assisti o treinamento",
+    "B": "Assisti ao treinamento",
+    "C": "Assisti no treinamento",
+    "D": "Assisti do treinamento",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A forma correta da crase é:",
+    "A": "Fui a a base militar",
+    "B": "Fui à base militar",
+    "C": "Fui á base militar",
+    "D": "Fui a à base militar",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "O termo que exerce função de adjunto adverbial em: 'Os soldados avançaram silenciosamente.'",
+    "A": "Soldados",
+    "B": "Avançaram",
+    "C": "Silenciosamente",
+    "D": "Os",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "O antônimo de 'obrigatório' é:",
+    "A": "Permitido",
+    "B": "Opcional",
+    "C": "Impossível",
+    "D": "Útil",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'O capitão confirmou que a tropa partiria ao amanhecer.' A oração subordinada introduzida por 'que' tem valor de:",
+    "A": "Objeto indireto",
+    "B": "Objeto direto",
+    "C": "Predicativo",
+    "D": "Complemento nominal",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A forma verbal do pretérito imperfeito é:",
+    "A": "Ele marchará",
+    "B": "Ele marchava",
+    "C": "Ele marchou",
+    "D": "Ele marchasse",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "O termo sublinhado exerce função de sujeito em: 'Correr faz bem à saúde.'",
+    "A": "Correr",
+    "B": "Faz",
+    "C": "Bem",
+    "D": "Saúde",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A expressão 'a fim de' indica:",
+    "A": "Causa",
+    "B": "Finalidade",
+    "C": "Condição",
+    "D": "Consequência",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Médio",
+    "enunciado": "Texto: 'O comandante, experiente e calmo, assumiu a situação.' O segmento destacado é:",
+    "A": "Vocativo",
+    "B": "Predicativo",
+    "C": "Aposição",
+    "D": "Objeto direto",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A voz passiva de: 'A tropa cumpriu a missão.' é:",
+    "A": "A missão foi cumprida da tropa",
+    "B": "A missão tinha sido cumprida pela tropa",
+    "C": "A missão foi cumprida pela tropa",
+    "D": "A missão é cumprida da tropa",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A oração reduzida de gerúndio aparece em:",
+    "A": "Os soldados marcharam rapidamente.",
+    "B": "Ao chegar ao quartel, apresentou-se.",
+    "C": "Os militares, obedecendo ao comando, avançaram.",
+    "D": "Quando chegaram, iniciaram o treino.",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A concordância incorreta está em:",
+    "A": "Houveram reuniões importantes ontem.",
+    "B": "Ocorreram atrasos na formatura.",
+    "C": "Chegaram os novos recrutas.",
+    "D": "Existiram dúvidas sobre o horário.",
+    "correta": "A"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "Em: 'O comandante falou calmamente, pois havia tensão no ambiente.' a conjunção 'pois' indica:",
+    "A": "Adição",
+    "B": "Conclusão",
+    "C": "Causa",
+    "D": "Finalidade",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A frase com uso correto da crase é:",
+    "A": "Fui a àrea restrita.",
+    "B": "Dirigi-me à sargento.",
+    "C": "Entreguei o relatório à tenente.",
+    "D": "Retornei à aproximadamente 10h.",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "O período composto por subordinação aparece em:",
+    "A": "O recruta marchou e cantou.",
+    "B": "Quando anoiteceu, iniciaram a vigília.",
+    "C": "Os soldados chegaram, mas estavam cansados.",
+    "D": "Ele treinou bastante; portanto, melhorou.",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A função sintática de 'rápido' em: 'O sargento falou rápido.' é:",
+    "A": "Adjunto adnominal",
+    "B": "Objeto direto",
+    "C": "Predicativo",
+    "D": "Adjunto adverbial",
+    "correta": "D"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "O período que apresenta paralelismo sintático é:",
+    "A": "Ele ordenou e a tropa obedeceu rapidamente.",
+    "B": "Os soldados não só marcharam, como cantavam.",
+    "C": "O comandante não só orientou a equipe, como também reforçou a estratégia.",
+    "D": "O capitão planejou a missão e cumprindo ordens.",
+    "correta": "C"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "Em: 'Os militares permaneceram onde estavam', o termo 'onde' é um:",
+    "A": "Pronome pessoal",
+    "B": "Pronome relativo",
+    "C": "Pronome possessivo",
+    "D": "Advérbio de modo",
+    "correta": "B"
+  },
+  {
+    "materia": "Português (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A pontuação correta está em:",
+    "A": "O general, ordenou a retirada.",
+    "B": "O soldado confirmou que, voltaria.",
+    "C": "O sargento, atento à tropa, deu o comando.",
+    "D": "A equipe avançou porém, lentamente.",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "Um circuito possui uma resistência de 20 Ω ligado a 10 V. A corrente elétrica é:",
+    "A": "0,2 A",
+    "B": "0,5 A",
+    "C": "1 A",
+    "D": "2 A",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "O seno de 30° vale:",
+    "A": "1",
+    "B": "0,5",
+    "C": "0,7",
+    "D": "0,87",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A área de um triângulo com base 8 e altura 6 é:",
+    "A": "12",
+    "B": "18",
+    "C": "24",
+    "D": "30",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A soma dos ângulos internos de um hexágono é:",
+    "A": "360°",
+    "B": "540°",
+    "C": "720°",
+    "D": "900°",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "Uma força de 10 N desloca um corpo por 3 m. O trabalho realizado é:",
+    "A": "3 J",
+    "B": "10 J",
+    "C": "13 J",
+    "D": "30 J",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "Simplifique: (a²b) / (ab) =",
+    "A": "ab",
+    "B": "a",
+    "C": "b",
+    "D": "a²",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "O valor de 2³ × 3² é:",
+    "A": "18",
+    "B": "36",
+    "C": "72",
+    "D": "108",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A fórmula da velocidade média é:",
+    "A": "v = d/t",
+    "B": "v = t/d",
+    "C": "v = dt",
+    "D": "v = d + t",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "Uma peça cúbica tem aresta 4 cm. Seu volume é:",
+    "A": "16 cm³",
+    "B": "32 cm³",
+    "C": "64 cm³",
+    "D": "128 cm³",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "O valor de √121 é:",
+    "A": "9",
+    "B": "10",
+    "C": "11",
+    "D": "12",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "Uma resistência de 8 Ω em série com outra de 12 Ω tem resistência equivalente:",
+    "A": "4 Ω",
+    "B": "12 Ω",
+    "C": "18 Ω",
+    "D": "20 Ω",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "Calcule a hipotenusa de um triângulo com catetos 9 e 12.",
+    "A": "14",
+    "B": "15",
+    "C": "16",
+    "D": "20",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "Para qual valor de x a equação 4x − 5 = 3x + 7 é verdadeira?",
+    "A": "x = −12",
+    "B": "x = 12",
+    "C": "x = −7",
+    "D": "x = 2",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "Uma torre projeta uma sombra de 15 m quando o ângulo de elevação solar é 45°. A altura da torre é:",
+    "A": "10,6 m",
+    "B": "12 m",
+    "C": "15 m",
+    "D": "18 m",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A soma dos 20 primeiros termos da PA cujo primeiro termo é 3 e razão 4 é:",
+    "A": "620",
+    "B": "720",
+    "C": "820",
+    "D": "920",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "Calcule o determinante da matriz [[4, 3], [2, 5]].",
+    "A": "14",
+    "B": "16",
+    "C": "17",
+    "D": "20",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A expressão fatorada de x² − 9 é:",
+    "A": "(x − 3)²",
+    "B": "(x + 3)²",
+    "C": "(x − 3)(x + 3)",
+    "D": "(x − 9)(x + 9)",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "No lançamento oblíquo, a componente horizontal da velocidade é v·cosθ. Se v = 40 m/s e θ = 60°, essa componente vale:",
+    "A": "10 m/s",
+    "B": "15 m/s",
+    "C": "20 m/s",
+    "D": "25 m/s",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A função f(x) = x² − 4x + 3 tem raízes:",
+    "A": "1 e 3",
+    "B": "1 e 4",
+    "C": "3 e 4",
+    "D": "−1 e 3",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Médio",
+    "enunciado": "O menor múltiplo comum de 24, 30 e 36 é:",
+    "A": "180",
+    "B": "360",
+    "C": "540",
+    "D": "720",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A corrente total em um circuito com resistores em paralelo de 6 Ω, 4 Ω e 12 Ω ligados a 12 V é:",
+    "A": "2 A",
+    "B": "3 A",
+    "C": "4 A",
+    "D": "6 A",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A área entre f(x)=x e g(x)=4, no intervalo de 0 a 4, é:",
+    "A": "4",
+    "B": "8",
+    "C": "12",
+    "D": "16",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A diagonal de um paralelepípedo de dimensões 6, 8 e 10 é:",
+    "A": "12",
+    "B": "14",
+    "C": "16",
+    "D": "18",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "Resolva: 2^(x+1) = 32.",
+    "A": "x = 2",
+    "B": "x = 3",
+    "C": "x = 4",
+    "D": "x = 5",
+    "correta": "B"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A soma de uma PG infinita cujo primeiro termo é 18 e razão 2/3 é:",
+    "A": "54",
+    "B": "48",
+    "C": "40",
+    "D": "30",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A probabilidade de tirar 2 cartas vermelhas consecutivas sem reposição de um baralho é:",
+    "A": "1/4",
+    "B": "1/3",
+    "C": "13/51",
+    "D": "25/102",
+    "correta": "D"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "Calcule o determinante da matriz [[2,1,3],[1,4,2],[0,5,1]].",
+    "A": "-15",
+    "B": "-12",
+    "C": "10",
+    "D": "18",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "Resolva o sistema: x + y + z = 6; 2x − y + z = 7; x + 2y − z = 3.",
+    "A": "(1,2,3)",
+    "B": "(2,1,3)",
+    "C": "(3,2,1)",
+    "D": "(1,3,2)",
+    "correta": "C"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A função f(x)=x³−6x possui pontos críticos em:",
+    "A": "x = ±√2",
+    "B": "x = ±2",
+    "C": "x = ±3",
+    "D": "x = ±√3",
+    "correta": "A"
+  },
+  {
+    "materia": "Matemática (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "O volume de um prisma cuja base é um triângulo equilátero de lado 8 e altura 15 é:",
+    "A": "120√3",
+    "B": "160√3",
+    "C": "240√3",
+    "D": "320√3",
+    "correta": "C"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "Durante a União Ibérica (1580–1640), o Brasil tornou-se alvo de invasões estrangeiras. A ocupação holandesa no Nordeste pode ser explicada principalmente por:",
+    "A": "Interesses puramente religiosos contra Portugal",
+    "B": "Retaliação ao monopólio português sobre o ouro",
+    "C": "Disputas comerciais ligadas ao açúcar",
+    "D": "Tentativa de domínio militar sobre o Atlântico Sul",
+    "correta": "C"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A Conjuração Baiana (1798), ao contrário da Inconfidência Mineira, defendia:",
+    "A": "A autonomia fiscal, mas manutenção da monarquia",
+    "B": "A libertação escrava e igualdade social",
+    "C": "Apoio ao aumento de impostos",
+    "D": "Transferência da capital para Salvador",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A Guerra Cisplatina (1825–1828) terminou com:",
+    "A": "Vitória brasileira e incorporação da Cisplatina",
+    "B": "Intervenção britânica e criação do Uruguai",
+    "C": "Domínio argentino sobre toda a região platina",
+    "D": "Derrota total das forças brasileiras",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "No período regencial (1831–1840), a criação da Guarda Nacional teve como objetivo central:",
+    "A": "Substituir o Exército",
+    "B": "Garantir defesa externa",
+    "C": "Controlar revoltas internas e fortalecer elites regionais",
+    "D": "Preparar o país para a independência",
+    "correta": "C"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A política externa do Barão do Rio Branco se caracterizou por:",
+    "A": "Diplomacia agressiva e uso da força",
+    "B": "Conciliação e arbitragem internacional em disputas territoriais",
+    "C": "Expansão militar na Amazônia",
+    "D": "Alinhamento automático ao imperialismo inglês",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A Revolução de 1930 representou:",
+    "A": "Consolidação da República Velha",
+    "B": "Movimento exclusivamente urbano",
+    "C": "Quebra do pacto oligárquico e ascensão de Vargas",
+    "D": "Restauração da monarquia",
+    "correta": "C"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A Intentona Comunista de 1935 foi influenciada por:",
+    "A": "Política isolacionista dos EUA",
+    "B": "A Internacional Comunista (Komintern)",
+    "C": "Fascismo italiano",
+    "D": "Liberalismo econômico",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "A participação da FEB na Segunda Guerra Mundial representou:",
+    "A": "Primeira atuação do Brasil fora do continente",
+    "B": "Mudança da diplomacia brasileira para alinhamento aos Aliados",
+    "C": "Fim do Estado Novo",
+    "D": "Entrada do Brasil na Guerra Fria ao lado da URSS",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "O Plano de Metas (1956–1961) tinha como principal objetivo:",
+    "A": "Manter modelo agroexportador",
+    "B": "Industrialização com ênfase em energia e rodovias",
+    "C": "Criar parlamentarismo definitivo",
+    "D": "Valorizar o café",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Fácil",
+    "enunciado": "O AI-5 (1968) marcou a radicalização do regime militar porque:",
+    "A": "Restabeleceu eleições diretas",
+    "B": "Criou conselhos populares",
+    "C": "Suspendeu direitos políticos e permitiu fechamento do Congresso",
+    "D": "Cancelou acordos econômicos com os EUA",
+    "correta": "C"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A economia mineradora do século XVIII teve como uma de suas consequências:",
+    "A": "Reforço do poder das câmaras municipais",
+    "B": "Deslocamento do eixo econômico para o Centro-Sul",
+    "C": "Desorganização total do sistema colonial",
+    "D": "Fim da escravidão",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A política do Encilhamento resultou principalmente:",
+    "A": "Modernização industrial",
+    "B": "Especulação financeira e inflação",
+    "C": "Consolidação do poder de Deodoro",
+    "D": "Valorização agrícola",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "O movimento do Contestado relacionava-se diretamente com:",
+    "A": "Disputas territoriais e problemas sociais ligados à ferrovia",
+    "B": "Revolta de africanos escravizados",
+    "C": "Colonização alemã",
+    "D": "Movimento liberal paulista",
+    "correta": "A"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A Política Externa Independente (1961–1964) buscava:",
+    "A": "Alinhamento total aos EUA",
+    "B": "Neutralidade completa",
+    "C": "Autonomia diplomática negociando com blocos rivais",
+    "D": "Apoio total a governos socialistas",
+    "correta": "C"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "O 'Milagre Econômico' brasileiro (1968–1973) caracterizou-se por:",
+    "A": "Distribuição de renda elevada",
+    "B": "Crescimento baseado em endividamento e capital externo",
+    "C": "Ausência de intervenção estatal",
+    "D": "Redução do setor industrial",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A crise do petróleo de 1973 afetou o Brasil porque:",
+    "A": "Era autossuficiente em petróleo",
+    "B": "Dependia de importações e crédito externo",
+    "C": "A Petrobras suspendeu operações",
+    "D": "Abandonou o modelo industrial",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A Lei da Anistia (1979):",
+    "A": "Puniu militares por abusos",
+    "B": "Anistiou somente civis",
+    "C": "Anistiou opositores e agentes do Estado",
+    "D": "Proibiu reorganização partidária",
+    "correta": "C"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A política africana do governo Geisel incluía:",
+    "A": "Apoio ao apartheid sul-africano",
+    "B": "Reconhecimento de movimentos de libertação africanos",
+    "C": "Romper com países árabes",
+    "D": "Oposição à OPEP",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A Revolução Russa influenciou movimentos brasileiros porque:",
+    "A": "Defendia federalismo liberal",
+    "B": "Inspirou anarquistas, tenentistas e comunistas",
+    "C": "Fortaleceu positivismo militar",
+    "D": "Criou partidos conservadores",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Médio",
+    "enunciado": "A Crise do Sistema Colonial ocorreu porque:",
+    "A": "Portugal reduziu impostos",
+    "B": "A Coroa aumentou exploração e centralização na colônia",
+    "C": "Houve industrialização imediata",
+    "D": "O ouro levou à independência imediata",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A administração pombalina no século XVIII implementou reformas no Brasil visando:",
+    "A": "Descentralizar capitanias",
+    "B": "Modernizar a administração e aumentar exploração econômica",
+    "C": "Fortalecer jesuítas",
+    "D": "Criar manufaturas independentes",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A independência latino-americana diferiu da brasileira porque:",
+    "A": "Foi pacífica em todos os países",
+    "B": "Resultou de acordos aristocráticos",
+    "C": "Teve guerras civis e mobilização popular intensa",
+    "D": "Foi conduzida por Portugal",
+    "correta": "C"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A consolidação da República Oligárquica dependeu de:",
+    "A": "Neutralidade militar",
+    "B": "Aliança entre cafeicultores, militares e coronéis",
+    "C": "Proibição de eleições estaduais",
+    "D": "Reforma agrária ampla",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "O Tenentismo influenciou a política nacional porque defendia:",
+    "A": "Manutenção do pacto café-com-leite",
+    "B": "Centralização política e moralização administrativa",
+    "C": "Separação total entre Exército e política",
+    "D": "Retorno da monarquia parlamentar",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A política externa do governo Médici caracterizou-se por:",
+    "A": "Expansão militar continental",
+    "B": "Alinhamento aos EUA e combate ao comunismo",
+    "C": "Parceria estratégica com a URSS",
+    "D": "Aproximação africana socialista",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "O enfraquecimento do regime militar no fim dos anos 1970 ocorreu devido:",
+    "A": "Crescimento econômico",
+    "B": "Crises do petróleo, inflação e pressões sociais",
+    "C": "Investimento militar estrangeiro",
+    "D": "Fim das greves",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "O Nacional-Desenvolvimentismo caracterizou-se por:",
+    "A": "Ausência de Estado",
+    "B": "Intervenção estatal e industrialização pesada",
+    "C": "Adoção do padrão-ouro",
+    "D": "Reforma agrária ampla",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "O Tratado de Versalhes contribuiu para instabilidade ao:",
+    "A": "Reintegrar Alemanha",
+    "B": "Impor punições econômicas e territoriais severas",
+    "C": "Fortalecer Rússia",
+    "D": "Ampliar o Império Austro-Húngaro",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A descolonização africana no século XX relaciona-se a:",
+    "A": "Derrota militar da ONU",
+    "B": "Crise europeia pós-guerra e movimentos nacionalistas",
+    "C": "Expansão otomana",
+    "D": "Proibição internacional",
+    "correta": "B"
+  },
+  {
+    "materia": "História (Exército)",
+    "nivel": "Difícil",
+    "enunciado": "A Constituição de 1988 inovou ao:",
+    "A": "Abolir direitos sociais",
+    "B": "Ampliar garantias e mecanismos de participação",
+    "C": "Extinguir separação de poderes",
+    "D": "Eliminar voto direto",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O maior país da América do Sul em extensão territorial é:",
+    "A": "Brasil",
+    "B": "Argentina",
+    "C": "Peru",
+    "D": "Colômbia",
+    "correta": "A"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A camada da atmosfera onde ocorrem os fenômenos meteorológicos é:",
+    "A": "Estratosfera",
+    "B": "Mesosfera",
+    "C": "Troposfera",
+    "D": "Termosfera",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O bioma predominantemente encontrado no Nordeste semiárido é:",
+    "A": "Mata Atlântica",
+    "B": "Pampa",
+    "C": "Pantanal",
+    "D": "Caatinga",
+    "correta": "D"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O continente mais populoso do mundo é:",
+    "A": "África",
+    "B": "Ásia",
+    "C": "Europa",
+    "D": "América",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O maior oceano do planeta é o:",
+    "A": "Atlântico",
+    "B": "Índico",
+    "C": "Pacífico",
+    "D": "Ártico",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A capital do estado do Amazonas é:",
+    "A": "Macapá",
+    "B": "Manaus",
+    "C": "Belém",
+    "D": "Porto Velho",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O rio mais extenso do mundo é geralmente considerado o:",
+    "A": "Rio Amazonas",
+    "B": "Rio Nilo",
+    "C": "Rio Mississipi",
+    "D": "Rio Ganges",
+    "correta": "A"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A linha imaginária que divide o planeta em hemisfério norte e sul é a:",
+    "A": "Meridiano de Greenwich",
+    "B": "Trópico de Capricórnio",
+    "C": "Linha do Equador",
+    "D": "Círculo Polar Ártico",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O clima predominante na região Norte do Brasil é o:",
+    "A": "Semiárido",
+    "B": "Equatorial",
+    "C": "Tropical de Altitude",
+    "D": "Subtropical",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O ponto cardeal que indica o nascer do sol é:",
+    "A": "Norte",
+    "B": "Sul",
+    "C": "Leste",
+    "D": "Oeste",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O Aquífero Guarani está localizado principalmente em:",
+    "A": "Brasil, Paraguai, Uruguai e Argentina",
+    "B": "Brasil, Bolívia e Peru",
+    "C": "Chile, Argentina e Bolívia",
+    "D": "Colômbia, Venezuela e Guiana",
+    "correta": "A"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A teoria que explica a movimentação dos continentes é a:",
+    "A": "Teoria do Big Bang",
+    "B": "Deriva Continental",
+    "C": "Teoria da Evolução",
+    "D": "Ciclo das Rochas",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O processo de urbanização acelerada sem planejamento é conhecido como:",
+    "A": "Reforma Agrária",
+    "B": "Alfabetização",
+    "C": "Êxodo Rural",
+    "D": "Megacidades",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "As áreas de convergência e divergência de placas tectônicas podem gerar:",
+    "A": "Auroras",
+    "B": "Tsunamis e terremotos",
+    "C": "Marés",
+    "D": "Correntes marítimas",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O maior produtor mundial de petróleo do Oriente Médio é:",
+    "A": "Israel",
+    "B": "Irã",
+    "C": "Arábia Saudita",
+    "D": "Síria",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A industrialização brasileira se intensificou a partir da era:",
+    "A": "Getúlio Vargas",
+    "B": "Dom Pedro II",
+    "C": "Juscelino Kubitschek",
+    "D": "Dilma Rousseff",
+    "correta": "A"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A principal causa do desmatamento na Amazônia atualmente é:",
+    "A": "Turismo",
+    "B": "Pecuária",
+    "C": "Urbanização",
+    "D": "Pesca predatória",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O fenômeno El Niño está associado ao:",
+    "A": "Resfriamento anômalo das águas do Pacífico",
+    "B": "Aquecimento anômalo das águas do Pacífico",
+    "C": "Derretimento de geleiras",
+    "D": "Aumento da radiação solar",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A cidade que mais concentra população no Brasil é:",
+    "A": "Rio de Janeiro",
+    "B": "Salvador",
+    "C": "São Paulo",
+    "D": "Brasília",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O Cerrado caracteriza-se principalmente por:",
+    "A": "Vegetação densa e úmida",
+    "B": "Campos alagados",
+    "C": "Vegetação de savana",
+    "D": "Florestas temperadas",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A corrente marítima que influencia o clima do Nordeste brasileiro, tornando-o mais seco, é a:",
+    "A": "Corrente do Golfo",
+    "B": "Corrente de Humboldt",
+    "C": "Corrente das Canárias",
+    "D": "Corrente do Brasil",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A divisão internacional do trabalho na fase atual da globalização caracteriza-se pela:",
+    "A": "Produção descentralizada e redes globais",
+    "B": "Centralização absoluta na Europa",
+    "C": "Soberania total dos Estados nacionais",
+    "D": "Economia baseada exclusivamente na agricultura",
+    "correta": "A"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O processo de desertificação no Brasil ocorre principalmente:",
+    "A": "No Centro-Oeste devido à mineração",
+    "B": "No Semiárido devido ao uso inadequado do solo",
+    "C": "No Sul devido ao clima subtropical",
+    "D": "Na Amazônia devido ao excesso de chuvas",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O conceito de 'cidade global' refere-se a:",
+    "A": "Cidades que concentram atividades agrícolas",
+    "B": "Centros urbanos com forte influência econômica mundial",
+    "C": "Cidades com mais de 1 milhão de habitantes",
+    "D": "Capitais nacionais",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A formação do relevo brasileiro é caracterizada principalmente por:",
+    "A": "Grandes cadeias de montanhas recentes",
+    "B": "Estruturas geológicas antigas e desgastadas",
+    "C": "Regiões vulcânicas ativas",
+    "D": "Planícies glaciais",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O termo 'anecúmeno' refere-se a:",
+    "A": "Áreas densamente povoadas",
+    "B": "Regiões improdutivas economicamente",
+    "C": "Porções da Terra praticamente não habitadas",
+    "D": "Áreas urbanizadas recentemente",
+    "correta": "C"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A principal consequência da continentalidade é:",
+    "A": "Baixa amplitude térmica",
+    "B": "Alta amplitude térmica",
+    "C": "Aumento da umidade",
+    "D": "Redução da insolação",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A zona de convergência intertropical (ZCIT) é responsável principalmente por:",
+    "A": "Secas prolongadas",
+    "B": "Chuvas intensas no Norte do Brasil",
+    "C": "Baixas temperaturas",
+    "D": "Ciclos de maré",
+    "correta": "B"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A urbanização brasileira é classificada como:",
+    "A": "Tardia e acelerada",
+    "B": "Antiga e gradual",
+    "C": "Controlada e planejada",
+    "D": "Exclusivamente industrial",
+    "correta": "A"
+  },
+  {
+    "materia": "Geografia (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A classificação climática mais aceita mundialmente foi criada por:",
+    "A": "Gauss",
+    "B": "Darwin",
+    "C": "Köppen",
+    "D": "Wegener",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "What is the correct translation of the word 'airport'?",
+    "A": "Porto",
+    "B": "Aeroporto",
+    "C": "Avião",
+    "D": "Piloto",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Choose the correct synonym for 'fast':",
+    "A": "Quick",
+    "B": "Cold",
+    "C": "Tall",
+    "D": "Hard",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "How do you say 'piloto' in English?",
+    "A": "Driver",
+    "B": "Pilot",
+    "C": "Captain",
+    "D": "Commander",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "The plural of 'plane' is:",
+    "A": "Planes",
+    "B": "Planen",
+    "C": "Plains",
+    "D": "Planees",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "What is the opposite of 'high'?",
+    "A": "Big",
+    "B": "Short",
+    "C": "Long",
+    "D": "Low",
+    "correta": "D"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Choose the correct translation of 'weather':",
+    "A": "Tempo (clima)",
+    "B": "Tempo (relógio)",
+    "C": "Viagem",
+    "D": "Vento forte",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "What is the correct verb for the sentence: 'The plane ___ at 8 a.m.'?",
+    "A": "leaves",
+    "B": "left",
+    "C": "leave",
+    "D": "leaving",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Select the correct meaning of 'crew':",
+    "A": "Passageiros",
+    "B": "Comida",
+    "C": "Tripulação",
+    "D": "Equipamento",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Which word means 'rápido'?",
+    "A": "Slow",
+    "B": "Early",
+    "C": "Quick",
+    "D": "Old",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "How do you say 'céu' in English?",
+    "A": "Sky",
+    "B": "Cloud",
+    "C": "Storm",
+    "D": "Sun",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Choose the correct option: 'The aircraft ___ due to a technical problem.'",
+    "A": "delays",
+    "B": "was delayed",
+    "C": "delay",
+    "D": "is delay",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "The correct translation of 'runway' is:",
+    "A": "Pista de pouso/decolagem",
+    "B": "Cabine",
+    "C": "Portão de embarque",
+    "D": "Bagagem",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "In the sentence 'The pilot must check the instruments', the word 'must' expresses:",
+    "A": "Obrigação",
+    "B": "Sugestão",
+    "C": "Possibilidade",
+    "D": "Condição",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Select the best synonym for 'dangerous':",
+    "A": "Safe",
+    "B": "Risky",
+    "C": "Heavy",
+    "D": "Large",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Choose the correct verb form: 'The crew ___ the passengers during turbulence.'",
+    "A": "warns",
+    "B": "warn",
+    "C": "warning",
+    "D": "warned",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "What is the meaning of 'altitude'?",
+    "A": "Velocidade",
+    "B": "Altura",
+    "C": "Distância horizontal",
+    "D": "Peso",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Choose the correct translation: 'The flight was cancelled due to bad weather.'",
+    "A": "O voo atrasou por causa do vento.",
+    "B": "O voo foi cancelado por causa do mau tempo.",
+    "C": "O avião caiu devido à tempestade.",
+    "D": "O voo foi desviado por causa da neve.",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "The opposite of 'ascent' is:",
+    "A": "Height",
+    "B": "Takeoff",
+    "C": "Descent",
+    "D": "Landing",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "In the sentence 'They are flying over the Atlantic', the tense used is:",
+    "A": "Simple present",
+    "B": "Past continuous",
+    "C": "Present continuous",
+    "D": "Future simple",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Which word means 'atraso'?",
+    "A": "Warning",
+    "B": "Delay",
+    "C": "Damage",
+    "D": "Check",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "In aeronautical context, the term 'crosswind' refers to:",
+    "A": "Vento contrário",
+    "B": "Vento lateral",
+    "C": "Vento a favor",
+    "D": "Vento descendente",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Choose the correct option: 'Had the pilot seen the storm earlier, he ___ the route.'",
+    "A": "will change",
+    "B": "would change",
+    "C": "would have changed",
+    "D": "changed",
+    "correta": "C"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "The term 'malfunction' means:",
+    "A": "Operação normal",
+    "B": "Falha de funcionamento",
+    "C": "Aumento de potência",
+    "D": "Variação de altitude",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Choose the best alternative: 'The aircraft, ___ engines had failed, made an emergency landing.'",
+    "A": "who",
+    "B": "which",
+    "C": "that",
+    "D": "where",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "The expression 'to comply with regulations' means:",
+    "A": "Desobedecer ordens",
+    "B": "Seguir normas",
+    "C": "Criar regras novas",
+    "D": "Avaliar documentos",
+    "correta": "B"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "In aviation, the word 'clearance' refers to:",
+    "A": "Autorização",
+    "B": "Limpeza",
+    "C": "Pane elétrica",
+    "D": "Altitude crítica",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Select the correct meaning of 'blackout' in aeronautics:",
+    "A": "Perda temporária de consciência",
+    "B": "Falta de combustível",
+    "C": "Falha do motor",
+    "D": "Erro de navegação",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Complete: 'The report suggests that human error was ___ cause of the accident.'",
+    "A": "the most likely",
+    "B": "much likely",
+    "C": "more likely",
+    "D": "likely most",
+    "correta": "A"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "The correct meaning of the phrasal verb 'take off' when referring to a trend or idea is:",
+    "A": "Decolar literalmente",
+    "B": "Ficar menos popular",
+    "C": "Lançar um produto",
+    "D": "Começar a ter sucesso",
+    "correta": "D"
+  },
+  {
+    "materia": "Inglês (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Choose the correct interpretation of: 'The pilot was supposed to report any anomalies.'",
+    "A": "O piloto deveria relatar qualquer anomalia.",
+    "B": "O piloto recusou-se a relatar anomalias.",
+    "C": "O piloto relatou todas as anomalias.",
+    "D": "O piloto não precisava relatar anomalias.",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Qual é a unidade de medida de força no SI?",
+    "A": "Joule",
+    "B": "Newton",
+    "C": "Watt",
+    "D": "Pascal",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A velocidade é definida como:",
+    "A": "A variação da massa no tempo",
+    "B": "A variação do espaço no tempo",
+    "C": "A variação da força no tempo",
+    "D": "A variação da energia no tempo",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A primeira lei de Newton também é conhecida como:",
+    "A": "Lei da Ação e Reação",
+    "B": "Lei da Inércia",
+    "C": "Lei da Força Resultante",
+    "D": "Lei da Gravitação",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A aceleração da gravidade na superfície da Terra é aproximadamente:",
+    "A": "2 m/s²",
+    "B": "5 m/s²",
+    "C": "9,8 m/s²",
+    "D": "15 m/s²",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A energia cinética está associada ao:",
+    "A": "Calor",
+    "B": "Movimento",
+    "C": "Som",
+    "D": "Campo magnético",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A unidade de potência no SI é o:",
+    "A": "Watt",
+    "B": "Volt",
+    "C": "Ohm",
+    "D": "Pascal",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O movimento retilíneo uniforme (MRU) caracteriza-se por:",
+    "A": "Velocidade constante",
+    "B": "Aceleração constante",
+    "C": "Força resultante constante",
+    "D": "Energia crescente",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A pressão é definida como:",
+    "A": "Força × Tempo",
+    "B": "Força / Área",
+    "C": "Energia / Tempo",
+    "D": "Velocidade × Massa",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A unidade de frequência é o:",
+    "A": "Hertz",
+    "B": "Newton",
+    "C": "Ampère",
+    "D": "Tesla",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Qual destas grandezas é vetorial?",
+    "A": "Massa",
+    "B": "Temperatura",
+    "C": "Força",
+    "D": "Energia",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A segunda lei de Newton afirma que a força resultante é igual a:",
+    "A": "Massa dividida pela aceleração",
+    "B": "Aceleração dividida pela massa",
+    "C": "Massa vezes aceleração",
+    "D": "Velocidade vezes tempo",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A lei de Coulomb descreve a força entre:",
+    "A": "Massas",
+    "B": "Cargas elétricas",
+    "C": "Objetos em movimento",
+    "D": "Ondas mecânicas",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O trabalho realizado por uma força é zero quando:",
+    "A": "A força é paralela ao deslocamento",
+    "B": "A força é perpendicular ao deslocamento",
+    "C": "A força tem grande intensidade",
+    "D": "O deslocamento é grande",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A quantidade de movimento (momentum) é dada por:",
+    "A": "m·a",
+    "B": "m·v",
+    "C": "v·a",
+    "D": "m/v",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A resistência do ar é um tipo de:",
+    "A": "Força gravitacional",
+    "B": "Força de atrito",
+    "C": "Força magnética",
+    "D": "Força elétrica",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A energia potencial gravitacional depende de:",
+    "A": "Velocidade e massa",
+    "B": "Altura e massa",
+    "C": "Velocidade e altura",
+    "D": "Temperatura",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O campo magnético ao redor de um fio percorrido por corrente elétrica é:",
+    "A": "Elétrico",
+    "B": "Magnético",
+    "C": "Gravitacional",
+    "D": "Nuclear",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O empuxo é a força responsável por:",
+    "A": "Atrito entre superfícies",
+    "B": "Deslocamento de fluido",
+    "C": "Flutuação de objetos",
+    "D": "Contração térmica",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Em um circuito elétrico, a resistência equivalente em resistores em série é:",
+    "A": "A soma das resistências",
+    "B": "O produto das resistências",
+    "C": "A média das resistências",
+    "D": "Sempre zero",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A lei dos gases ideais é dada por:",
+    "A": "PV = nRT",
+    "B": "F = m·a",
+    "C": "E = m·c²",
+    "D": "P = F/A",
+    "correta": "A"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O teorema trabalho–energia afirma que o trabalho resultante é igual à:",
+    "A": "Variação da energia potencial",
+    "B": "Variação da energia cinética",
+    "C": "Energia térmica do sistema",
+    "D": "Potência aplicada",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A força centrípeta em um movimento circular uniforme aponta sempre para:",
+    "A": "Fora da trajetória",
+    "B": "A mesma direção da velocidade",
+    "C": "O centro da trajetória",
+    "D": "A direção oposta ao movimento",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A lei de Faraday explica:",
+    "A": "A formação da gravidade",
+    "B": "A indução eletromagnética",
+    "C": "A propagação de ondas sonoras",
+    "D": "A teoria da relatividade",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Em um sistema isolado, a quantidade de movimento total:",
+    "A": "Diminui com o tempo",
+    "B": "Aumenta com o tempo",
+    "C": "Permanece constante",
+    "D": "Depende da energia total",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O coeficiente de dilatação térmica linear indica:",
+    "A": "Como o volume varia com a massa",
+    "B": "A resistência à condução térmica",
+    "C": "Quanto um material se expande com a temperatura",
+    "D": "A energia necessária para mudar de estado físico",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A força de Lorentz atua sobre partículas que possuem:",
+    "A": "Apenas massa",
+    "B": "Apenas velocidade",
+    "C": "Carga elétrica e movimento",
+    "D": "Temperatura elevada",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A energia interna de um gás ideal depende diretamente de:",
+    "A": "Pressão",
+    "B": "Temperatura",
+    "C": "Volume",
+    "D": "Quantidade de movimento",
+    "correta": "B"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O fenômeno da difração ocorre quando uma onda:",
+    "A": "Aumenta sua frequência",
+    "B": "Se propaga no vácuo",
+    "C": "Contorna obstáculos",
+    "D": "Aumenta sua massa",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Na teoria da relatividade, o tempo dilata quando:",
+    "A": "O objeto acelera até parar",
+    "B": "O objeto se move muito lentamente",
+    "C": "O objeto viaja próximo à velocidade da luz",
+    "D": "A energia cinética diminui",
+    "correta": "C"
+  },
+  {
+    "materia": "Física (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O índice de refração de um material indica:",
+    "A": "Sua densidade",
+    "B": "Sua resistência mecânica",
+    "C": "A razão entre a velocidade da luz no vácuo e no material",
+    "D": "A quantidade de calor por unidade de massa",
+    "correta": "C"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O átomo é formado basicamente por elétrons, prótons e:",
+    "A": "Fótons",
+    "B": "Nêutrons",
+    "C": "Íons",
+    "D": "Moléculas",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A água é uma substância formada pelos elementos químicos:",
+    "A": "Hidrogênio e oxigênio",
+    "B": "Carbono e hidrogênio",
+    "C": "Nitrogênio e carbono",
+    "D": "Oxigênio e sódio",
+    "correta": "A"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Qual é o estado físico da matéria caracterizado por volume variável e forma variável?",
+    "A": "Sólido",
+    "B": "Líquido",
+    "C": "Gasoso",
+    "D": "Plasma",
+    "correta": "C"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A tabela periódica é organizada principalmente pelo:",
+    "A": "Número de massa",
+    "B": "Número de nêutrons",
+    "C": "Número atômico",
+    "D": "Volume atômico",
+    "correta": "C"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O pH igual a 7 indica uma solução:",
+    "A": "Ácida",
+    "B": "Básica",
+    "C": "Neutra",
+    "D": "Instável",
+    "correta": "C"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A ligação química formada pela transferência de elétrons é chamada de:",
+    "A": "Metálica",
+    "B": "Iônica",
+    "C": "Covalente",
+    "D": "Hidrogênio",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A fórmula química do gás carbônico é:",
+    "A": "CO",
+    "B": "CO₂",
+    "C": "C₂O",
+    "D": "C₂O₂",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "A propriedade que indica a resistência de um material ao risco é chamada de:",
+    "A": "Densidade",
+    "B": "Dureza",
+    "C": "Condutividade",
+    "D": "Viscosidade",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "Uma mistura homogênea também é conhecida como:",
+    "A": "Solução",
+    "B": "Suspensão",
+    "C": "Coloide",
+    "D": "Precipitado",
+    "correta": "A"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Fácil",
+    "enunciado": "O símbolo químico do sódio é:",
+    "A": "S",
+    "B": "Na",
+    "C": "So",
+    "D": "Sd",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A tendência de um átomo atrair elétrons em uma ligação química é chamada de:",
+    "A": "Ionização",
+    "B": "Eletronegatividade",
+    "C": "Polaridade",
+    "D": "Densidade",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O número de massa é igual à soma de prótons e:",
+    "A": "Elétrons",
+    "B": "Nêutrons",
+    "C": "Íons",
+    "D": "Moléculas",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A reação química que libera energia para o meio é denominada:",
+    "A": "Exotérmica",
+    "B": "Endotérmica",
+    "C": "Neutra",
+    "D": "Reversível",
+    "correta": "A"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A concentração de uma solução é geralmente expressa em:",
+    "A": "Mol/L",
+    "B": "g/cm³",
+    "C": "m/s",
+    "D": "Joule",
+    "correta": "A"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O fenômeno em que um sólido passa diretamente para o estado gasoso é chamado de:",
+    "A": "Fusão",
+    "B": "Sublimação",
+    "C": "Solidificação",
+    "D": "Condensação",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "O gás responsável pelo efeito estufa mais abundante na atmosfera é:",
+    "A": "Ozônio",
+    "B": "Metano",
+    "C": "CO₂",
+    "D": "Vapor de água",
+    "correta": "D"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A ligação covalente ocorre quando:",
+    "A": "Há transferência de elétrons",
+    "B": "Há compartilhamento de elétrons",
+    "C": "Os núcleos se repelem",
+    "D": "Os átomos se ionizam",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "Um ácido forte é aquele que:",
+    "A": "Apresenta pH alto",
+    "B": "Ioniza completamente em solução",
+    "C": "É sempre tóxico",
+    "D": "Conduz mal eletricidade",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A lei de conservação da massa diz que:",
+    "A": "A massa total aumenta na reação",
+    "B": "A massa total diminui na reação",
+    "C": "A massa se mantém constante",
+    "D": "A massa depende da pressão",
+    "correta": "C"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Médio",
+    "enunciado": "A quantidade de matéria é expressa em:",
+    "A": "Mol",
+    "B": "Newton",
+    "C": "Watt",
+    "D": "Pascal",
+    "correta": "A"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A constante de equilíbrio (Kc) de uma reação depende principalmente da:",
+    "A": "Pressão",
+    "B": "Temperatura",
+    "C": "Massa",
+    "D": "Eletronegatividade",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A teoria ácido-base de Brønsted-Lowry define ácido como:",
+    "A": "Doadores de pares de elétrons",
+    "B": "Receptores de prótons",
+    "C": "Doadores de prótons",
+    "D": "Moléculas polares",
+    "correta": "C"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O número de oxidação do oxigênio na água oxigenada (H₂O₂) é:",
+    "A": "-2",
+    "B": "-1",
+    "C": "0",
+    "D": "+1",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A entalpia de uma reação é definida como:",
+    "A": "A variação da velocidade da reação",
+    "B": "A energia térmica absorvida ou liberada",
+    "C": "A quantidade de calor do ambiente",
+    "D": "A massa total dos reagentes",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A hibridização do carbono na molécula de etino (C₂H₂) é:",
+    "A": "sp³",
+    "B": "sp²",
+    "C": "sp",
+    "D": "Não há hibridização",
+    "correta": "C"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A força intermolecular predominante entre moléculas apolares é:",
+    "A": "Ligações de hidrogênio",
+    "B": "Dipolo-dipolo",
+    "C": "Íon-dipolo",
+    "D": "Forças de London",
+    "correta": "D"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A energia de ativação de uma reação química representa:",
+    "A": "A energia total dos produtos",
+    "B": "A energia mínima necessária para iniciar a reação",
+    "C": "A energia térmica do sistema",
+    "D": "A diferença entre reagentes e produtos",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "Um catalisador atua na reação química:",
+    "A": "Aumentando a energia de ativação",
+    "B": "Diminuindo a energia de ativação",
+    "C": "Alterando a constante universal dos gases",
+    "D": "Aumentando a massa dos reagentes",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "A isomeria em que compostos têm a mesma fórmula molecular mas diferentes ligações entre átomos é chamada de:",
+    "A": "Isomeria óptica",
+    "B": "Isomeria plana (constitucional)",
+    "C": "Isomeria geométrica",
+    "D": "Isomeria espacial",
+    "correta": "B"
+  },
+  {
+    "materia": "Química (Aeronáutica)",
+    "nivel": "Difícil",
+    "enunciado": "O efeito Tyndall é característico de:",
+    "A": "Soluções",
+    "B": "Suspensões",
+    "C": "Coloides",
+    "D": "Misturas eutéticas",
+    "correta": "C"
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "A velocidade média de um carro que percorre 100 km em 2 horas é:",
+    "A": "25 km/h",
+    "B": "50 km/h",
+    "C": "75 km/h",
+    "D": "100 km/h",
+    "correta": "B"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "A unidade de força no SI é:",
+    "A": "Watt",
+    "B": "Pascal",
+    "C": "Newton",
+    "D": "Joule",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "A energia cinética depende de:",
+    "A": "Apenas da massa",
+    "B": "Apenas da altura",
+    "C": "Da massa e da velocidade",
+    "D": "Da temperatura",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "A aceleração da gravidade na Terra é aproximadamente:",
+    "A": "5 m/s²",
+    "B": "7 m/s²",
+    "C": "9,8 m/s²",
+    "D": "12 m/s²",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "A lei de Ohm relaciona:",
+    "A": "Velocidade, tempo e deslocamento",
+    "B": "Força, massa e aceleração",
+    "C": "Tensão, corrente e resistência",
+    "D": "Pressão, temperatura e volume",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "Uma lâmpada de 60 W consome 60 J de energia em:",
+    "A": "1 s",
+    "B": "10 s",
+    "C": "1 min",
+    "D": "1 h",
+    "correta": "A"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "Um corpo em repouso tem velocidade igual a:",
+    "A": "0",
+    "B": "1",
+    "C": "Depende da massa",
+    "D": "Depende da força aplicada",
+    "correta": "A"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "A unidade de potência no SI é:",
+    "A": "J",
+    "B": "N",
+    "C": "W",
+    "D": "C",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "O som é um tipo de onda:",
+    "A": "Eletromagnética",
+    "B": "Transversal obrigatoriamente",
+    "C": "Longitudinal mecânica",
+    "D": "Somente transversal",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Fácil",
+    "enunciado": "A terceira lei de Newton afirma que:",
+    "A": "A energia se conserva",
+    "B": "Para cada ação há uma reação",
+    "C": "A força é igual à massa vezes aceleração",
+    "D": "Corpos permanecem em repouso",
+    "correta": "B"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "Um objeto é lançado verticalmente para cima com velocidade inicial de 20 m/s. Sua altura máxima é aproximadamente:",
+    "A": "10 m",
+    "B": "20 m",
+    "C": "30 m",
+    "D": "40 m",
+    "correta": "B"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "A resistência equivalente de dois resistores de 6 Ω e 3 Ω em paralelo é:",
+    "A": "2 Ω",
+    "B": "3 Ω",
+    "C": "9 Ω",
+    "D": "18 Ω",
+    "correta": "A"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "Uma força de 50 N atua em um corpo e realiza um trabalho de 150 J. O deslocamento foi de:",
+    "A": "2 m",
+    "B": "3 m",
+    "C": "4 m",
+    "D": "5 m",
+    "correta": "B"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "Uma onda tem frequência de 200 Hz e comprimento de onda de 1,5 m. Sua velocidade é:",
+    "A": "150 m/s",
+    "B": "200 m/s",
+    "C": "250 m/s",
+    "D": "300 m/s",
+    "correta": "D"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "O momento linear de um corpo de massa 10 kg se movendo a 3 m/s é:",
+    "A": "3 kg·m/s",
+    "B": "10 kg·m/s",
+    "C": "13 kg·m/s",
+    "D": "30 kg·m/s",
+    "correta": "D"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "Um espelho plano forma uma imagem:",
+    "A": "Real e invertida",
+    "B": "Real e ampliada",
+    "C": "Virtual e do mesmo tamanho",
+    "D": "Virtual e reduzida",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "Um corpo de massa 4 kg sofre uma força resultante que produz aceleração de 2 m/s². A força é:",
+    "A": "2 N",
+    "B": "4 N",
+    "C": "6 N",
+    "D": "8 N",
+    "correta": "D"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "A dilatação linear de um metal depende de:",
+    "A": "Velocidade",
+    "B": "Força",
+    "C": "Temperatura",
+    "D": "Pressão",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "A frequência de uma onda aumenta e sua velocidade permanece constante. O que ocorre com o comprimento de onda?",
+    "A": "Aumenta",
+    "B": "Diminui",
+    "C": "Fica constante",
+    "D": "Vira zero",
+    "correta": "B"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Médio",
+    "enunciado": "Um objeto eletrizado negativamente possui:",
+    "A": "Excesso de prótons",
+    "B": "Déficit de prótons",
+    "C": "Excesso de elétrons",
+    "D": "Déficit de elétrons",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "Uma mola com constante elástica 200 N/m é comprimida 0,1 m. A energia armazenada é:",
+    "A": "0,5 J",
+    "B": "1 J",
+    "C": "2 J",
+    "D": "5 J",
+    "correta": "A"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "Um corpo de 2 kg é lançado horizontalmente com velocidade de 10 m/s do topo de uma mesa de 1,25 m. O tempo de queda é aproximadamente:",
+    "A": "0,2 s",
+    "B": "0,3 s",
+    "C": "0,5 s",
+    "D": "1,0 s",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "A potência dissipada em um resistor de 10 Ω ligado a uma fonte de 20 V é:",
+    "A": "20 W",
+    "B": "40 W",
+    "C": "60 W",
+    "D": "80 W",
+    "correta": "D"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "Uma lente convergente com distância focal de 20 cm forma uma imagem real de um objeto colocado a 40 cm. A distância da imagem é:",
+    "A": "10 cm",
+    "B": "20 cm",
+    "C": "40 cm",
+    "D": "80 cm",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "A equação v = λf indica que, ao dobrar a frequência de uma onda em meio fixo:",
+    "A": "A velocidade dobra",
+    "B": "O comprimento de onda dobra",
+    "C": "O comprimento de onda se reduz pela metade",
+    "D": "Nada muda",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "A força centrípeta necessária para manter um corpo de 5 kg em movimento circular de 10 m/s em raio de 4 m é:",
+    "A": "25 N",
+    "B": "50 N",
+    "C": "100 N",
+    "D": "125 N",
+    "correta": "C"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "Um transformador ideal reduz a tensão de 1200 V para 120 V. O número de espiras no secundário será:",
+    "A": "10% do primário",
+    "B": "50% do primário",
+    "C": "Igual ao primário",
+    "D": "10 vezes o primário",
+    "correta": "A"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "Em um circuito RC, ao aumentar a capacitância, o tempo de carga:",
+    "A": "Diminui",
+    "B": "Aumenta",
+    "C": "É eliminado",
+    "D": "Fica aleatório",
+    "correta": "B"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "O trabalho realizado por uma força variável é obtido:",
+    "A": "Pela área sob o gráfico F × t",
+    "B": "Pela área sob o gráfico F × x",
+    "C": "Pela área sob o gráfico v × t",
+    "D": "Pela área sob o gráfico a × t",
+    "correta": "B"
+  },
+  {
+    "materia": "Física",
+    "nivel": "Difícil",
+    "enunciado": "No efeito Doppler, quando a fonte se aproxima do observador, a frequência percebida:",
+    "A": "Diminui",
+    "B": "Permanece idêntica",
+    "C": "Aumenta",
+    "D": "Torna-se zero",
+    "correta": "C"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "A água (H₂O) é um exemplo de:",
+    "A": "Substância simples",
+    "B": "Mistura heterogênea",
+    "C": "Substância composta",
+    "D": "Solução iônica",
+    "correta": "C"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "A soma das massas atômicas dos elementos de uma molécula é chamada de:",
+    "A": "Massa molar",
+    "B": "Massa específica",
+    "C": "Massa nuclear",
+    "D": "Energia de ligação",
+    "correta": "A"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "O pH de uma solução ácida é:",
+    "A": "Menor que 7",
+    "B": "Igual a 7",
+    "C": "Maior que 7",
+    "D": "Sempre igual a 14",
+    "correta": "A"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "O gás responsável pelo aquecimento global mais associado à queima de combustíveis fósseis é:",
+    "A": "O₂",
+    "B": "CO₂",
+    "C": "N₂",
+    "D": "He",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "O número atômico (Z) representa:",
+    "A": "Número de prótons",
+    "B": "Número de nêutrons",
+    "C": "Número de elétrons na última camada",
+    "D": "Massa total do átomo",
+    "correta": "A"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "A ligação entre átomos que compartilham elétrons é chamada de:",
+    "A": "Iônica",
+    "B": "Metálica",
+    "C": "Covalente",
+    "D": "Nuclear",
+    "correta": "C"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "Evaporação é um processo de:",
+    "A": "Mudança do líquido para o gasoso",
+    "B": "Gasoso para sólido",
+    "C": "Sólido para líquido",
+    "D": "Sólido para gasoso",
+    "correta": "A"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "O NaCl, presente no sal de cozinha, é uma:",
+    "A": "Base forte",
+    "B": "Proteína",
+    "C": "Molécula orgânica",
+    "D": "Substância iônica",
+    "correta": "D"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "O álcool etílico é representado pela fórmula:",
+    "A": "CH₄",
+    "B": "C₂H₆O",
+    "C": "C₆H₁₂O₆",
+    "D": "CO₂",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Fácil",
+    "enunciado": "A unidade usada para medir a quantidade de matéria é:",
+    "A": "Mol",
+    "B": "Ampère",
+    "C": "Newton",
+    "D": "Joule",
+    "correta": "A"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "Ao dissolver NaCl em água, ocorre um processo de:",
+    "A": "Ionização",
+    "B": "Dissociação iônica",
+    "C": "Combustão",
+    "D": "Polimerização",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "O gás responsável pela chuva ácida é principalmente:",
+    "A": "H₂",
+    "B": "SO₂",
+    "C": "N₂",
+    "D": "O₃",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "A molécula CH₄ apresenta geometria:",
+    "A": "Linear",
+    "B": "Angular",
+    "C": "Trigonal plana",
+    "D": "Tetraédrica",
+    "correta": "D"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "Em uma reação, a velocidade aumenta quando:",
+    "A": "A temperatura diminui",
+    "B": "A concentração aumenta",
+    "C": "Os catalisadores são removidos",
+    "D": "A superfície de contato diminui",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "O gás oxigênio é mais solúvel em água fria do que em água quente. Isso ocorre devido a:",
+    "A": "Aumento da pressão",
+    "B": "Diminuição da energia cinética das moléculas",
+    "C": "Aumento da densidade da água",
+    "D": "Reações exotérmicas",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "A função orgânica dos compostos que possuem o grupo –OH ligado a carbono saturado é:",
+    "A": "Éter",
+    "B": "Álcool",
+    "C": "Aldeído",
+    "D": "Ácido carboxílico",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "O rendimento de uma reação indica:",
+    "A": "A pureza dos reagentes",
+    "B": "A proporção de produto obtido",
+    "C": "A quantidade de energia liberada",
+    "D": "A cor do produto final",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "A concentração de uma solução é 20 g/L. Em 2 litros dessa solução, há:",
+    "A": "10 g",
+    "B": "20 g",
+    "C": "30 g",
+    "D": "40 g",
+    "correta": "D"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "As ligações presentes no CO₂ são:",
+    "A": "Simples",
+    "B": "Duplas",
+    "C": "Triplas",
+    "D": "Metálicas",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Médio",
+    "enunciado": "Em uma solução tampão, o pH se mantém:",
+    "A": "Muito variável",
+    "B": "Constante diante da adição moderada de ácido ou base",
+    "C": "Sempre igual a 14",
+    "D": "Sempre igual a 1",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "A combustão completa do etanol (C₂H₆O) produz CO₂ e H₂O. A razão molar entre CO₂ e C₂H₆O é:",
+    "A": "1:1",
+    "B": "2:1",
+    "C": "3:1",
+    "D": "4:1",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "Um sistema exotérmico libera 200 kJ ao ambiente. Isso significa que:",
+    "A": "A energia interna aumentou",
+    "B": "O ΔH é positivo",
+    "C": "O ΔH é negativo",
+    "D": "A reação não ocorreu",
+    "correta": "C"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "Em uma eletrólise aquosa de NaCl, forma-se gás H₂ no eletrodo:",
+    "A": "Negativo (cátodo)",
+    "B": "Positivo (ânodo)",
+    "C": "Ambos",
+    "D": "Nenhum",
+    "correta": "A"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "O benzeno (C₆H₆) apresenta ligações:",
+    "A": "Totalmente simples",
+    "B": "Alternância de simples e duplas devido à ressonância",
+    "C": "Apenas duplas",
+    "D": "Metálicas",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "O aumento da pressão favorece reações gasosas que:",
+    "A": "Produzem mais mols de gás",
+    "B": "Consomem mols de gás",
+    "C": "Produzem sólidos",
+    "D": "Não têm variação de mols",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "A entalpia de formação da água é −286 kJ/mol. A energia liberada na formação de 3 mols de H₂O é:",
+    "A": "−286 kJ",
+    "B": "−572 kJ",
+    "C": "−858 kJ",
+    "D": "−1000 kJ",
+    "correta": "C"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "Em uma pilha eletroquímica, o elo salino tem função de:",
+    "A": "Impedir fluxo de elétrons",
+    "B": "Equilibrar cargas iônicas entre as semicelas",
+    "C": "Aumentar o potencial elétrico",
+    "D": "Gerar mais íons",
+    "correta": "B"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "O polímero PVC é formado a partir do monômero:",
+    "A": "Eteno",
+    "B": "Propeno",
+    "C": "Cloreto de vinila",
+    "D": "Estireno",
+    "correta": "C"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "A solubilidade de um sal que possui íon comum diminui devido ao:",
+    "A": "Princípio de Le Chatelier",
+    "B": "Efeito Tyndall",
+    "C": "Lei de Hess",
+    "D": "Regra de Hund",
+    "correta": "A"
+  },
+  {
+    "materia": "Química",
+    "nivel": "Difícil",
+    "enunciado": "A oxidação do etanol a ácido acético ocorre por:",
+    "A": "Oxidação branda",
+    "B": "Oxidação forte",
+    "C": "Hidrólise",
+    "D": "Saponificação",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "A menor unidade estrutural e funcional dos seres vivos é:",
+    "A": "Órgão",
+    "B": "Tecidos",
+    "C": "Célula",
+    "D": "Sistema",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "O DNA é encontrado principalmente:",
+    "A": "No citoplasma",
+    "B": "Nos ribossomos",
+    "C": "No núcleo de células eucarióticas",
+    "D": "Nas mitocôndrias apenas",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "A fotossíntese ocorre principalmente em:",
+    "A": "Mitocôndrias",
+    "B": "Cloroplastos",
+    "C": "Ribossomos",
+    "D": "Lisossomos",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "Um exemplo de consumidor primário em uma cadeia alimentar é:",
+    "A": "Capim",
+    "B": "Leão",
+    "C": "Coelho",
+    "D": "Fungo",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "O sistema responsável pelo transporte de oxigênio no corpo humano é o:",
+    "A": "Digestório",
+    "B": "Respiratório",
+    "C": "Nervoso",
+    "D": "Circulatório",
+    "correta": "D"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "O sangue oxigenado sai do coração através da:",
+    "A": "Veia cava",
+    "B": "Artéria aorta",
+    "C": "Veia pulmonar",
+    "D": "Artéria pulmonar",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "A unidade básica da hereditariedade é o:",
+    "A": "Gene",
+    "B": "RNA",
+    "C": "Lipídeo",
+    "D": "Proteína",
+    "correta": "A"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "Os fungos se alimentam por:",
+    "A": "Fotossíntese",
+    "B": "Absorção",
+    "C": "Englobamento",
+    "D": "Filtração",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "A estrutura responsável pela síntese de proteínas é:",
+    "A": "Lisossomo",
+    "B": "Ribossomo",
+    "C": "Complexo de Golgi",
+    "D": "Vacúolo",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Fácil",
+    "enunciado": "O organismo que produz seu próprio alimento é chamado de:",
+    "A": "Heterótrofo",
+    "B": "Predador",
+    "C": "Autótrofo",
+    "D": "Parasita",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "A seleção natural atua sobre:",
+    "A": "Indivíduos e altera genes diretamente",
+    "B": "Indivíduos, mas altera a frequência gênica na população",
+    "C": "Populações e altera indivíduos",
+    "D": "Genes, mas não populações",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "A duplicação do DNA ocorre na fase:",
+    "A": "G1",
+    "B": "G2",
+    "C": "S",
+    "D": "Mitose",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "Em uma reação enzimática, a enzima atua como:",
+    "A": "Consumida permanentemente",
+    "B": "Redutora da energia de ativação",
+    "C": "Fonte de energia",
+    "D": "Neutralizadora do substrato",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "Em um cruzamento Aa × aa, a probabilidade de um descendente ser recessivo é:",
+    "A": "0%",
+    "B": "25%",
+    "C": "50%",
+    "D": "100%",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "A principal função dos glóbulos brancos é:",
+    "A": "Transporte de oxigênio",
+    "B": "Coagulação",
+    "C": "Imunidade",
+    "D": "Digestão",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "Os produtores em um ecossistema obtêm energia principalmente de:",
+    "A": "Outros animais",
+    "B": "Luz solar",
+    "C": "Matéria em decomposição",
+    "D": "Oxigênio atmosférico",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "O hormônio responsável pelo controle da glicemia é:",
+    "A": "Tiroxina",
+    "B": "Insulina",
+    "C": "Adrenalina",
+    "D": "Estrogênio",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "O RNA mensageiro é produzido no processo de:",
+    "A": "Tradução",
+    "B": "Transcrição",
+    "C": "Transdução",
+    "D": "Ligação",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "O bioma brasileiro caracterizado por seca prolongada e vegetação xerófila é:",
+    "A": "Amazônia",
+    "B": "Caatinga",
+    "C": "Pantanal",
+    "D": "Pampa",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Médio",
+    "enunciado": "A epiderme, a derme e a hipoderme pertencem ao sistema:",
+    "A": "Digestório",
+    "B": "Excretor",
+    "C": "Tegumentar",
+    "D": "Endócrino",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "Mutação em células germinativas pode resultar em:",
+    "A": "Alterações não hereditárias",
+    "B": "Efeitos exclusivamente somáticos",
+    "C": "Transmissão para descendentes",
+    "D": "Impossibilidade de expressão fenotípica",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "A presença de estruturas análogas indica:",
+    "A": "Origem comum",
+    "B": "Função semelhante e origem evolutiva distinta",
+    "C": "Função distinta e mesma origem evolutiva",
+    "D": "Mutações idênticas",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "O processo de PCR permite:",
+    "A": "Síntese de proteínas",
+    "B": "Amplificação de sequências específicas de DNA",
+    "C": "Transcrição de RNA",
+    "D": "Quebra de membranas celulares",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "A sucessão ecológica primária ocorre quando:",
+    "A": "O solo já está formado",
+    "B": "Ocorre após incêndios em florestas",
+    "C": "Inicia-se em áreas sem solo, como rochas expostas",
+    "D": "Envolve apenas plantas invasoras",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "Uma cadeia alimentar com 5 níveis tróficos apresenta maior energia em:",
+    "A": "Consumidor terciário",
+    "B": "Consumidor secundário",
+    "C": "Produtor",
+    "D": "Decompositor",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "O excesso de nutrientes em ambientes aquáticos causa eutrofização, que resulta em:",
+    "A": "Aumento da biodiversidade",
+    "B": "Proliferação de algas e redução do oxigênio",
+    "C": "Elevação do pH",
+    "D": "Redução da decomposição",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "A hemofilia é uma doença ligada ao cromossomo X. Um pai hemofílico e mãe normal não portadora terão:",
+    "A": "Apenas filhos hemofílicos",
+    "B": "Apenas filhas hemofílicas",
+    "C": "Todos os filhos normais e todas as filhas portadoras",
+    "D": "50% dos filhos afetados",
+    "correta": "C"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "As bombas de sódio e potássio consomem ATP porque transportam íons:",
+    "A": "A favor do gradiente",
+    "B": "Contra o gradiente",
+    "C": "Em equilíbrio",
+    "D": "Sem gasto energético",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "A especiação alopátrica ocorre devido a:",
+    "A": "Mutação simultânea",
+    "B": "Barreiras geográficas isolando populações",
+    "C": "Competição intraespecífica",
+    "D": "Mudanças climáticas rápidas",
+    "correta": "B"
+  },
+  {
+    "materia": "Biologia",
+    "nivel": "Difícil",
+    "enunciado": "O ciclo do carbono é diretamente influenciado pela:",
+    "A": "Fixação de nitrogênio",
+    "B": "Fotossíntese e respiração",
+    "C": "Formação de fosfatos",
+    "D": "Metalização de minerais",
+    "correta": "B"
+  }
+]
